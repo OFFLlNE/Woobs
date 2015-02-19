@@ -1,0 +1,69 @@
+.menu ul {
+	background-color: #DDECEF;
+	padding: 15px 15px;
+	border: 1px solid;
+	border-radius: 5px;
+
+}
+.navigation{
+	background-color: #7297BA;
+	padding: 15px 15px;
+
+}
+.navigation li {
+  display: inline;
+  padding-left: 11px;
+}
+.navigation a {
+  color: #5a5a5a;
+  font-size: 15px;
+  font-weight: bold;
+  padding: 14px 10px;
+  text-transform: uppercase;
+
+}
+.steam-button {
+	background: url("http://www.tf2wh.com/img/sits.png");
+	background-size: 300px;
+	padding-left: 60px
+}
+.base {
+	height: -moz-calc(100% - 100px); /* Firefox */
+ 	height: -webkit-calc(100% - 100px); /* Chrome, Safari */
+ 	height: calc(100% - 100px); /* IE9+ and future browsers */
+
+}
+.side{
+}
+
+.side ul {
+	background-color: #008282;
+	padding: 200px 69px;
+	border: 1px solid #BFBFDB;
+
+}
+.side li {
+  display: block;
+  padding-left: 11px;
+}
+
+.side a {
+  color: #5a5a5a;
+  font-size: 14px;
+  font-weight: bold;
+  padding: 0px 3px;
+  text-transform: uppercase;
+
+}
+
+.thumbnail{
+	margin:0px;
+    padding:0px;
+    border:none;
+}
+body {
+	background-color: #000000;
+}
+.black{
+	background-color: #000000;
+}
