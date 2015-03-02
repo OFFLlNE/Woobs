@@ -25,7 +25,7 @@
 			<div class="row">
 				<div class="col-xs-2 col-sm-2 col-md-2">
 					<div class="pull-right"
-						<button onclick="location.href = 'main.php';"><img src= "img/logoSmallSmall.png"></button>
+						<button onclick="location.href = 'index.php';"><img src= "img/logoSmallSmall.png"></button>
 					</div>
 
 	           	</div>
