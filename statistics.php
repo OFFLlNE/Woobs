@@ -19,9 +19,11 @@
 <div id="navigation">
 	<?php include('/menu.php'); ?>
 </div>
-<p>
-	Statistics
-</p>
+<div class="middle">
+	<p>
+		Statistics
+	</p>
+</div>
 
 <HR NOSHADE SIZE=7>
 <ADDRESS> <A HREF=MAILTO:johanneshorm@hotmail.com>Woobs&copy</A> TÜ Informaatika </ADDRESS>

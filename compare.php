@@ -19,9 +19,12 @@
 <div id="navigation">
 	<?php include('/menu.php'); ?>
 </div>
-<p>
-	Compare
-</p>
+<div class="middle">
+	<p>
+		Compare
+	</p>
+</div>
+
 
 
 <HR NOSHADE SIZE=7>
