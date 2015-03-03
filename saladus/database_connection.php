@@ -1,7 +1,7 @@
 <?php
-$servername = "tcp:ouvcutnxpc.database.windows.net";
-$username = "woobs"@SERVER_ID;
-$password = "SammalHabe1";
+$servername = "eu-cdbr-azure-north-b.cloudapp.net";
+$username = "bf3c7cd016fb44"@SERVER_ID;
+$password = "134bea17";
 $db = "csgorankingsdatabase";
 // Create connection
 $conn = mysqli_connect($servername, $username, $password);
