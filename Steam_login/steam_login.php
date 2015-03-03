@@ -11,11 +11,11 @@ try
             $openid->identity = 'http://steamcommunity.com/openid/?l=english';    // This is forcing english because it has a weird habit of selecting a random language otherwise
             header('Location: ' . $openid->authUrl());
         }
-?>
-<form action="?login" method="post">
-    <input type="image" src="http://cdn.steamcommunity.com/public/images/signinthroughsteam/sits_small.png">
-</form>
-<?php
+        ?>
+        <form action="?login" method="post">
+            <input type="image" src="http://cdn.steamcommunity.com/public/images/signinthroughsteam/sits_small.png">
+        </form>
+        <?php
     }
     elseif($openid->mode == 'cancel')
     {
@@ -23,6 +23,7 @@ try
     }
     else
     {
+
         if($openid->validate())
         {
                 $id = $openid->identity;

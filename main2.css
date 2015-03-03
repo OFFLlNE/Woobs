@@ -6,12 +6,13 @@ html, body, img, button, .thumbnail{
   	padding: 0px;
     border: none;
   }
+
  button{
  	background-color: transparent;
  }
 
 .main{
-	width: 80%;
+	width: 85%;
 	background-color: #1C1C1C;
 	margin-left: auto;
     margin-right: auto;
@@ -42,7 +43,7 @@ html, body, img, button, .thumbnail{
 	padding: 15px 15px;
 }
 .middle {
-	width: 80%;
+	width: 85%;
 	background-color: #EBEBE0;
 	margin-left: auto;
     margin-right: auto;
@@ -70,7 +71,7 @@ html, body, img, button, .thumbnail{
 
 }
 .heading{
-	width: 80%;
+	width: 85%;
 	background-color: #1C1C1C;
 	width: 380px;
 	border: 5px solid #EBEBE0;
@@ -78,7 +79,7 @@ html, body, img, button, .thumbnail{
 
 }
 .statistics{
-	width: 80%;
+	width: 85%;
 	background-color: #1C1C1C;
 	margin-left: auto;
     margin-right: auto;
