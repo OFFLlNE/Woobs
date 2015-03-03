@@ -1,14 +1,14 @@
 <?php
-$server = "tcp:ouvcutnxpc.database.windows.net";
-$user = "woobs"@SERVER_ID;
-$pwd = "SammalHabe1";
+$servername = "tcp:ouvcutnxpc.database.windows.net";
+$username = "woobs"@SERVER_ID;
+$password = "SammalHabe1";
 $db = "csgorankingsdatabase";
+// Create connection
+$conn = mysqli_connect($servername, $username, $password);
 
-$conn = sqlsrv_connect($server, array("UID"=>$user, "PWD"=>$pwd, "Database"=>$db));
-echo "$conn";
-
-if($conn === false){
-    die(print_r(sqlsrv_errors()));
+// Check connection
+if (!$conn) {
+    die("Connection failed: " . mysqli_connect_error());
 }
 echo "Connected successfully";
 ?>
