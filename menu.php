@@ -5,7 +5,6 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
-	<script src="../js/setFunction.js" type="text/javascript"></script>
 	<!-- Latest compiled and minified CSS -->
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
 	<!-- Optional theme -->
@@ -25,8 +24,10 @@
 	<div class="container-fluid">
 			<div class="row">
 				<div class="col-xs-2 col-sm-2 col-md-2">
-					<div class="pull-right"
-						<button onclick="location.href = 'index.php';"><img src= "img/logoSmallSmall.png"></button>
+					<div class="logo">
+						<div class="pull-right">
+							<button onclick="location.href = 'index.php';"><img src= "img/logoSmallSmall.png" ></button>
+						</div>
 					</div>
 
 	           	</div>
@@ -42,7 +43,7 @@
 			        	<ul class="lower">
 			    			<li><a class="youtube" href="https://www.youtube.com">Youtube</a></li>
 		          			<li><a class="reddit" href="https://www.reddit.com">Reddit</a></li>
-		          			<li><a class="twitch" href="https://www.twitch.com">Twitch</a></li>
+		          			<li><a class="twitch" href="https://www.twitch.net">Twitch</a></li>
 			    		</ul>
 			        </div>
 			    </div>
@@ -54,9 +55,9 @@
 				</div>
 			    <div class="col-xs-3 col-sm-3 col-md-3">
 			    	<div class="pull-right">
-
-	                  		<button type="submit"><img src= "img/signin.png"></button>
-
+			    		<div class="login-button">
+	                  		<button type="submit" class="login-button"><img src="img/signin.png" ></button>
+	                  	</div>
 	              	</div>
 				</div>
 			</div>

@@ -34,9 +34,18 @@ html, body, img, button, .thumbnail{
 	height: 30px;
 
 }
+.logo img {
+ display: block;
+ max-width: 100%;
+}
+.login-button img {
+ display: block;
+ max-width: 100%;
+}
 .menu ul {
 	background-color: #1A1A1A;
 	padding: 15px 15px;
+
 
 }
 .row {
@@ -69,12 +78,11 @@ html, body, img, button, .thumbnail{
   width: 350px;
 }
 
-}
+
 .heading{
 	width: 85%;
 	background-color: #1C1C1C;
 	width: 380px;
-	border: 5px solid #EBEBE0;
 	color: white;
 
 }
@@ -104,37 +112,45 @@ table{
 a.profile:hover{
 	background-color: #FF6600;
 	border: 1px solid;
+	text-decoration: none;
 }
 a.stats:hover{
 	background-color: #FF0000;
 	border: 1px solid;
+	text-decoration: none;
 }
 a.compare:hover{
 	background-color: #FF0066;
 	border: 1px solid;
+	text-decoration: none;
 }
 a.live:hover{
 	background-color: #0066FF;
 	border: 1px solid;
+	text-decoration: none;
 
 }
 a.support:hover{
 	background-color: #FFFF00;
 	border: 1px solid;
+	text-decoration: none;
 }
 
 a.youtube:hover{
 	background-color: #00FF00;
 	border: 1px solid;
+	text-decoration: none;
 }
 a.reddit:hover{
 	background-color: #0099CC;
 	border: 1px solid;
+	text-decoration: none;
 
 }
 a.twitch:hover{
 	background-color: #FF33CC;
 	border: 1px solid;
+	text-decoration: none;
 }
 
 
