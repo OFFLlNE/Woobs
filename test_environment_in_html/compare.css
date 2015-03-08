@@ -58,8 +58,26 @@ html, body, img, button, .thumbnail{
     margin-right: auto;
     margin-top: auto;
     border: 5px solid;
-
 }
+.compare {
+    width: 70%;
+	background-color: #EBEBE0;
+	margin-left: auto;
+    margin-right: auto;
+    margin-top: auto;
+    border: 5px solid;
+}
+.player1 {
+  float: left;
+}
+
+.player2 {
+  float: right;
+}
+.go{
+	margin-left: 50%;
+}
+
 .side ul{
 	background-color: #1C1C1C;
 }
@@ -77,20 +95,13 @@ html, body, img, button, .thumbnail{
 .lower{
   width: 350px;
 }
+
+
 .heading{
 	width: 85%;
 	background-color: #1C1C1C;
 	width: 380px;
 	color: white;
-
-}
-.statistics{
-	width: 85%;
-	background-color: #1C1C1C;
-	margin-left: auto;
-    margin-right: auto;
-    margin-top: auto;
-    border: 5px solid #EBEBE0;;
 
 }
 .box{

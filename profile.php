@@ -12,7 +12,7 @@
 
 	<!-- Latest compiled and minified JavaScript -->
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
-	<link rel="stylesheet" href="main2.css">
+	<link rel="stylesheet" href="profile.css">
 
 </head>
 <body>
@@ -20,9 +20,55 @@
 	<?php include('/menu.php'); ?>
 </div>
 <div class="middle">
-	<p>
-		Profile
-	</p>
+	<h1 id="heading">Profile</h1>
+	<div class="container">
+		<div class="col-sm-2">
+			<h1 id="heading">Last Match</h1>
+			<div class="box">
+	    		<table style="width:100%">
+					<tr>
+						<td>blablabla</td>
+						<td>NUMBER</td>
+					</tr>
+					<tr>
+						<td>jne</td>
+						<td>NUMBER</td>
+					</tr>
+				</table>
+			</div>
+		</div>
+		<div class="col-sm-6">
+			<h1 id="heading">Overall Statistics</h1>
+			<div class="box">
+	    		<table style="width:100%">
+					<tr>
+						<td>blablabla</td>
+						<td>NUMBER</td>
+					</tr>
+					<tr>
+						<td>jne</td>
+						<td>NUMBER</td>
+					</tr>
+					<tr>
+						<td>blablabla</td>
+						<td>NUMBER</td>
+					</tr>
+					<tr>
+						<td>jne</td>
+						<td>NUMBER</td>
+					</tr>
+					<tr>
+						<td>blablabla</td>
+						<td>NUMBER</td>
+					</tr>
+					
+				</table>
+			</div>
+		</div>
+		<img class= "col-sm-4">
+			<img src="img/profilepic.png" class="img-circle"/>
+		</img>
+	</div>
 </div>
 
 <HR NOSHADE SIZE=7>

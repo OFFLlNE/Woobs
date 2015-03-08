@@ -60,6 +60,18 @@ html, body, img, button, .thumbnail{
     border: 5px solid;
 
 }
+.profile{
+	width: 85%;
+	background-color: #EBEBE0;
+	margin-bottom: 0 auto;
+    margin-top: 0;
+    border: 5px solid;
+    overflow: auto;
+}
+.profilepic{
+	margin-top: 20%;
+}
+
 .side ul{
 	background-color: #1C1C1C;
 }
@@ -84,23 +96,29 @@ html, body, img, button, .thumbnail{
 	color: white;
 
 }
-.statistics{
-	width: 85%;
+.overallstatistics{
+	width: 50%;
 	background-color: #1C1C1C;
-	margin-left: auto;
-    margin-right: auto;
-    margin-top: auto;
-    border: 5px solid #EBEBE0;;
+	padding: 0;
+    margin: 0;
+    display: block;
+    position: fixed;
+    border: 5px solid #EBEBE0;
+
+}
+
+.lastmatch{
+	width: 20%;
+	display: block;
+    float: right;
+	background-color: #1C1C1C;
+    border: 5px solid #EBEBE0;
 
 }
 .box{
 	width: 90%;
-	margin-left: auto;
-    margin-right: auto;
-    margin-top: auto;
 
 }
-
 table{
 	background-color: #1C1C1C;
 	color: white;
