@@ -129,7 +129,7 @@ a.live:hover{
 
 }
 a.support:hover{
-	background-color: #FFFF00;
+	background-color: #6600FF;
 	border: 1px solid;
 	text-decoration: none;
 }
@@ -147,6 +147,49 @@ a.reddit:hover{
 }
 a.twitch:hover{
 	background-color: #FF33CC;
+	border: 1px solid;
+	text-decoration: none;
+}
+a.profile:active{
+	background-color: #909090 ;
+	border: 1px solid;
+	text-decoration: none;
+}
+a.stats:active{
+	background-color: #909090 ;
+	border: 1px solid;
+	text-decoration: none;
+}
+a.compare:active{
+	background-color: #909090 ;
+	border: 1px solid;
+	text-decoration: none;
+}
+a.live:active{
+	background-color: #909090 ;
+	border: 1px solid;
+	text-decoration: none;
+
+}
+a.support:active{
+	background-color: #909090 ;
+	border: 1px solid;
+	text-decoration: none;
+}
+
+a.youtube:active{
+	background-color: #909090 ;
+	border: 1px solid;
+	text-decoration: none;
+}
+a.reddit:active{
+	background-color: #909090 ;
+	border: 1px solid;
+	text-decoration: none;
+
+}
+a.twitch:active{
+	background-color: #909090 ;
 	border: 1px solid;
 	text-decoration: none;
 }

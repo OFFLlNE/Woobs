@@ -12,7 +12,7 @@
 
 	<!-- Latest compiled and minified JavaScript -->
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
-	<link rel="stylesheet" href="live.css">
+	<link rel="stylesheet" href="main2.css">
 
 </head>
 <body>
