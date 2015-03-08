@@ -20,9 +20,9 @@
 	<?php include('/menu.php'); ?>
 </div>
 <div class="middle">
-	<p>
+	<h1>
 		Live
-	</p>
+	</h1>
 </div>
 
 <HR NOSHADE SIZE=7>
