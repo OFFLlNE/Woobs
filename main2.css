@@ -133,7 +133,7 @@ a.live:hover{
 
 }
 a.support:hover{
-	background-color: #6600CC;
+	background-color: #CC66CC;
 	border: 1px solid;
 	text-decoration: none;
 }
@@ -155,7 +155,11 @@ a.twitch:hover{
 	text-decoration: none;
 }
 <!--> Lisasin :))</-->
-
+a.profile:active{
+	background-color: #909090 ;
+	border: 1px solid;
+	text-decoration: none;
+}
 a.stats:active{
 	background-color: #909090 ;
 	border: 1px solid;
