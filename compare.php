@@ -24,7 +24,7 @@
 	<div class="container">
 		<div class="col-sm-5">
 			<h1 id="heading">Player1</h1>
-			<img class="pilt">
+			<img class="profilepic">
 	    		<img src="img/profilepic.png"/>
 			</img>
 			<p class="tekst">
@@ -38,7 +38,7 @@
 			<h1 id="heading">
 				<h1>Player2</h1>
 			</h1>
-			<img class="pilt">
+			<img class="profilepic">
 	    		<img src="img/profilepic.png"/>
 			</img>
 			<p class="tekst">
