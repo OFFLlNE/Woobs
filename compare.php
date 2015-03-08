@@ -20,9 +20,32 @@
 	<?php include('/menu.php'); ?>
 </div>
 <div class="middle">
-	<p>
-		Compare
-	</p>
+	<h1 id="heading">Compare</h1>
+	<div class="container">
+		<div class="col-sm-5">
+			<h1 id="heading">Player1</h1>
+			<img class="pilt">
+	    		<img src="img/profilepic.png"/>
+			</img>
+			<p class="tekst">
+	    		<p>Mingi tekst</p>
+			</p>
+		</div>
+		<div class="col-sm-2">
+			<button class="btn btn-default btn-lg">GO</button>
+		</div>
+		<div class="col-sm-5">
+			<h1 id="heading">
+				<h1>Player2</h1>
+			</h1>
+			<img class="pilt">
+	    		<img src="img/profilepic.png"/>
+			</img>
+			<p class="tekst">
+	    		<p>Mingi tekst</p>
+			</p>
+		</div>
+	</div>
 </div>
 
 

@@ -22,7 +22,7 @@
 <div class="middle">
 	<h1 id="heading">Profile</h1>
 	<div class="container">
-		<div class="col-sm-2">
+		<div class="col-sm-3">
 			<h1 id="heading">Last Match</h1>
 			<div class="box">
 	    		<table style="width:100%">
@@ -65,7 +65,7 @@
 				</table>
 			</div>
 		</div>
-		<img class= "col-sm-4">
+		<img class= "col-sm-3">
 			<img src="img/profilepic.png" class="img-circle"/>
 		</img>
 	</div>
