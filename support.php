@@ -23,7 +23,7 @@
 </div>
 <div class="middle">
 	<div class="container-fluid">
-	<h1 id="heading">Support</h1>
+		<h1 id="heading">Support</h1>
 			<div class="row">
 				<div class="col-xs-12 col-sm-12 col-md-12">
 					<div class="donation">
