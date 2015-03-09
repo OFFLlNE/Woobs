@@ -16,6 +16,7 @@
 
 </head>
 <body>
+<?php $activePage = "live.php"; ?>
 <div id="navigation">
 	<?php include('/menu.php'); ?>
 </div>

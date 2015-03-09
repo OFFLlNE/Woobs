@@ -4,9 +4,7 @@
 	<title>Menu</title>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-
 	<script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
-	<script src="js/activeMenuItem.js"></script>
 	<!-- Latest compiled and minified CSS -->
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
 	<!-- Optional theme -->
@@ -36,11 +34,16 @@
 				<div class="col-xs-6 col-sm-6 col-md-6">
 					<div class="menu">
 						<ul>
-			          		<li><a class="profile" href="profile.php">Profile</a></li>
-			          		<li><a class="stats" href="statistics.php">Statistics</a></li>
-			          		<li><a class="compare" href="compare.php">Compare</a></li>
-			          		<li><a class="live" href="live.php">Live</a></li>
-			          		<li><a class="support" href="support.php">Support</a></li>
+			          		<li><a <?php if ($activePage =="profile.php") {?> class="active" <?php } ?>
+			          		 class="profile" href="profile.php">Profile</a></li>
+			          		<li><a <?php if ($activePage =="statistics.php") {?> class="active" <?php } ?>
+			          		 class="stats" href="statistics.php">Statistics</a></li>
+			          		<li><a <?php if ($activePage =="compare.php") {?> class="active" <?php } ?>
+			          		 class="compare" href="compare.php">Compare</a></li>
+			          		<li><a <?php if ($activePage =="live.php") {?> class="active" <?php } ?>
+			          		 class="live" href="live.php">Live</a></li>
+			          		<li><a <?php if ($activePage =="support.php") {?> class="active" <?php } ?>
+			          		 class="support" href="support.php">Support</a></li>
 			        	</ul>
 			        	<ul class="lower">
 			    			<li><a class="youtube" href="https://www.youtube.com">Youtube</a></li>

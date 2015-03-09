@@ -1,12 +1,8 @@
-$(function(){
-    // this will get the full URL at the address bar
-    var url = window.location.href;
+window.onload = activateCurrentLink;
 
-    // passes on every "a" tag
-    $(".menu a").each(function() {
-            // checks if its the same on the address bar
-        if(url == (this.href)) {
-            $(this).closest("li").addClass("active");
-        }
-    });
-});
+function activateCurrentLink(){
+    var a = document.getElementsByTagName("A");
+    for(var i=0;i<a.length;i++)
+        if(a[i].href == window.location.href.split("#")[0])
+            a[i].className = 'active';
+}

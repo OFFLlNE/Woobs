@@ -16,6 +16,8 @@
 
 </head>
 <body>
+
+<?php $activePage = "profile.php"; ?>
 <div id="navigation">
 	<?php include('/menu.php'); ?>
 </div>
@@ -24,7 +26,7 @@
 	<div class="container">
 		<div class="col-sm-3">
 			<h1 id="heading">Last Match</h1>
-			<div class="box">
+			<div class="boxProfile">
 	    		<table style="width:100%">
 					<tr>
 						<td>blablabla</td>
@@ -39,7 +41,7 @@
 		</div>
 		<div class="col-sm-6">
 			<h1 id="heading">Overall Statistics</h1>
-			<div class="box">
+			<div class="boxProfile">
 	    		<table style="width:100%">
 					<tr>
 						<td>blablabla</td>
@@ -61,7 +63,7 @@
 						<td>blablabla</td>
 						<td>NUMBER</td>
 					</tr>
-					
+
 				</table>
 			</div>
 		</div>

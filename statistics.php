@@ -16,6 +16,7 @@
 
 </head>
 <body>
+<?php $activePage = "statistics.php"; ?>
 <div id="navigation">
 	<?php include('/menu.php'); ?>
 </div>

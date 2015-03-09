@@ -17,6 +17,7 @@
 
 </head>
 <body>
+<?php $activePage = ""; ?>
 <div id="navigation">
 	<?php include('/menu.php'); ?>
 </div>
@@ -33,7 +34,7 @@
 			<h1>Top 15 overall ranking</h1>
 	</div>
 
-	<div class="box">
+	<div class="boxMain">
 	    <table style="width:100%">
 			<tr>
 				<td>Jill</td>
