@@ -43,10 +43,11 @@
 					</div>
 				</div>
 			</div>
-			<h3 id="heading">About us</h3>
+
 			<div class="row">
 				<div class="col-xs-12 col-sm-12 col-md-12">
 					<div class="AboutUs">
+						<h3 id="heading">About us</h3>
 						<p>
 							We are 3 students in the University of Tartu,
 							studying informatics. Since we and many of our
