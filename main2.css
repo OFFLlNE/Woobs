@@ -45,8 +45,6 @@ html, body, img, button, .thumbnail{
 .menu ul {
 	background-color: #1A1A1A;
 	padding: 15px 15px;
-
-
 }
 .row {
 	padding: 15px 15px;
@@ -80,10 +78,10 @@ html, body, img, button, .thumbnail{
 .heading{
 	width: 85%;
 	background-color: #1C1C1C;
-	width: 380px;
 	color: white;
 
 }
+
 .statistics{
 	width: 85%;
 	background-color: #1C1C1C;
