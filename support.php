@@ -21,9 +21,7 @@
 	<?php include('/menu.php'); ?>
 </div>
 <div class="middle">
-	<p>
-		Support
-	</p>
+	<h1 id="heading">Profile</h1>
 </div>
 
 <HR NOSHADE SIZE=7>
