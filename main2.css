@@ -123,28 +123,28 @@ table {
 }
 
 a.profile:hover{
-	background-color: #FF6600;
+	background-color: #FF9933;
 	border: 1px solid;
 	text-decoration: none;
 }
 a.stats:hover{
-	background-color: #FF0000;
+	background-color: #00CC66;
 	border: 1px solid;
 	text-decoration: none;
 }
 a.compare:hover{
-	background-color: #FF0066;
+	background-color: #FF3399;
 	border: 1px solid;
 	text-decoration: none;
 }
 a.live:hover{
-	background-color: #0066FF;
+	background-color: #9966FF;
 	border: 1px solid;
 	text-decoration: none;
 
 }
 a.support:hover{
-	background-color: #6600CC;
+	background-color: #3399CC;
 	border: 1px solid;
 	text-decoration: none;
 }
@@ -155,13 +155,13 @@ a.youtube:hover{
 	text-decoration: none;
 }
 a.reddit:hover{
-	background-color: #0099CC;
+	background-color: #FF5700;
 	border: 1px solid;
 	text-decoration: none;
 
 }
 a.twitch:hover{
-	background-color: #FF33CC;
+	background-color: #6441A5;
 	border: 1px solid;
 	text-decoration: none;
 }
