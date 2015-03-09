@@ -27,7 +27,7 @@
 			<div class="row">
 				<div class="col-xs-12 col-sm-12 col-md-12">
 					<div class="donation">
-						<h2 id="heading">Donate to our cause: </h2>
+						<h3 id="heading">Donate to our cause</h3>
 						<form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
 							<input type="hidden" name="cmd" value="_donations">
 							<input type="hidden" name="business" value="loll_noob1@hotmail.com">
@@ -43,7 +43,7 @@
 					</div>
 				</div>
 			</div>
-			<h3 id="heading">About us: </h3>
+			<h3 id="heading">About us</h3>
 			<div class="row">
 				<div class="col-xs-12 col-sm-12 col-md-12">
 					<div class="AboutUs">
