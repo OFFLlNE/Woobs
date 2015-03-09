@@ -14,14 +14,67 @@
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
 	<link rel="stylesheet" href="main2.css">
 
+
 </head>
+<style>
+h2 {
+    color:blue;
+    font-family:verdana;
+    font-size:125%;
+}
+h3 {
+    color:black;
+    font-family:verdana;
+    font-size:125%;
+}
+
+</style>
 <body>
 <?php $activePage = "support.php"; ?>
 <div id="navigation">
 	<?php include('/menu.php'); ?>
 </div>
 <div class="middle">
-	<h1 id="heading">Support</h1>
+	<h2 id="heading">Support us here: </h2>
+	<div class = "donation">
+		<form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+			<input type="hidden" name="cmd" value="_donations">
+			<input type="hidden" name="business" value="loll_noob1@hotmail.com">
+			<input type="hidden" name="lc" value="US">
+			<input type="hidden" name="item_name" value="CSGOrankings">
+			<input type="hidden" name="no_note" value="0">
+			<input type="hidden" name="currency_code" value="USD">
+			<input type="hidden" name="bn" value="PP-DonationsBF:btn_donateCC_LG.gif:NonHostedGuest">
+			<input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
+			<img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
+		</form>
+
+	</div>
+	<h3 id="heading">About us: </h3>
+	<div class = "Aboutus">
+		<p>
+			We are 3 students in the University of Tartu, 
+			studying informatics. Since we and many of our
+			friends play the game called Counter-Strike: 
+			Global Offensive,so we thought we should make an
+			interesting webpage to track out stats and even
+			compare our stats
+		</p>
+	</div>
+	<div class = "Contact">
+		<a id="show_id" onclick="document.getElementById('spoiler_id').style.display='';
+			document.getElementById('show_id').style.display='none';" class="link">[Questions or suggestions, feel free to contact us]
+		</a>
+		<span id="spoiler_id" style="display: none">
+			<a 
+				onclick="document.getElementById('spoiler_id').style.display='none'; document.getElementById('show_id').style.display='';" class="link">[Hide]
+			</a>
+			<br>
+				<a 
+					href="mailto:valjalauri@gmail.com">Click To send a mail
+				</a> 
+		</span>
+	</div>
 </div>
 
 <HR NOSHADE SIZE=7>
