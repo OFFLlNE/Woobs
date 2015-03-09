@@ -99,7 +99,7 @@ html, body, img, button, .thumbnail{
     margin-right: auto;
     margin-top: auto;
     padding: 5px 5px;
-    border: 5px solid #EBEBE0;
+    border: 5px solid #A3A391;
 
 }
 .profilepic{
@@ -157,45 +157,7 @@ a.twitch:hover{
 	text-decoration: none;
 }
 <!--> Lisasin :))</-->
-
-a.stats:active{
-	background-color: #909090 ;
-	border: 1px solid;
-	text-decoration: none;
-}
-a.compare:active{
-	background-color: #909090 ;
-	border: 1px solid;
-	text-decoration: none;
-}
-a.live:active{
-	background-color: #909090 ;
-	border: 1px solid;
-	text-decoration: none;
-
-}
-a.support:active{
-	background-color: #909090 ;
-	border: 1px solid;
-	text-decoration: none;
-}
-
-a.youtube:active{
-	background-color: #909090 ;
-	border: 1px solid;
-	text-decoration: none;
-}
-a.reddit:active{
-	background-color: #909090 ;
-	border: 1px solid;
-	text-decoration: none;
-
-}
-a.twitch:active{
-	background-color: #909090 ;
-	border: 1px solid;
-	text-decoration: none;
-}
+.active { background-color: #000; }
 
 
 
