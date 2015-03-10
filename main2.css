@@ -41,7 +41,7 @@ html, body, img, button, .thumbnail{
 .login-button {
  display: block;
  max-width: 100%;
- max-height:
+ max-height: 100%;
 }
 .menu ul {
 	background-color: #1A1A1A;
