@@ -1,3 +1,6 @@
+<?php
+    require ('steamAuthentication/steamauth.php');
+?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -61,12 +64,23 @@
 			    <div class="col-xs-3 col-sm-3 col-md-3">
 			    	<div class="pull-right">
 			    		<div class="login-button">
-	                  		<button type="submit" class="login-button"><img src="img/signin.png" ></button>
+	                  		<?php
+								if(!isset($_SESSION['steamid'])) {
+
+								    steamlogin(); //login button
+
+								}  else {
+
+								    include ('steamauth/userInfo.php'); //To access the $steamprofile array
+								    //Protected content
+
+								    logoutbutton(); //Logout Button
+								}
+							?>
 	                  	</div>
 	              	</div>
 				</div>
 			</div>
-
 		</div>
 	</div>
 </div>
