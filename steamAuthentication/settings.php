@@ -2,7 +2,7 @@
 $steamauth['apikey'] = "32705B0D9840B2D61BDDEBD694E41631"; // Your Steam WebAPI-Key found at http://steamcommunity.com/dev/apikey
 $steamauth['domainname'] = "http://csgorankings.azurewebsites.net/"; // The main URL of your website displayed in the login page
 $steamauth['buttonstyle'] = "large"; // Style of the login button [small|large_no|large]
-$steamauth['logoutpage'] = "http://csgorankings.azurewebsites.net/index.php"; // Page to redirect to after a successfull logout (from the directory the SteamAuth-folder is located in) - NO slash at the beginning!
+$steamauth['logoutpage'] = "http://csgorankings.azurewebsites.net/"; // Page to redirect to after a successfull logout (from the directory the SteamAuth-folder is located in) - NO slash at the beginning!
 $steamauth['loginpage'] = "http://csgorankings.azurewebsites.net/"; // Page to redirect to after a successfull login (from the directory the SteamAuth-folder is located in) - NO slash at the beginning!
 
 // System stuff

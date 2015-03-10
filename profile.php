@@ -27,7 +27,7 @@
 		<div class="row">
 			<div class="row">
 			<div class="col-xs-3 col-sm-3 col-md-3">
-				<img><img src="img/profilepic.png" class="img-circle"/></img>
+				<img src="img/profilepic.png" class="img-circle"/></img>
 			</div>
 			<div class="col-xs-9 col-sm-9 col-md-9">
 				<h1 id="heading">Overall Statistics</h1>
@@ -56,7 +56,7 @@
 
 					</table>
 				</div>
-			</div>	
+			</div>
 			</div>
 			<div class="col-xs-3 col-sm-3 col-md-3">
 				<h1 id="heading">Last Match</h1>

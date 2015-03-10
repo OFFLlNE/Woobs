@@ -55,30 +55,32 @@
 			    		</ul>
 			        </div>
 			    </div>
-			    <div class="col-xs-1 col-sm-1 col-md-1">
-			    	<button type="button" class="btn btn-default btn-lg">
-  						<span class="glyphicon glyphicon-search" aria-hidden="true"></span> Players
-					</button>
+			    <div class="col-xs-2 col-sm-2 col-md-2">
+				    <div class="pull-right">
+				    		<div class="login-button">
+		                  		<?php
+									if(!isset($_SESSION['steamid'])) {
 
+									    steamlogin(); //login button
+
+									}  else {
+
+									    include ('steamauth/userInfo.php'); //To access the $steamprofile array
+									    //Protected content
+
+
+										echo <a href="javascript:ReplaceContentInContainer('profilePic', <img src="".$steamprofile['avatarfull']"" .$steamprofile['personaname']"></a>
+
+									    logoutbutton(); //Logout Button
+									}
+								?>
+		                  	</div>
+		              	</div>
 				</div>
-			    <div class="col-xs-3 col-sm-3 col-md-3">
-			    	<div class="pull-right">
-			    		<div class="login-button">
-	                  		<?php
-								if(!isset($_SESSION['steamid'])) {
-
-								    steamlogin(); //login button
-
-								}  else {
-
-								    include ('steamauth/userInfo.php'); //To access the $steamprofile array
-								    //Protected content
-
-								    logoutbutton(); //Logout Button
-								}
-							?>
-	                  	</div>
-	              	</div>
+			    <div class="col-xs-2 col-sm-2 col-md-2">
+			    	<div class="profilePic">
+			    		<img src="img/profileMenu.png" class="img-circle"/></img>
+			    	</div>
 				</div>
 			</div>
 		</div>
