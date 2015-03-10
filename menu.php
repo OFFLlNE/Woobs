@@ -56,6 +56,11 @@
 			        </div>
 			    </div>
 			    <div class="col-xs-2 col-sm-2 col-md-2">
+			    	<div class="steamPic pull-right">
+			    		<img src="img/profileMenu.png"/></img>
+			    	</div>
+				</div>
+			    <div class="col-xs-2 col-sm-2 col-md-2">
 				    <div class="pull-right">
 				    		<div class="login-button">
 		                  		<?php
@@ -72,11 +77,6 @@
 								?>
 		                  	</div>
 		              	</div>
-				</div>
-			    <div class="col-xs-2 col-sm-2 col-md-2">
-			    	<div class="profilePic">
-			    		<img src="img/profileMenu.png" class="img-circle"/></img>
-			    	</div>
 				</div>
 			</div>
 		</div>

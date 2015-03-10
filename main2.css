@@ -38,9 +38,10 @@ html, body, img, button, .thumbnail{
  display: block;
  max-width: 100%;
 }
-.login-button img {
+.login-button {
  display: block;
  max-width: 100%;
+ max-height:
 }
 .menu ul {
 	background-color: #1A1A1A;
@@ -113,11 +114,14 @@ html, body, img, button, .thumbnail{
 	margin-top: 20%;
 }
 
-
 table {
 	background-color: #1C1C1C;
 	color: white;
 
+}
+
+.steamPic img{
+	border-radius: 35%;
 }
 
 a.profile:hover{
@@ -168,6 +172,7 @@ a.twitch:hover{
 	 border: 1px solid;
 	 text-decoration: none;
  }
+
 
 
 
