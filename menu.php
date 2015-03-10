@@ -67,10 +67,6 @@
 
 									    include ('steamauth/userInfo.php'); //To access the $steamprofile array
 									    //Protected content
-
-
-										echo <a href="javascript:ReplaceContentInContainer('profilePic', <img src="".$steamprofile['avatarfull']"" .$steamprofile['personaname']"></a>
-
 									    logoutbutton(); //Logout Button
 									}
 								?>
