@@ -51,9 +51,9 @@
 							We are 3 students in the University of Tartu,
 							studying informatics. Since we and many of our
 							friends play the game called Counter-Strike:
-							Global Offensive,so we thought we should make an
-							interesting webpage to track out stats and even
-							compare our stats
+							Global Offensive, we thought we should make an
+							interesting webpage to track our stats and even
+							compare them.
 						</p>
 					</div>
 					<div class = "Contact">
