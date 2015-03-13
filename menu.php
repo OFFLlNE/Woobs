@@ -1,5 +1,5 @@
 <?php
-    require ('steamAuthentication/steamauth.php');
+    require ('steamauth/steamauth.php');
 ?>
 <!DOCTYPE html>
 <html>
