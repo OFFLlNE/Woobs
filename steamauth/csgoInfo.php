@@ -3,8 +3,8 @@
     if (empty($_SESSION['steam_uptodate']) or $_SESSION['steam_uptodate'] == false or empty($_SESSION['steam_personaname'])) {
         $url = file_get_contents("http://api.steampowered.com/ISteamUser/GetUserStatsForGame/v0002/?appid=730&key=".$steamauth['apikey']."&steamid=".$_SESSION['steamid']);
         $content = json_decode($url, true);
-        $_SESSION['total_kills'] = $content['playerstats']['stats'][0]['name'];
-        $_SESSION['total_deaths'] = $content['playerstats']['stats'][1]['name'];
+        $_SESSION['total_kills'] = $content['playerstats']['stats'][0]['value'];
+        $_SESSION['total_deaths'] = $content['playerstats']['stats'][1]['value'];
         $_SESSION['steam_uptodate'] = true;
     }
 
