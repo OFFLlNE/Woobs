@@ -71,10 +71,10 @@
 									}  else {
 
 									    include ('steamauth/userInfo.php'); //To access the $steamprofile array
+									    echo "Welcome back " . $steamprofile['personaname'] . "</br>";
 									    include ('steamauth/csgoInfo.php');
-									     echo "Welcome back " . $steamprofile['personaname'] . "</br>";
-    									 echo "here is your avatar: </br>" . '<img src="'.$steamprofile['avatarfull'].'" title="" alt="" />';
-    									 echo "Kills " . $steamprofile['totalkills'] . "</br>";
+
+    									echo "Kills " . $steamprofile['totalkills'] . "</br>";
 
 									    //Protected content
 									    logoutbutton(); //Logout Button
