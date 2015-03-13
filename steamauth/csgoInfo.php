@@ -8,7 +8,7 @@
         $_SESSION['steam_uptodate'] = true;
     }
 
-    $steamprofile['totalkills'] = $_SESSION['total_kills'];
-    $steamprofile['totaldeaths'] = $_SESSION['total_deaths'];
+    $csgoprofile['totalkills'] = $_SESSION['total_kills'];
+    $csgoprofile['totaldeaths'] = $_SESSION['total_deaths'];
 
 ?>
