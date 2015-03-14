@@ -6,19 +6,17 @@ function writeToUser($steamID, $username, $avatar_small, $avatar_medium, $avatar
 	 if(mysql_num_rows($query) == 0)
     {
 	 	$sql = "INSERT INTO user (steamID, username, avatar_small,avatar_medium, avatar_full, profile_url)
-		VALUES ($steamID, $username, $avatar_small, $avatar_medium, $avatar_full, $profile_url)";
+		VALUES ('{$steamID}', '{$username}', '{$avatar_small}', '{$avatar_medium}', '{$avatar_full}', '{$profile_url)}'";
 
 		if (mysqli_query($conn, $sql)) {
 		    echo "New record created successfully";
 		} else {
 		    echo "Error: " . $sql . "<br>" . mysqli_error($conn);
 		}
-
-		mysqli_close($conn);
 	    }
     else
     {
-    	$sql = "UPDATE user SET username='{$username}', avatar_small ='{$avatar_small', avatar_medium='{$avatar_medium}', avatar_full='{$avatar_full}'
+    	$sql = "UPDATE user SET username='{$username}', avatar_small ='{$avatar_small}', avatar_medium='{$avatar_medium}', avatar_full='{$avatar_full}'
     	 WHERE steamID='{$steamID}'";
 		if (mysqli_query($conn, $sql)) {
 		    echo "record updated successfully";
@@ -26,8 +24,8 @@ function writeToUser($steamID, $username, $avatar_small, $avatar_medium, $avatar
 		    echo "Error: " . $sql . "<br>" . mysqli_error($conn);
 		}
 
-		mysqli_close($conn);
 	    }
+mysqli_close($conn);
 
 }
 ?>

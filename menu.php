@@ -78,9 +78,6 @@
 
     									echo "Kills " . $csgoprofile['totalkills'] . "</br>";
     									include ('steamauth/writeToUser.php');
-
-
-
 									    //Protected content
 									    logoutbutton(); //Logout Button
 									}
