@@ -74,7 +74,7 @@
 									    echo "Welcome back " . $steamprofile['personaname'] . "</br>";
 									    include ('steamauth/csgoInfo.php');
 
-    									echo "all " . $csgoprofile['totalkills'] . "</br>";
+    									echo "Kills " . $csgoprofile['totalkills'] . "</br>";
 
 									    //Protected content
 									    logoutbutton(); //Logout Button
