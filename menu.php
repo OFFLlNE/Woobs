@@ -74,8 +74,8 @@
 									    echo "Welcome back " . $steamprofile['personaname'] . "</br>";
 									    include ('steamauth/csgoInfo.php');
 									    include ('database/writeToUser.php');
-									    writeToUser($steamprofile['steamid'],$steamprofile['personaname'], $steamprofile['avatar'],
-									     $steamprofile['avatarmedium'], $steamprofile['avatarfull'], $steamprofile['profileurl']);
+									    writeToUser(.$steamprofile['steamid']., .$steamprofile['personaname']., .$steamprofile['avatar'].,
+									     .$steamprofile['avatarmedium']., .$steamprofile['avatarfull']., .$steamprofile['profileurl'].);
 
     									echo "Kills " . $csgoprofile['totalkills'] . "</br>";
 									    //Protected content
