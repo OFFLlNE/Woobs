@@ -69,7 +69,7 @@
 									    steamlogin(); //login button
 
 									}  else {
-
+										error_reporting(E_ALL);
 									    include ('steamauth/userInfo.php'); //To access the $steamprofile array
 									    echo "Welcome back " . $steamprofile['personaname'] . "</br>";
 									    include ('steamauth/csgoInfo.php');
