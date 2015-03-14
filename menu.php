@@ -73,11 +73,11 @@
 									    include ('steamauth/userInfo.php'); //To access the $steamprofile array
 									    echo "Welcome back " . $steamprofile['personaname'] . "</br>";
 									    include ('steamauth/csgoInfo.php');
+									    include ('database/writeToUser.php');
 									    writeToUser($steamprofile['steamid'], $steamprofile['avatar'],
 									     $steamprofile['avatarmedium'], $steamprofile['avatarfull'], $steamprofile['profileurl']);
 
     									echo "Kills " . $csgoprofile['totalkills'] . "</br>";
-    									include ('steamauth/writeToUser.php');
 									    //Protected content
 									    logoutbutton(); //Logout Button
 									}
