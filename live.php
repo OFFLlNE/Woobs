@@ -16,14 +16,53 @@
 
 </head>
 <body>
-<?php $activePage = "live.php"; ?>
 <div id="navigation">
 	<?php include('/menu.php'); ?>
 </div>
 <div class="middle">
 	<h1>
-		Live
+		Live Streamerinos
+		<div class="container-fluid">
+			<div class="col-xs-12s col-sm-12 col-md-6">
+				<object type="application/x-shockwave-flash" height="240" width="360" data="//www-cdn.jtvnw.net/swflibs/TwitchPlayer.swf" bgcolor="#000000">
+					<param name="allowFullScreen" value="true" />
+					<param name="allowScriptAccess" value="always" />
+					<param name="allowNetworking" value="all" />
+					<param name="movie" value="//www-cdn.jtvnw.net/swflibs/TwitchPlayer.swf" />
+					<param name="flashvars" value="channel=m0e_tv&auto_play=false&start_volume=25" />
+				</object>
+			</div>
+			<div class="col-xs-12 col-sm-12 col-md-6">
+				<object type="application/x-shockwave-flash" height="240" width="360" data="//www-cdn.jtvnw.net/swflibs/TwitchPlayer.swf" bgcolor="#000000">
+					<param name="allowFullScreen" value="true" />
+					<param name="allowScriptAccess" value="always" />
+					<param name="allowNetworking" value="all" />
+					<param name="movie" value="//www-cdn.jtvnw.net/swflibs/TwitchPlayer.swf" />
+					<param name="flashvars" value="channel=esl_csgo&auto_play=false&start_volume=25" />
+				</object>
+			</div>
+			<div class="col-xs-12s col-sm-12 col-md-6">
+				<object type="application/x-shockwave-flash" height="240" width="360" data="//www-cdn.jtvnw.net/swflibs/TwitchPlayer.swf" bgcolor="#000000">
+					<param name="allowFullScreen" value="true" />
+					<param name="allowScriptAccess" value="always" />
+					<param name="allowNetworking" value="all" />
+					<param name="movie" value="//www-cdn.jtvnw.net/swflibs/TwitchPlayer.swf" />
+					<param name="flashvars" value="channel=Monstercat&auto_play=false&start_volume=25" />
+				</object>
+			</div>
+			<div class="col-xs-12 col-sm-12 col-md-6">
+				<object type="application/x-shockwave-flash" height="240" width="360" data="//www-cdn.jtvnw.net/swflibs/TwitchPlayer.swf" bgcolor="#000000">
+					<param name="allowFullScreen" value="true" />
+					<param name="allowScriptAccess" value="always" />
+					<param name="allowNetworking" value="all" />
+					<param name="movie" value="//www-cdn.jtvnw.net/swflibs/TwitchPlayer.swf" />
+					<param name="flashvars" value="channel=esl_lol&auto_play=false&start_volume=25" />
+				</object>
+			</div>
+		</div>
+
 	</h1>
+		
 </div>
 
 <HR NOSHADE SIZE=7>
