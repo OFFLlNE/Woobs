@@ -1,3 +1,7 @@
+<!DOCTYPE html>
+<html>
+	<title>Home</title>
+<body>
 
 <?php $activePage = ""; ?>
 <div id="navigation">

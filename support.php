@@ -1,3 +1,8 @@
+<!DOCTYPE html>
+<html>
+	<title>Support</title>
+<body>
+
 <?php $activePage = "support.php"; ?>
 <div id="navigation">
 	<?php include('/menu.php'); ?>

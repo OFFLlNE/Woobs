@@ -1,3 +1,8 @@
+<!DOCTYPE html>
+<html>
+	<title>Profile</title>
+<body>
+
 <?php $activePage = "profile.php"; ?>
 <div id="navigation">
 	<?php include('/menu.php'); ?>

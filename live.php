@@ -1,4 +1,9 @@
 
+<!DOCTYPE html>
+<html>
+	<title>Live</title>
+<body>
+
 <?php $activePage = "live.php"; ?>
 <div id="navigation">
 	<?php include('/menu.php'); ?>

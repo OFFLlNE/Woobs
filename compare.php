@@ -1,4 +1,9 @@
 
+<!DOCTYPE html>
+<html>
+	<title>Compare</title>
+<body>
+
 <?php $activePage = "compare.php"; ?>
 <div id="navigation">
 	<?php include('/menu.php'); ?>

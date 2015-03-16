@@ -1,3 +1,8 @@
+<!DOCTYPE html>
+<html>
+	<title>Statistics</title>
+<body>
+
 <?php $activePage = "statistics.php"; ?>
 <div id="navigation">
 	<?php include('/menu.php'); ?>
