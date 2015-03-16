@@ -1,6 +1,8 @@
 <?php
-include("database_connection.php");
+
 function writeToUser($steamID, $username, $avatar_small, $avatar_medium, $avatar_full, $profile_url) {
+	include("database_connection.php");
+	database();
 	$query = "SELECT * FROM user WHERE steamID = '{$steamID}'";
 	$result = mysql_query($query);
 	 if(mysql_num_rows($query) == 0){

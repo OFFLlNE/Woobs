@@ -173,6 +173,11 @@ a.twitch:hover{
 	 text-decoration: none;
  }
 
+address { 
+    display: block;
+    font-style: italic;
+    text-align: center;
+}
 
 
 
