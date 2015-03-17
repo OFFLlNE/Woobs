@@ -1,6 +1,12 @@
 <?php
 
-function writeToUser($steamID, $username, $avatar_small, $avatar_medium, $avatar_full, $profile_url) {
+function writeToUser($steamprofile) {
+	$steamprofile['steam_steamid'] = $steamID;
+	$steamprofile['steam_personaname'] = $username;
+	$steamprofile['steam_avatar'] = $avatar_small;
+	$steamprofile['steam_avatarmedium'] = $avatar_medium;
+	$steamprofile['steam_avatarfull'] = $avatar_full;
+	$steamprofile['steam_profileurl'] = $profile_url;
 	include("database_connection.php");
 	$conn=database();
 	$query = "SELECT * FROM csgorankingsdata.user WHERE steamID = '{$steamID}'";
@@ -9,18 +15,15 @@ function writeToUser($steamID, $username, $avatar_small, $avatar_medium, $avatar
 	 	$sql = "INSERT INTO csgorankingsdata.user (steamID, username, avatar_small ,avatar_medium, avatar_full, profile_url)
 		VALUES ('{$steamID}', '{$username}', '{$avatar_small}', '{$avatar_medium}', '{$avatar_full}', '{$profile_url}')";
 
-		if (mysqli_query($conn, $sql)) {
-		    echo "New record created successfully";
-		} else {
+		if (!mysqli_query($conn, $sql)) {
 		    echo "Error: " . $sql . "<br>" . mysqli_error($conn);
 		}
 	    }
     else{
     	$sql = "UPDATE user SET username='{$username}', avatar_small ='{$avatar_small}', avatar_medium='{$avatar_medium}', avatar_full='{$avatar_full}'
     	 WHERE steamID='{$steamID}'";
+    	}
 		if (mysqli_query($conn, $sql)) {
-		    echo "record updated successfully";
-		} else {
 		    echo "Error: " . $sql . "<br>" . mysqli_error($conn);
 		}
 
