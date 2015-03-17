@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html>
-	<title>Statistics</title>
+	<head>
+		<title>Statistics</title>
+	</head>
 <body>
 
 <?php $activePage = "statistics.php"; ?>

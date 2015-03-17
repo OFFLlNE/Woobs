@@ -1,7 +1,9 @@
 
 <!DOCTYPE html>
 <html>
-	<title>Compare</title>
+	<head>
+		<title>Compare</title>
+	</head>
 <body>
 
 <?php $activePage = "compare.php"; ?>

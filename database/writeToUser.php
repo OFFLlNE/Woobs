@@ -2,11 +2,11 @@
 
 function writeToUser($steamID, $username, $avatar_small, $avatar_medium, $avatar_full, $profile_url) {
 	include("database_connection.php");
-	database();
-	$query = "SELECT * FROM user WHERE steamID = '{$steamID}'";
-	$result = mysql_query($query);
-	 if(mysql_num_rows($query) == 0){
-	 	$sql = "INSERT INTO user (steamID, username, avatar_small ,avatar_medium, avatar_full, profile_url)
+	$conn=database();
+	$query = "SELECT * FROM csgorankingsdata.user WHERE steamID = '{$steamID}'";
+	$result = mysqli_query($conn ,$query) or die(mysqli_error($conn));
+	 if(mysqli_num_rows($result) == 0){
+	 	$sql = "INSERT INTO csgorankingsdata.user (steamID, username, avatar_small ,avatar_medium, avatar_full, profile_url)
 		VALUES ('{$steamID}', '{$username}', '{$avatar_small}', '{$avatar_medium}', '{$avatar_full}', '{$profile_url}')";
 
 		if (mysqli_query($conn, $sql)) {

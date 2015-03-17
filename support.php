@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html>
-	<title>Support</title>
+	<head>
+		<title>Support</title>
+	</head>
 <body>
 
 <?php $activePage = "support.php"; ?>

@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html>
-	<title>Profile</title>
+	<head>
+		<title>Profile</title>
+	</head>
 <body>
 
 <?php $activePage = "profile.php"; ?>
