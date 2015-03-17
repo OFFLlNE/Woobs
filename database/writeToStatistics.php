@@ -1,8 +1,11 @@
 <?php
 
-function writeToUser($csgoProfile) {
-	$csgoProfile['SteamID'] =$SteamID;
-	$csgoProfile['total_time_played'] =$total_time_played;
+function writeToStatistics($csgoProfile) {
+	foreach ($csgoProfile as $stat) {
+		echo $stat+"vahe";
+	}
+	$csgoProfile['SteamID'] = $SteamID;
+	$csgoProfile['total_time_played'] = $total_time_played;
 	$csgoProfile['total_damage_done'] = $total_damage_done;
 	$csgoProfile['total_kills'] = $total_kills;
 	$csgoProfile['total_deaths'] = $total_deaths;
@@ -89,8 +92,14 @@ function writeToUser($csgoProfile) {
 			'{$total_hits_ssg08}',
 			'{$total_kills_m4a1}',
 			'{$total_shots_m4a1}',
-			'{$total_hits_m4a1}',
+			'{$total_hits_m4a1}'
 					)";
+			if (mysqli_query($conn, $sql)) {
+    			echo "";
+			}
+			else {
+    			echo "Error updating record: " . mysqli_error($conn);
+			}
 		}
 		else{
 			$sql = "UPDATE statistics SET
@@ -121,14 +130,12 @@ function writeToUser($csgoProfile) {
 				total_shots_m4a1 = '{$total_shots_m4a1}',
 				total_hits_m4a1 =  '{$total_hits_m4a1}'
 				 WHERE steamID='{$steamID}'
-				)"
-
-
+				)";
 
 		}
 
 		if (mysqli_query($conn, $sql)) {
-		    echo "New record created successfully";
+		    echo "";
 		} else {
 		    echo "Error: " . $sql . "<br>" . mysqli_error($conn);
 		}

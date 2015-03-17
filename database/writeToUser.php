@@ -15,19 +15,25 @@ function writeToUser($steamprofile) {
 	 	$sql = "INSERT INTO csgorankingsdata.user (steamID, username, avatar_small ,avatar_medium, avatar_full, profile_url)
 		VALUES ('{$steamID}', '{$username}', '{$avatar_small}', '{$avatar_medium}', '{$avatar_full}', '{$profile_url}')";
 
-		if (!mysqli_query($conn, $sql)) {
-		    echo "Error: " . $sql . "<br>" . mysqli_error($conn);
+		if (mysqli_query($conn, $sql)) {
+    		echo "";
 		}
+		 else {
+   		 echo "Error adding record: " . mysqli_error($conn);
+			}
 	    }
     else{
     	$sql = "UPDATE user SET username='{$username}', avatar_small ='{$avatar_small}', avatar_medium='{$avatar_medium}', avatar_full='{$avatar_full}'
     	 WHERE steamID='{$steamID}'";
-    	}
-		if (mysqli_query($conn, $sql)) {
-		    echo "Error: " . $sql . "<br>" . mysqli_error($conn);
-		}
 
-	    }
+    	 if (mysqli_query($conn, $sql)) {
+   			 echo "";
+		}
+		 else {
+    		echo "Error updating record: " . mysqli_error($conn);
+			}
+    	}
+
 mysqli_close($conn);
 
 }
