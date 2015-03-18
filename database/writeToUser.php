@@ -1,12 +1,12 @@
 <?php
 
 function writeToUser($steamprofile) {
-	$steamprofile['steam_steamid'] = $steamID;
-	$steamprofile['steam_personaname'] = $username;
-	$steamprofile['steam_avatar'] = $avatar_small;
-	$steamprofile['steam_avatarmedium'] = $avatar_medium;
-	$steamprofile['steam_avatarfull'] = $avatar_full;
-	$steamprofile['steam_profileurl'] = $profile_url;
+	$steamID = $steamprofile['steam_steamid'];
+	$username = $steamprofile['steam_personaname'];
+	$avatar_small = $steamprofile['steam_avatar'];
+	$avatar_medium = $steamprofile['steam_avatarmedium'];
+	$avatar_full = $steamprofile['steam_avatarfull'];
+	$profile_url = $steamprofile['steam_profileurl'];
 	include("database_connection.php");
 	$conn=database();
 	$query = "SELECT * FROM csgorankingsdata.user WHERE steamID = '{$steamID}'";

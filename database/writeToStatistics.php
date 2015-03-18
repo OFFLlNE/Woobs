@@ -1,36 +1,33 @@
 <?php
 
 function writeToStatistics($csgoProfile) {
-	foreach ($csgoProfile as $stat) {
-		echo $stat+"vahe";
-	}
-	$csgoProfile['SteamID'] = $SteamID;
-	$csgoProfile['total_time_played'] = $total_time_played;
-	$csgoProfile['total_damage_done'] = $total_damage_done;
-	$csgoProfile['total_kills'] = $total_kills;
-	$csgoProfile['total_deaths'] = $total_deaths;
-	$csgoProfile['total_money_earned'] = $total_money_earned;
-	$csgoProfile['total_kills_headshot'] = $total_kills_headshot;
-	$csgoProfile['total_shots_hit'] = $total_shots_hit;
-	$csgoProfile['total_shots_fired'] = $total_shots_fired;
-	$csgoProfile['total_kills_awp'] = $total_kills_awp;
-	$csgoProfile['total_shots_awp'] = $total_shots_awp;
-	$csgoProfile['total_hits_awp'] = $total_hits_awp;
-	$csgoProfile['total_kills_ak47'] = $total_kills_ak47;
-	$csgoProfile['total_shots_ak47'] = $total_shots_ak47;
-	$csgoProfile['total_hits_ak47'] = $total_hits_ak47;
-	$csgoProfile['total_kills_glock'] = $total_kills_glock;
-	$csgoProfile['total_shots_glock'] = $total_shots_glock;
-	$csgoProfile['total_hits_glock'] = $total_hits_glock;
-	$csgoProfile['total_kills_hkp2000'] = $total_kills_hkp2000;
-	$csgoProfile['total_shots_hkp2000'] = $total_shots_hkp2000;
-	$csgoProfile['total_hits_hkp2000'] = $total_hits_hkp2000;
-	$csgoProfile['total_shots_ssg08'] = $total_shots_ssg08;
-	$csgoProfile['total_hits_ssg08'] = $total_hits_ssg08;
-	$csgoProfile['total_kills_ssg08'] = $total_kills_ssg08;
-	$csgoProfile['total_kills_m4a1'] = $total_kills_m4a1;
-	$csgoProfile['total_shots_m4a1'] = $total_shots_m4a1;
-	$csgoProfile['total_hits_m4a1'] = $total_hits_m4a1;
+	$steamID = $csgoProfile['steamID'];
+	$total_time_played = $csgoProfile['total_time_played'];
+	$total_damage_done = $csgoProfile['total_damage_done'];
+	$total_kills = $csgoProfile['total_kills'];
+	$total_deaths = $csgoProfile['total_deaths'];
+	$total_money_earned = $csgoProfile['total_money_earned'];
+	$total_kills_headshot = $csgoProfile['total_kills_headshot'];
+	$total_shots_hit = $csgoProfile['total_shots_hit'];
+	$total_shots_fired = $csgoProfile['total_shots_fired'];
+	$total_kills_awp = $csgoProfile['total_kills_awp'];
+	$total_shots_awp = $csgoProfile['total_shots_awp'];
+	$total_hits_awp = $csgoProfile['total_hits_awp'];
+	$total_kills_ak47 = $csgoProfile['total_kills_ak47'];
+	$total_shots_ak47 = $csgoProfile['total_shots_ak47'];
+	$total_hits_ak47 = $csgoProfile['total_hits_ak47'];
+	$total_kills_glock = $csgoProfile['total_kills_glock'];
+	$total_shots_glock = $csgoProfile['total_shots_glock'];
+	$total_hits_glock = $csgoProfile['total_hits_glock'];
+	$total_kills_hkp2000 = $csgoProfile['total_kills_hkp2000'];
+	$total_shots_hkp2000 = $csgoProfile['total_shots_hkp2000'];
+	$total_hits_hkp2000 = $csgoProfile['total_hits_hkp2000'];
+	$total_shots_ssg08 = $csgoProfile['total_shots_ssg08'];
+	$total_hits_ssg08 = $csgoProfile['total_hits_ssg08'];
+	$total_kills_ssg08 = $csgoProfile['total_kills_ssg08'];
+	$total_kills_m4a1 = $csgoProfile['total_kills_m4a1'];
+	$total_shots_m4a1 = $csgoProfile['total_shots_m4a1'];
+	$total_hits_m4a1 = $csgoProfile['total_hits_m4a1'];
 
 	include("database_connection.php");
 	$conn=database();
@@ -65,34 +62,35 @@ function writeToStatistics($csgoProfile) {
 			total_kills_m4a1,
 			total_shots_m4a1,
 			total_hits_m4a1)
+
 		VALUES (
 			'{$steamID}',
-			'{$total_time_played}',
-			'{$total_damage_done}',
-			'{$total_kills}',
-			'{$total_deaths}',
-			'{$total_money_earned}',
-			'{$total_kills_headshot}',
-			'{$total_shots_hit}',
-			'{$total_shots_fired}',
-			'{$total_kills_awp}',
-			'{$total_shots_awp}',
-			'{$total_hits_awp}',
-			'{$total_kills_ak47}',
-			'{$total_shots_ak47}',
-			'{$total_hits_ak47}',
-			'{$total_kills_glock}',
-			'{$total_shots_glock}',
-			'{$total_hits_glock}',
-			'{$total_kills_hkp2000}',
-			'{$total_shots_hkp2000}',
-			'{$total_hits_hkp2000}',
-			'{$total_kills_ssg08}',
-			'{$total_shots_ssg08}',
-			'{$total_hits_ssg08}',
-			'{$total_kills_m4a1}',
-			'{$total_shots_m4a1}',
-			'{$total_hits_m4a1}'
+			{$total_time_played},
+			{$total_damage_done},
+			{$total_kills},
+			{$total_deaths},
+			{$total_money_earned},
+			{$total_kills_headshot},
+			{$total_shots_hit},
+			{$total_shots_fired},
+			{$total_kills_awp},
+			{$total_shots_awp},
+			{$total_hits_awp},
+			{$total_kills_ak47},
+			{$total_shots_ak47},
+			{$total_hits_ak47},
+			{$total_kills_glock},
+			{$total_shots_glock},
+			{$total_hits_glock},
+			{$total_kills_hkp2000},
+			{$total_shots_hkp2000},
+			{$total_hits_hkp2000},
+			{$total_kills_ssg08},
+			{$total_shots_ssg08},
+			{$total_hits_ssg08},
+			{$total_kills_m4a1},
+			{$total_shots_m4a1},
+			{$total_hits_m4a1}
 					)";
 			if (mysqli_query($conn, $sql)) {
     			echo "";
@@ -103,32 +101,32 @@ function writeToStatistics($csgoProfile) {
 		}
 		else{
 			$sql = "UPDATE statistics SET
-				total_time_played = '{$total_time_played}',
-				total_damage_done = '{$total_damage_done}',
-				total_kills = '{$total_kills}',
-				total_deaths = '{$total_deaths}',
-				total_money_earned = '{$total_money_earned}',
-				total_kills_headshot = '{$total_kills_headshot}',
-				total_shots_hit = '{$total_shots_hit}',
-				total_shots_fired = '{$total_shots_fired}',
-				total_kills_awp = '{$total_kills_awp}',
-				total_shots_awp = '{$total_shots_awp}',
-				total_hits_awp = '{$total_hits_awp}',
-				total_kills_ak47 = '{$total_kills_ak47}',
-				total_shots_ak47 = '{$total_shots_ak47}',
-				total_hits_ak47 = '{$total_hits_ak47}',
-				total_kills_glock = '{$total_kills_glock}',
-				total_shots_glock = '{$total_shots_glock}',
-				total_hits_glock = '{$total_hits_glock}',
-				total_kills_hkp2000 = '{$total_kills_hkp2000}',
-				total_shots_hkp2000 = '{$total_shots_hkp2000}',
-				total_hits_hkp2000 = '{$total_hits_hkp2000}',
-				total_kills_ssg08 = '{$total_kills_ssg08}',
-				total_shots_ssg08 = '{$total_shots_ssg08}',
-				total_hits_ssg08 = '{$total_hits_ssg08}',
-				total_kills_m4a1 = '{$total_kills_m4a1}',
-				total_shots_m4a1 = '{$total_shots_m4a1}',
-				total_hits_m4a1 =  '{$total_hits_m4a1}'
+				total_time_played = {$total_time_played},
+				total_damage_done = {$total_damage_done},
+				total_kills = {$total_kills},
+				total_deaths = {$total_deaths},
+				total_money_earned = {$total_money_earned},
+				total_kills_headshot = {$total_kills_headshot},
+				total_shots_hit = {$total_shots_hit},
+				total_shots_fired = {$total_shots_fired},
+				total_kills_awp = {$total_kills_awp},
+				total_shots_awp = {$total_shots_awp},
+				total_hits_awp = {$total_hits_awp},
+				total_kills_ak47 = {$total_kills_ak47},
+				total_shots_ak47 = {$total_shots_ak47},
+				total_hits_ak47 = {$total_hits_ak47},
+				total_kills_glock = {$total_kills_glock},
+				total_shots_glock = {$total_shots_glock},
+				total_hits_glock = {$total_hits_glock},
+				total_kills_hkp2000 = {$total_kills_hkp2000},
+				total_shots_hkp2000 = {$total_shots_hkp2000},
+				total_hits_hkp2000 = {$total_hits_hkp2000},
+				total_kills_ssg08 = {$total_kills_ssg08},
+				total_shots_ssg08 = {$total_shots_ssg08},
+				total_hits_ssg08 = {$total_hits_ssg08},
+				total_kills_m4a1 = {$total_kills_m4a1},
+				total_shots_m4a1 = {$total_shots_m4a1},
+				total_hits_m4a1 = {$total_hits_m4a1}
 				 WHERE steamID='{$steamID}'
 				)";
 

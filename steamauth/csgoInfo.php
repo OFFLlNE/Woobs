@@ -5,7 +5,9 @@
     	$playerstats = $content['playerstats'];
         $stats = $playerstats['stats'];
         $insert_into_db = array();
-        $insert_into_db['steamID'] = $playerstats['steamID'];
+        $id = $playerstats['steamID'];
+        $insert_into_db['steamID'] = $id;
+
         $info =  array(
 			'total_time_played',
 			'total_damage_done',
@@ -40,6 +42,7 @@
         }
         $_SESSION['steam_uptodate'] = true;
         include("database/writeToStatistics.php");
+        $insert_into_db["total_time_played"] = 0;
         writeToStatistics($insert_into_db);
 
 ?>
