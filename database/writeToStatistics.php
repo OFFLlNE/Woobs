@@ -34,7 +34,7 @@ function writeToStatistics($csgoProfile) {
 	$query = "SELECT * FROM csgorankingsdata.statistics WHERE steamID = '{$steamID}'";
 	$result = mysqli_query($conn ,$query) or die(mysqli_error($conn));
 	 if(mysqli_num_rows($result) == 0){
-	 	$sql = "INSERT INTO csgorankingsdata.user (
+	 	$sql = "INSERT INTO csgorankingsdata.statistics (
 			SteamID,
 			total_time_played,
 			total_damage_done,
