@@ -127,8 +127,7 @@ function writeToStatistics($csgoProfile) {
 				total_kills_m4a1 = {$total_kills_m4a1},
 				total_shots_m4a1 = {$total_shots_m4a1},
 				total_hits_m4a1 = {$total_hits_m4a1}
-				 WHERE steamID='{$steamID}'
-				)";
+				 WHERE steamID='{$steamID}'";
 
 		}
 
