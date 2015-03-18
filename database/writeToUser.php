@@ -27,6 +27,8 @@ function writeToUser($steamprofile) {
     else{
     	$sql = "UPDATE user SET username='{$username}', avatar_small ='{$avatar_small}', avatar_medium='{$avatar_medium}', avatar_full='{$avatar_full}'
     	 WHERE steamID='{$steamID}'";
+    	 echo "siin2";
+		echo $profile_url;
 
     	 if (mysqli_query($conn, $sql)) {
    			 echo "";
@@ -35,6 +37,8 @@ function writeToUser($steamprofile) {
     		echo "Error updating record: " . mysqli_error($conn);
 			}
     	}
+    	echo "siin3";
+		echo $profile_url;
 
 mysqli_close($conn);
 
