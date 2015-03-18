@@ -1,13 +1,13 @@
 <?php
 
 function writeToUser($steamprofile) {
-	$steamID = $steamprofile['steam_steamid'];
-	$username = $steamprofile['steam_personaname'];
-	$avatar_small = $steamprofile['steam_avatar'];
-	$avatar_medium = $steamprofile['steam_avatarmedium'];
-	$avatar_full = $steamprofile['steam_avatarfull'];
-	$profile_url = $steamprofile['steam_profileurl'];
-	include("database_connection.php");
+	$steamID = $steamprofile['steamid'];
+	$username = $steamprofile['personaname'];
+	$avatar_small = $steamprofile['avatar'];
+	$avatar_medium = $steamprofile['avatarmedium'];
+	$avatar_full = $steamprofile['avatarfull'];
+	$profile_url = $steamprofile['profileurl'];
+	require_once("database_connection.php");
 	$conn=database();
 	$query = "SELECT * FROM csgorankingsdata.user WHERE steamID = '{$steamID}'";
 	$result = mysqli_query($conn ,$query) or die(mysqli_error($conn));
@@ -15,8 +15,6 @@ function writeToUser($steamprofile) {
 	 if(mysqli_num_rows($result) == 0){
 	 	$sql = "INSERT INTO csgorankingsdata.user (steamID, username, avatar_small ,avatar_medium, avatar_full, profile_url)
 		VALUES ('{$steamID}', '{$username}', '{$avatar_small}', '{$avatar_medium}', '{$avatar_full}', '{$profile_url}')";
-		echo "siin";
-		echo $profile_url;
 		if (mysqli_query($conn, $sql)) {
     		echo "";
 		}
@@ -27,9 +25,6 @@ function writeToUser($steamprofile) {
     else{
     	$sql = "UPDATE user SET username='{$username}', avatar_small ='{$avatar_small}', avatar_medium='{$avatar_medium}', avatar_full='{$avatar_full}'
     	 WHERE steamID='{$steamID}'";
-    	 echo "siin2";
-		echo $profile_url;
-
     	 if (mysqli_query($conn, $sql)) {
    			 echo "";
 		}
@@ -37,8 +32,7 @@ function writeToUser($steamprofile) {
     		echo "Error updating record: " . mysqli_error($conn);
 			}
     	}
-    	echo "siin3";
-		echo $profile_url;
+
 
 mysqli_close($conn);
 

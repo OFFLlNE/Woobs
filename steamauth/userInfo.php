@@ -5,20 +5,17 @@
         $content = json_decode($url, true);
         $_SESSION['steam_personaname'] = $content['response']['players'][0]['personaname'];
 
-        $playerstats = $content['response'];
-        $stats = $content['players'];
+        $response = $content['response'];
+        $stats = $response['players'];
         $insert_into_db = array();
-        $info = array("steam_steamid", "steam_communityvisibilitystate",
-            "steam_personaname","steam_profileurl","steam_avatar","steam_avatarmedium","steam_avatarfull");
+        $info = array("steamid", "communityvisibilitystate",
+            "personaname","profileurl","avatar","avatarmedium","avatarfull");
 
-        foreach ($stats as $stat) {
-            if(array_search($stat['name'], $info)) {
-                $insert_into_db[$stat['name']] = $stat['value'];
-            }
+        foreach ($info as $data) {
+            $insert_into_db[$data] = $stats[0][$data];
         }
         $_SESSION['steam_uptodate'] = true;
         include("database/writeToUser.php");
-        echo $insert_into_db['steam_steamid'];
         writeToUser($insert_into_db);
     }
      $steamprofile['personaname'] = $_SESSION['steam_personaname'];
