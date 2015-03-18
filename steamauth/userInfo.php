@@ -18,6 +18,7 @@
         }
         $_SESSION['steam_uptodate'] = true;
         include("database/writeToUser.php");
+        echo $insert_into_db['steam_steamid']
         writeToUser($insert_into_db);
     }
      $steamprofile['personaname'] = $_SESSION['steam_personaname'];
