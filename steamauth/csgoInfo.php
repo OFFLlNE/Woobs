@@ -8,8 +8,20 @@
         $id = $playerstats['steamID'];
         $insert_into_db['steamID'] = $id;
 
+    $urlTime = file_get_contents("http://api.steampowered.com/IPlayerService/GetOwnedGames/v0001/?key=".$steamauth['apikey']."&steamid=".$_SESSION['steamid']);
+    $contentTime = json_decode($urlTime, true);
+    	$response = $contentTime['response'];
+    	$games = $response['games'];
+
+    	foreach ($games as $game) {
+            if($game['appid'] == '730') {
+                $insert_into_db['total_time_played'] = $game['playtime_forever'];
+                $insert_into_db['time_played_2w'] = $game['playtime_2weeks'];
+            }
+        }
+
         $info =  array(
-			'total_time_played',
+        	'empty',
 			'total_damage_done',
 			'total_kills',
 			'total_deaths',
@@ -42,7 +54,6 @@
         }
         $_SESSION['steam_uptodate'] = true;
         include("database/writeToStatistics.php");
-        $insert_into_db["total_time_played"] = 0;
         writeToStatistics($insert_into_db);
 
 ?>

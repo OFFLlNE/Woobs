@@ -3,6 +3,7 @@
 function writeToStatistics($csgoProfile) {
 	$steamID = $csgoProfile['steamID'];
 	$total_time_played = $csgoProfile['total_time_played'];
+	$time_played_2weeks = $csgoProfile['time_played_2w'];
 	$total_damage_done = $csgoProfile['total_damage_done'];
 	$total_kills = $csgoProfile['total_kills'];
 	$total_deaths = $csgoProfile['total_deaths'];
@@ -37,6 +38,7 @@ function writeToStatistics($csgoProfile) {
 	 	$sql = "INSERT INTO csgorankingsdata.statistics (
 			SteamID,
 			total_time_played,
+			time_played_2w,
 			total_damage_done,
 			total_kills,
 			total_deaths,
@@ -66,6 +68,7 @@ function writeToStatistics($csgoProfile) {
 		VALUES (
 			'{$steamID}',
 			{$total_time_played},
+			{$time_played_2weeks},
 			{$total_damage_done},
 			{$total_kills},
 			{$total_deaths},
@@ -102,6 +105,7 @@ function writeToStatistics($csgoProfile) {
 		else{
 			$sql = "UPDATE statistics SET
 				total_time_played = {$total_time_played},
+				time_played_2w = {$time_played_2weeks},
 				total_damage_done = {$total_damage_done},
 				total_kills = {$total_kills},
 				total_deaths = {$total_deaths},
