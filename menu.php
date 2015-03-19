@@ -15,6 +15,12 @@
 
 	<!-- Latest compiled and minified JavaScript -->
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+	<script type="text/javascript"><!--
+		function ReplaceContentInContainer(id,content) {
+			var container = document.getElementById(id);
+			container.innerHTML = content;
+	}
+</script>
 	<link rel="stylesheet" href="main2.css">
 
 
@@ -57,29 +63,37 @@
 			    </div>
 			    <div class="col-xs-2 col-sm-2 col-md-2">
 			    	<div class="steamPic pull-right">
-			    		<img src="img/profileMenu.png"/></img>
+			    	<?php
+			    		if (isset($_SESSION['steamid'])) {
+			    			include ('steamauth/userInfo.php');
+				    		$avatar = $steamprofile['avatar'];
+
+				    		echo '<img src=' . $avatar . '/>';
+			    	}
+			    		else{
+			    			echo '<img src="img/profileMenu.png"/>';
+
+			    	}
+			    	?>
 			    	</div>
 				</div>
 			    <div class="col-xs-2 col-sm-2 col-md-2">
-				    <div class="pull-right">
-				    		<div class="login-button">
+				    <div class="login-button">
+		                 <?php
+							if(!isset($_SESSION['steamid'])) {
 
-		                  		<?php
-									if(!isset($_SESSION['steamid'])) {
+								steamlogin(); //login button
 
-									    steamlogin(); //login button
-
-									}  else {
-									    include ('steamauth/userInfo.php'); //To access the $steamprofile array
-									    $name = $steamprofile['personaname'];
-									    echo "<div class='text'><p>Welcome back '{$name}'</p></div>";
-									    include ('steamauth/csgoInfo.php');
+							}  else {
+								include ('steamauth/userInfo.php'); //To access the $steamprofile array
+								$name = $steamprofile['personaname'];
+								$avatar = $steamprofile['avatar'];
+								echo "<div class='text'><p>Welcome back '{$name}'</p></div>";
 									    //Protected content
-									    logoutbutton(); //Logout Button
+								logoutbutton(); //Logout Button
 									}
-								?>
-		                  	</div>
-		              	</div>
+						?>
+		            </div>
 				</div>
 			</div>
 		</div>
