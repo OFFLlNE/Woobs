@@ -10,7 +10,7 @@
 <div class="middle">
 	<div class="base">
 		<div class="thumbnail">
-			<img src="img/base.png"/>
+			<img src="img/base.gif"/>
 		</div>
 	</div>
 </div>
