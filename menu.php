@@ -63,6 +63,7 @@
 			    <div class="col-xs-2 col-sm-2 col-md-2">
 				    <div class="pull-right">
 				    		<div class="login-button">
+
 		                  		<?php
 									if(!isset($_SESSION['steamid'])) {
 
@@ -70,7 +71,8 @@
 
 									}  else {
 									    include ('steamauth/userInfo.php'); //To access the $steamprofile array
-									    echo "Welcome back " . $steamprofile['personaname'] . "</br>";
+									    $name = $steamprofile['personaname'];
+									    echo "<div class='text'><p>Welcome back '{$name}'</p></div>";
 									    include ('steamauth/csgoInfo.php');
 									    //Protected content
 									    logoutbutton(); //Logout Button

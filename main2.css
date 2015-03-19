@@ -173,12 +173,19 @@ a.twitch:hover{
 	 text-decoration: none;
  }
 
-address { 
+address {
     display: block;
     font-style: italic;
     text-align: center;
 }
 
+.text p{
+  color: #FFFFFF;
+  font-size: 15px;
+  font-weight: bold;
+  font-family: "Arial", Arial, sans-serif;
+
+}
 
 
 
