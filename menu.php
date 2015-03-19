@@ -70,15 +70,14 @@
 
 				    		echo '<img src=' . $avatar . '/>';
 			    	}
-			    		else{
-			    			echo '<img src="img/profileMenu.png"/>';
-
+			    	else{
+			    		echo '<img src=img/bck.png/>';
 			    	}
 			    	?>
 			    	</div>
 				</div>
 			    <div class="col-xs-2 col-sm-2 col-md-2">
-				    <div class="login-button">
+				    <div class="login-button pull-right">
 		                 <?php
 							if(!isset($_SESSION['steamid'])) {
 
