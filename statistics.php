@@ -26,33 +26,34 @@
   				</ul>
 			</div>
 			<div class="col-xs-12 col-sm-12 col-md-12">
-				<h1 id="heading">Top 10 overall rating</h1>
+				<h1 id="heading">Top 10 Total Kills</h1>
 				<div class="boxProfile">
-		    		<table style="width:100%">
+					<table style="width:100%">
 						<tr>
-							<td>blablabla</td>
-							<td>NUMBER</td>
+							<td>Username</td>
+							<td>Total Kills</td>
 						</tr>
-						<tr>
-							<td>jne</td>
-							<td>NUMBER</td>
-						</tr>
-						<tr>
-							<td>blablabla</td>
-							<td>NUMBER</td>
-						</tr>
-						<tr>
-							<td>jne</td>
-							<td>NUMBER</td>
-						</tr>
-						<tr>
-							<td>blablabla</td>
-							<td>NUMBER</td>
-						</tr>
+					<?php
+					//connect to the database
+					$mysqli = NEW MySQLi('eu-cdbr-azure-north-b.cloudapp.net', 'bf3c7cd016fb44', '134bea17','csgorankingsdata');
+					//Query the database
+					$resultSet = $mysqli->query("SELECT * FROM total_kills_view");
 
+					if($resultSet->num_rows != 0){
+						while($rows = $resultSet->fetch_assoc()){
+							$username = $rows['UserName'];
+							$total_kills = $rows['total_kills'];
+
+							echo "<tr>
+							<td>$username</td>
+							<td>$total_kills</td>
+							</tr>";
+
+						}
+					}
+		    		
+					?>
 					</table>
-				</div>
-			</div>
 			<div class="col-xs-12 col-sm-12 col-md-12">
 				<h1 id="heading">Top 10 last match rating</h1>
 				<div class="boxProfile">
