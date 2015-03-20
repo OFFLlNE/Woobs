@@ -35,9 +35,10 @@
 						</tr>
 					<?php
 					//connect to the database
-					$mysqli = NEW MySQLi('eu-cdbr-azure-north-b.cloudapp.net', 'bf3c7cd016fb44', '134bea17','csgorankingsdata');
+					require_once("database\database_connection.php");
+					$conn=database();
 					//Query the database
-					$resultSet = $mysqli->query("SELECT * FROM total_kills_view");
+					$resultSet = $conn->query("SELECT * FROM total_kills_view");
 
 					if($resultSet->num_rows != 0){
 						while($rows = $resultSet->fetch_assoc()){
@@ -50,6 +51,9 @@
 							</tr>";
 
 						}
+					}
+					else{
+						echo"ERROR";
 					}
 		    		
 					?>

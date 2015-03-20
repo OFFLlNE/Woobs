@@ -17,72 +17,40 @@
 
 <div class="statistics">
 	<div class="heading">
-			<h1>Top 15 overall ranking</h1>
+			<h1>Top 10 Total Kills</h1>
 	</div>
 
 	<div class="boxMain">
 	    <table style="width:100%">
-			<tr>
-				<td>Jill</td>
-				<td>Smith</td>
-				<td>50</td>
-			</tr>
-			<tr>
-				<td>Eve</td>
-				<td>Jackson</td>
-				<td>94</td>
-			</tr>
-			<tr>
-				<td>Eve</td>
-				<td>Jackson</td>
-				<td>94</td>
-			</tr>
-			<tr>
-				<td>Eve</td>
-				<td>Jackson</td>
-				<td>94</td>
-			</tr>
-			<tr>
-				<td>Eve</td>
-				<td>Jackson</td>
-				<td>94</td>
-			</tr>
-			<tr>
-				<td>Eve</td>
-				<td>Jackson</td>
-				<td>94</td>
-			</tr>
-			<tr>
-				<td>Eve</td>
-				<td>Jackson</td>
-				<td>94</td>
-			</tr>
-			<tr>
-				<td>Eve</td>
-				<td>Jackson</td>
-				<td>94</td>
-			</tr>
-			<tr>
-				<td>Eve</td>
-				<td>Jackson</td>
-				<td>94</td>
-			</tr>
-			<tr>
-				<td>Eve</td>
-				<td>Jackson</td>
-				<td>94</td>
-			</tr>
-			<tr>
-				<td>Eve</td>
-				<td>Jackson</td>
-				<td>94</td>
-			</tr>
-			<tr>
-				<td>Eve</td>
-				<td>Jackson</td>
-				<td>94</td>
-			</tr>
-		</table>
+						<tr>
+							<td>Username</td>
+							<td>Total Kills</td>
+						</tr>
+					<?php
+					//connect to the database
+					require_once("database\database_connection.php");
+					$conn=database();
+					//Query the database
+					$resultSet = $conn->query("SELECT * FROM total_kills_view");
+
+					if($resultSet->num_rows != 0){
+						while($rows = $resultSet->fetch_assoc()){
+							$username = $rows['UserName'];
+							$total_kills = $rows['total_kills'];
+
+							echo "<tr>
+							<td>$username</td>
+							<td>$total_kills</td>
+							</tr>";
+
+						}
+					}
+					else{
+						echo"ERROR";
+					}
+		    		
+					?>
+					</table>
 
 	</div>
 </div>
