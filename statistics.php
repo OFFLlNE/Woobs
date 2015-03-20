@@ -26,28 +26,24 @@
   				</ul>
 			</div>
 			<div class="col-xs-12 col-sm-12 col-md-12">
-				<h1 id="heading">Top 10 Total Kills</h1>
+				<h1 id="heading">Top 10 Money Wellspent</h1>
 				<div class="boxProfile">
 					<table style="width:100%">
-						<tr>
-							<td>Username</td>
-							<td>Total Kills</td>
-						</tr>
 					<?php
 					//connect to the database
 					require_once("database\database_connection.php");
 					$conn=database();
 					//Query the database
-					$resultSet = $conn->query("SELECT * FROM total_kills_view");
+					$resultSet = $conn->query("SELECT * FROM money_well_spent_view");
 
 					if($resultSet->num_rows != 0){
 						while($rows = $resultSet->fetch_assoc()){
 							$username = $rows['UserName'];
-							$total_kills = $rows['total_kills'];
+							$money_well_spent = $rows['money_well_spent'];
 
 							echo "<tr>
 							<td>$username</td>
-							<td>$total_kills</td>
+							<td>$money_well_spent</td>
 							</tr>";
 
 						}
@@ -58,35 +54,96 @@
 		    		
 					?>
 					</table>
-			<div class="col-xs-12 col-sm-12 col-md-12">
-				<h1 id="heading">Top 10 last match rating</h1>
-				<div class="boxProfile">
-		    		<table style="width:100%">
-						<tr>
-							<td>blablabla</td>
-							<td>NUMBER</td>
-						</tr>
-						<tr>
-							<td>jne</td>
-							<td>NUMBER</td>
-						</tr>
-					</table>
-				</div>
 			</div>
 			<div class="col-xs-12 col-sm-12 col-md-12">
-				<h1 id="heading">Top10 K/D ratio</h1>
+				<h1 id="heading">Top 10 K/D Ratio</h1>
 				<div class="boxProfile">
-		    		<table style="width:100%">
-						<tr>
-							<td>blablabla</td>
-							<td>NUMBER</td>
-						</tr>
-						<tr>
-							<td>jne</td>
-							<td>NUMBER</td>
-						</tr>
+					<table style="width:100%">
+					<?php
+					//connect to the database
+					require_once("database\database_connection.php");
+					$conn=database();
+					//Query the database
+					$resultSet = $conn->query("SELECT * FROM kd_ratio_view");
+
+					if($resultSet->num_rows != 0){
+						while($rows = $resultSet->fetch_assoc()){
+							$username = $rows['UserName'];
+							$kd_ratio = $rows['kd_ratio'];
+
+							echo "<tr>
+							<td>$username</td>
+							<td>$kd_ratio</td>
+							</tr>";
+
+						}
+					}
+					else{
+						echo"ERROR";
+					}
+		    		
+					?>
 					</table>
-				</div>
+			</div>
+			<div class="col-xs-12 col-sm-12 col-md-12">
+				<h1 id="heading">Top 10 Nolifers</h1>
+				<div class="boxProfile">
+					<table style="width:100%">
+					<?php
+					//connect to the database
+					require_once("database\database_connection.php");
+					$conn=database();
+					//Query the database
+					$resultSet = $conn->query("SELECT * FROM nolifers_view");
+
+					if($resultSet->num_rows != 0){
+						while($rows = $resultSet->fetch_assoc()){
+							$username = $rows['UserName'];
+							$timespent = $rows['timespent'];
+
+							echo "<tr>
+							<td>$username</td>
+							<td>$timespent</td>
+							</tr>";
+
+						}
+					}
+					else{
+						echo"ERROR";
+					}
+		    		
+					?>
+					</table>
+			</div>
+			<div class="col-xs-12 col-sm-12 col-md-12">
+				<h1 id="heading">Top 10 Headhunters</h1>
+				<div class="boxProfile">
+					<table style="width:100%">
+					<?php
+					//connect to the database
+					require_once("database\database_connection.php");
+					$conn=database();
+					//Query the database
+					$resultSet = $conn->query("SELECT * FROM headhunters_view");
+
+					if($resultSet->num_rows != 0){
+						while($rows = $resultSet->fetch_assoc()){
+							$username = $rows['UserName'];
+							$headhunters = $rows['headhunters'];
+
+							echo "<tr>
+							<td>$username</td>
+							<td>$headhunters</td>
+							</tr>";
+
+						}
+					}
+					else{
+						echo"ERROR";
+					}
+		    		
+					?>
+					</table>
 			</div>
 		</div>
 	</div>
