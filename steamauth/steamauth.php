@@ -4,7 +4,7 @@ session_start();
 require ('openid.php');
 
 function logoutbutton() {
-    echo "<form action=\"steamauth/logout.php\" method=\"post\"><input value=\"Logout\" type=\"submit\" /></form>"; //logout button
+    echo "<form action=\"steamauth/logout.php\" method=\"post\"><input value=\"Logout\" type=\"image\" src=\"http://csgorankings.azurewebsites.net/img/logout.png\" /></form>"; //logout button
 }
 
 function steamlogin()
