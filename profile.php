@@ -15,7 +15,20 @@
 		<div class="row">
 			<div class="row">
 			<div class="col-xs-3 col-sm-3 col-md-3">
-				<img src="img/profilepic.png" class="img-circle"/></img>
+
+
+				<?php
+			    	if (isset($_SESSION['steamid'])) {
+			    		include ('steamauth/userInfo.php');
+				    	$avatar = $steamprofile['avatar'];
+
+				    	echo '<img src=' . $avatar . ' class="img-circle"/>';
+			    	}
+			    	else{
+			    		echo '<img src="img/profilepic.png" class="img-circle"/>';
+			    	}
+			    ?>
+
 			</div>
 			<div class="col-xs-9 col-sm-9 col-md-9">
 				<h1 id="heading">Overall Statistics</h1>
