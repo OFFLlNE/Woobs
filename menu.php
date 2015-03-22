@@ -66,7 +66,7 @@
 				    		echo '<img src=' . $avatar . '/>';
 			    	}
 			    	else{
-			    		echo '<img src=img/bck.png/>';
+			    		echo '<img src="img/bck.png" />';
 			    	}
 			    	?>
 			    	</div>

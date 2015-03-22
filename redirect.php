@@ -5,8 +5,8 @@
 		   		$url = $_SESSION['url']; // holds url for last page visited.
 			else 
 		   		$url = "index.php"; // default page for 
-
-			header("Location: $url"); // perform correct redirect.
+		   
+			header("Location: http://$url"); // perform correct redirect.
 			$_SESSION['redirect']=true;
 		}
 	}
