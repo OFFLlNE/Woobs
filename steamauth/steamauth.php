@@ -1,6 +1,5 @@
 <?php
 ob_start();
-session_start();
 require ('openid.php');
  
 function logoutbutton() {
@@ -27,14 +26,13 @@ try {
 }
  
      elseif($openid->mode == 'cancel') {
-        echo 'User has canceled authentication!';
+        echo 'User has cancelled authentication!';
     } else {
         if($openid->validate()) {
                 $id = $openid->identity;
                 $ptn = "/^http:\/\/steamcommunity\.com\/openid\/id\/(7[0-9]{15,25}+)$/";
                 preg_match($ptn, $id, $matches);
  
-                session_start();
                 $_SESSION['steamid'] = $matches[1];
                  if (isset($steamauth['loginpage'])) {
                                         header('Location: '.$steamauth['loginpage']);

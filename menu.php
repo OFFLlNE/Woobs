@@ -15,17 +15,12 @@
 
 	<!-- Latest compiled and minified JavaScript -->
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
-	<script type="text/javascript"><!--
-		function ReplaceContentInContainer(id,content) {
-			var container = document.getElementById(id);
-			container.innerHTML = content;
-	}
-</script>
 	<link rel="stylesheet" href="main2.css">
 
 
 </head>
 <body>
+<?php require('/getSession.php'); ?>
 <div class="top">
 </div>
 
@@ -71,7 +66,7 @@
 				    		echo '<img src=' . $avatar . '/>';
 			    	}
 			    	else{
-			    		echo '<img src=img/bck.png/>';
+			    		echo '<img src="img/bck.png" />';
 			    	}
 			    	?>
 			    	</div>
@@ -80,17 +75,20 @@
 				    <div class="login-button pull-right">
 		                 <?php
 							if(!isset($_SESSION['steamid'])) {
-
-								steamlogin(); //login button
+								$_SESSION['redirect'] = false;
+								steamlogin(); 
 
 							}  else {
 								include ('steamauth/userInfo.php'); //To access the $steamprofile array
 								$name = $steamprofile['personaname'];
 								$avatar = $steamprofile['avatar'];
 								echo "<div class='text'><p>Welcome back '{$name}'</p></div>";
-									    //Protected content
-								logoutbutton(); //Logout Button
-									}
+								include('redirect.php');
+								redirect();
+								logoutbutton(); 
+
+							}
+						
 						?>
 		            </div>
 				</div>
