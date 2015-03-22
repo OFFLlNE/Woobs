@@ -13,12 +13,8 @@
             'steam_personaname','steam_profileurl','steam_avatar','steam_avatarmedium','steam_avatarfull')
         foreach ($stats as $stat) {
             if(array_search($stat['name'], $info) {
-                if($stat['value']===NULL){
-                    $insert_into_db[$stat['name']] = 0;
-                }
-                else{
-                    $insert_into_db[$stat['name']] = $stat['value'];
-                }
+              $insert_into_db[$stat['name']] = $stat['value'];
+                
             }
         }
         $_SESSION['steam_uptodate'] = true;
