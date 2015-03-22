@@ -24,7 +24,24 @@
 					<form class="name">
 						Player1:
 						<br>
-							<input type="text" name="firstname">
+						<input type="text" list="FavoriteColor" id="color" name="color" style="width:100px;">
+						<datalist id="FavoriteColor">
+						<?php
+						require_once("database\database_connection.php");
+						$conn=database();
+						//Query the database
+						$resultSet = $conn->query("SELECT * FROM user");
+
+						if($resultSet->num_rows != 0){
+							while($rows = $resultSet->fetch_assoc()){
+								$username = $rows['UserName'];
+								echo "<option value=$username>";
+
+						}
+					}
+					?>
+						</datalist>
+
 					</form>
 				</div>
 				<div class="col-xs-2 col-sm-2 col-md-2">
@@ -34,7 +51,24 @@
 					<form class="name">
 						Player2:
 						<br>
-							<input type="text" name="firstname">
+							<input type="text" list="FavoriteColor" id="color" name="color" style="width:100px;">
+							<datalist id="FavoriteColor">
+							<?php
+							require_once("database\database_connection.php");
+							$conn=database();
+							//Query the database
+							$resultSet = $conn->query("SELECT * FROM user");
+
+							if($resultSet->num_rows != 0){
+								while($rows = $resultSet->fetch_assoc()){
+									$username = $rows['UserName'];
+
+									echo "<option value=$username>";
+
+								}
+							}
+							?>
+							</datalist>
 					</form>
 				</div>
 				<div class="col-xs-3 col-sm-3 col-md-3">
