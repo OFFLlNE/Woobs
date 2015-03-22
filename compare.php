@@ -49,7 +49,7 @@
 				</div>
 				<div class="col-xs-2 col-sm-2 col-md-2">
 					<form class="name">
-						Player2:
+						Player2:  
 						<br>
 							<input type="text" list="FavoriteColor" id="color" name="color" style="width:100px;">
 							<datalist id="FavoriteColor">
