@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html manifest="example.appcache">
+<html>
 	<head>
 		<title>Statistics</title>
 	</head>
