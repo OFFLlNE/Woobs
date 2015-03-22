@@ -51,7 +51,7 @@
 					else{
 						echo"ERROR";
 					}
-		    		
+		    		$conn->close();
 					?>
 					</table>
 			</div>
@@ -81,7 +81,7 @@
 					else{
 						echo"ERROR";
 					}
-		    		
+		    		$conn->close();
 					?>
 					</table>
 			</div>
@@ -111,6 +111,7 @@
 					else{
 						echo"ERROR";
 					}
+					$conn->close();
 		    		
 					?>
 					</table>
@@ -141,7 +142,7 @@
 					else{
 						echo"ERROR";
 					}
-		    		
+		    		$conn->close();
 					?>
 					</table>
 			</div>
