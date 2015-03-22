@@ -82,6 +82,7 @@
 								include ('steamauth/userInfo.php'); //To access the $steamprofile array
 								$name = $steamprofile['personaname'];
 								$avatar = $steamprofile['avatar'];
+								echo "<div class='text'><p>Welcome back '{$name}'</p></div>";
 								include('redirect.php');
 								redirect();
 								logoutbutton(); 
