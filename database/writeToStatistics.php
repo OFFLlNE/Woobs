@@ -30,7 +30,7 @@ function writeToStatistics($csgoProfile) {
 	$total_shots_m4a1 = $csgoProfile['total_shots_m4a1'];
 	$total_hits_m4a1 = $csgoProfile['total_hits_m4a1'];
 
-	include("database_connection.php");
+	require_once("database_connection.php");
 	$conn=database();
 	$query = "SELECT * FROM csgorankingsdata.statistics WHERE steamID = '{$steamID}'";
 	$result = mysqli_query($conn ,$query) or die(mysqli_error($conn));
