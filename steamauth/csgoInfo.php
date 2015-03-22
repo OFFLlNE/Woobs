@@ -1,14 +1,27 @@
 <?php
 	include("settings.php");
-	include("../database/writeToStatistics.php")
     $url = file_get_contents("http://api.steampowered.com/ISteamUserStats/GetUserStatsForGame/v0002/?appid=730&key=".$steamauth['apikey']."&steamid=".$_SESSION['steamid']);
     $content = json_decode($url, true);
     	$playerstats = $content['playerstats'];
         $stats = $playerstats['stats'];
         $insert_into_db = array();
-        $insert_into_db['SteamID'] = $playerstats['SteamID']
+        $id = $playerstats['steamID'];
+        $insert_into_db['steamID'] = $id;
+
+    $urlTime = file_get_contents("http://api.steampowered.com/IPlayerService/GetOwnedGames/v0001/?key=".$steamauth['apikey']."&steamid=".$_SESSION['steamid']);
+    $contentTime = json_decode($urlTime, true);
+    	$response = $contentTime['response'];
+    	$games = $response['games'];
+
+    	foreach ($games as $game) {
+            if($game['appid'] == '730') {
+                $insert_into_db['total_time_played'] = $game['playtime_forever'];
+                $insert_into_db['time_played_2w'] = $game['playtime_2weeks'];
+            }
+        }
+
         $info =  array(
-			'total_time_played',
+        	'empty',
 			'total_damage_done',
 			'total_kills',
 			'total_deaths',
@@ -33,15 +46,14 @@
 			'total_kills_ssg08',
 			'total_kills_m4a1',
 			'total_shots_m4a1',
-			'total_hits_m4a1')
+			'total_hits_m4a1');
         foreach ($stats as $stat) {
-            if(array_search($stat['name'], $info) {
-            	$insert_into_db[$stat['name']] = $stat['value'];
-            
+            if(array_search($stat['name'], $info)) {
+                $insert_into_db[$stat['name']] = $stat['value'];
             }
         }
         $_SESSION['steam_uptodate'] = true;
+        include_once("database/writeToStatistics.php");
         writeToStatistics($insert_into_db);
-    }
 
 ?>
