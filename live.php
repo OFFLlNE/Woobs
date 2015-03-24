@@ -9,7 +9,7 @@
 	<?php include('/menu.php'); ?>
 </div>
 <div class="middle">
-	<h1>Live Streamerinos</h1>
+	<h1>Live Stream</h1>
 		<div class="container-fluid">
 			<div class="row">
 				<div class="col-xs-12 col-sm-12 col-md-6">
@@ -43,7 +43,7 @@
 						<param name="flashvars" value="channel=Monstercat&auto_play=false&start_volume=25" />
 					</object>
 				</div>
-			
+
 				<div class="col-xs-12 col-sm-12 col-md-6">
 					<object type="application/x-shockwave-flash" height="240" width="360" data="//www-cdn.jtvnw.net/swflibs/TwitchPlayer.swf" bgcolor="#000000">
 						<param name="allowFullScreen" value="true" />
@@ -55,7 +55,7 @@
 				</div>
 			</div>
 		</div>
-		
+
 </div>
 
 

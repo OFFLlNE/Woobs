@@ -60,7 +60,7 @@
 			</div>
 			</div>
 			<div class="col-xs-3 col-sm-3 col-md-3">
-				<h1 id="heading">Last Match</h1>
+				<h1 id="heading">Ratings</h1>
 				<div class="boxProfile">
 		    		<table style="width:100%">
 						<tr>
