@@ -24,8 +24,8 @@
 					<form class="name">
 						Player1:
 						<br>
-						<input type="text" list="FavoriteColor" id="color" name="color" style="width:100px;">
-						<datalist id="FavoriteColor">
+						<input type="text" list="UserNames" id="color" name="color" style="width:100px;">
+						<datalist id="UserNames">
 						<?php
 						require_once("database\database_connection.php");
 						$conn=database();
@@ -51,8 +51,8 @@
 					<form class="name">
 						Player2:  
 						<br>
-							<input type="text" list="FavoriteColor" id="color" name="color" style="width:100px;">
-							<datalist id="FavoriteColor">
+							<input type="text" list="UserNames" id="color" name="color" style="width:100px;">
+							<datalist id="UserNames">
 							<?php
 							require_once("database\database_connection.php");
 							$conn=database();
@@ -72,9 +72,7 @@
 					</form>
 				</div>
 				<div class="col-xs-3 col-sm-3 col-md-3">
-					<h1 id="heading">
-						<h1>Player2</h1>
-					</h1>
+					<h1 id="heading">Player2</h1>
 					<img class="profilepic">
 			    		<img src="img/profilepic.png"/>
 					</img>
