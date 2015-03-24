@@ -99,7 +99,7 @@ function writeToStatistics($csgoProfile) {
     			echo "";
 			}
 			else {
-    			echo "";/*Error updating record: " . mysqli_error($conn);*/
+    			echo "Error updating record: " . mysqli_error($conn);
 			}
 		}
 		else{
@@ -138,7 +138,7 @@ function writeToStatistics($csgoProfile) {
 		if (mysqli_query($conn, $sql)) {
 		    echo "";
 		} else {
-		    echo "";/* "Error: " . $sql . "<br>" . mysqli_error($conn);*/
+		    echo "Error: " . $sql . "<br>" . mysqli_error($conn);
 		}
 
 mysqli_close($conn);

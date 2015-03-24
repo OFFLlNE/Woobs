@@ -19,7 +19,7 @@ function writeToUser($steamprofile) {
     		echo "";
 		}
 		 else {
-   		 echo "";/*Error adding record: " . mysqli_error($conn);*/
+   		 echo "Error adding record: " . mysqli_error($conn);
 			}
 	    }
     else{

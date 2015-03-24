@@ -53,7 +53,7 @@
             }
         }
         $_SESSION['steam_uptodate'] = true;
-        include_once("database/writeToStatistics.php");
+        include("database/writeToStatistics.php");
         writeToStatistics($insert_into_db);
-
+       
 ?>
