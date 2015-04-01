@@ -19,7 +19,7 @@
 </head>
 
 <body>
-
+	
 <?php require('/getSession.php'); ?>
 <div class="top">
 </div>
@@ -93,7 +93,7 @@
 		            </div>
 				</div>
 			</div>
-		
+		</div>
 	</div>
 </div>
 </body>
