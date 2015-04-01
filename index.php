@@ -10,7 +10,7 @@
 <div class="middle">
 	<div class="base">
 		<div class="thumbnail">
-			<img src="img/base.gif">
+			<img src="img/base.gif" alt="CS:GO Rankings"/>
 		</div>
 	</div>
 </div>
