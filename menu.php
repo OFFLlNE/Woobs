@@ -1,7 +1,6 @@
 <?php
     require ('steamauth/steamauth.php');
 ?>
-<!DOCTYPE html>
 <html>
 <head>
 	<title>Menu</title>
