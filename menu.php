@@ -16,10 +16,10 @@
 	<!-- Latest compiled and minified JavaScript -->
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
 	<link rel="stylesheet" property='stylesheet' href="main2.css">
-
-
 </head>
+
 <body>
+
 <?php require('/getSession.php'); ?>
 <div class="top">
 </div>
@@ -93,7 +93,7 @@
 		            </div>
 				</div>
 			</div>
-		</div>
+		
 	</div>
 </div>
 </body>
