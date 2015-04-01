@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html>
 	<head>
 		<title>Compare</title>
@@ -46,6 +47,7 @@
 				</div>
 				<div class="col-xs-2 col-sm-2 col-md-2">
 					<button class="btn btn-default btn-lg">GO</button>
+			
 				</div>
 				<div class="col-xs-2 col-sm-2 col-md-2">
 					<form class="name">
