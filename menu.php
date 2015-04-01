@@ -30,7 +30,7 @@
 				<div class="col-xs-2 col-sm-2 col-md-2">
 					<div class="logo">
 						<div class="pull-right">
-							<button onclick="location.href = 'index.php';"><img src= "img/logoSmallSmall.png" ></button>
+							<button onclick="location.href = 'index.php';"><img src= "img/logoSmallSmall.png" alt="Logo"></button>
 						</div>
 					</div>
 
@@ -63,7 +63,7 @@
 			    			include ('steamauth/userInfo.php');
 				    		$avatar = $steamprofile['avatar'];
 
-				    		echo '<img src=' . $avatar . '/>';
+				    		echo '<img src=' . $avatar . 'alt="Avatar"/>';
 			    	}
 			    	else{
 			    		echo '<img src="img/bck.png" alt="Default"/>';
