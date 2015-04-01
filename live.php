@@ -1,5 +1,3 @@
-
-<!DOCTYPE html>
 <html>
 	<title>Live</title>
 <body>
