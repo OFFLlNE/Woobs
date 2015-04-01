@@ -37,9 +37,10 @@
 								$username = $rows['UserName'];
 								echo "<option value=$username>";
 
+							}
 						}
-					}
-					?>
+						$conn->close();
+						?>
 						</datalist>
 
 					</form>

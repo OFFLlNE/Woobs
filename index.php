@@ -16,8 +16,57 @@
 </div>
 
 <div class="statistics">
+
+	<div class="users_statistics">
+		<?php
+					//connect to the database
+					require_once("database\database_connection.php");
+					$conn=database();
+					//Query the database
+					$resultSet = $conn->query("SELECT * FROM users_count_view");
+
+					if($resultSet->num_rows != 0){
+						while($rows = $resultSet->fetch_assoc()){
+							$users = $rows['users'];
+
+							echo "<p>
+							Registered users: $users
+							</p>";
+
+						}
+					}
+					else{
+						echo"ERROR";
+					}
+		    		$conn->close();
+		?>
+
+		<?php
+					//connect to the database
+					require_once("database\database_connection.php");
+					$conn=database();
+					//Query the database
+					$resultSet = $conn->query("SELECT * FROM users_cs_count_view");
+
+					if($resultSet->num_rows != 0){
+						while($rows = $resultSet->fetch_assoc()){
+							$users = $rows['users_with_cs'];
+
+							echo "<p>
+							Registered users with CS:GO: $users
+							</p>";
+
+						}
+					}
+					else{
+						echo"ERROR";
+					}
+		    		$conn->close();
+		?>
+	</div>
+
 	<div class="heading">
-			<h1>Top 10 Total Kills</h1>
+		<h1>Top 10 Total Kills</h1>
 	</div>
 
 	<div class="boxMain">
@@ -48,7 +97,7 @@
 					else{
 						echo"ERROR";
 					}
-		    		
+		    		$conn->close();
 					?>
 					</table>
 
