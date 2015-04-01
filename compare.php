@@ -30,12 +30,12 @@
 						require_once("database\database_connection.php");
 						$conn=database();
 						//Query the database
-						$resultSet = $conn->query("SELECT * FROM user");
+						$resultSet = $conn->query("SELECT userName FROM cs_user_view");
 
 						if($resultSet->num_rows != 0){
 							while($rows = $resultSet->fetch_assoc()){
-								$username = $rows['UserName'];
-								echo "<option value=$username>";
+								$userName = $rows['userName'];
+								echo "<option value=$userName>";
 
 							}
 						}
@@ -55,20 +55,20 @@
 							<input type="text" list="UserNames" id="color" name="color" style="width:100px;">
 							<datalist id="UserNames">
 							<?php
-							require_once("database\database_connection.php");
-							$conn=database();
-							//Query the database
-							$resultSet = $conn->query("SELECT * FROM user");
+						require_once("database\database_connection.php");
+						$conn=database();
+						//Query the database
+						$resultSet = $conn->query("SELECT userName FROM cs_user_view");
 
-							if($resultSet->num_rows != 0){
-								while($rows = $resultSet->fetch_assoc()){
-									$username = $rows['UserName'];
+						if($resultSet->num_rows != 0){
+							while($rows = $resultSet->fetch_assoc()){
+								$userName = $rows['userName'];
+								echo "<option value=$userName>";
 
-									echo "<option value=$username>";
-
-								}
 							}
-							?>
+						}
+						$conn->close();
+						?>
 							</datalist>
 					</form>
 				</div>
