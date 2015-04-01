@@ -106,7 +106,7 @@
 <div class="top">
 </div>
 
-<ADDRESS> <A HREF=MAILTO:johanneshorm@hotmail.com>Woobs&copy</A> TÜ Informaatika </ADDRESS>
+<ADDRESS> <A HREF=MAILTO:johanneshorm@hotmail.com>Woobs&amp;copy</A> TÜ Informaatika </ADDRESS>
 
 </body>
 </html>
