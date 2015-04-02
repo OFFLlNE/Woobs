@@ -6,7 +6,7 @@
 <head>
 	<title>Menu</title>
 	<meta charset="utf-8">
-	<meta property="viewport" content="width=device-width, initial-scale=1"/>
+	<meta property="viewport" itemprop="" content="width=device-width, initial-scale=1"/>
 	<script type="text/javascript" property='javascript' src="http://code.jquery.com/jquery-latest.min.js"></script>
 	<!-- Latest compiled and minified CSS -->
 	<link rel="stylesheet" property='stylesheet' href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css"/>
