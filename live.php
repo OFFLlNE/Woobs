@@ -18,7 +18,7 @@
 						<param name="allowScriptAccess" value="always" />
 						<param name="allowNetworking" value="all" />
 						<param name="movie" value="//www-cdn.jtvnw.net/swflibs/TwitchPlayer.swf" />
-						<param name="flashvars" value="channel=m0e_tv&auto_play=false&start_volume=25" />
+						<param name="flashvars" value="channel=m0e_tv&amp;auto_play=false&amp;start_volume=25" />
 					</object>
 				</div>
 
@@ -28,7 +28,7 @@
 						<param name="allowScriptAccess" value="always" />
 						<param name="allowNetworking" value="all" />
 						<param name="movie" value="//www-cdn.jtvnw.net/swflibs/TwitchPlayer.swf" />
-						<param name="flashvars" value="channel=esl_csgo&auto_play=false&start_volume=25" />
+						<param name="flashvars" value="channel=esl_csgo&amp;auto_play=false&amp;start_volume=25" />
 					</object>
 				</div>
 			</div>
@@ -40,7 +40,7 @@
 						<param name="allowScriptAccess" value="always" />
 						<param name="allowNetworking" value="all" />
 						<param name="movie" value="//www-cdn.jtvnw.net/swflibs/TwitchPlayer.swf" />
-						<param name="flashvars" value="channel=Monstercat&auto_play=false&start_volume=25" />
+						<param name="flashvars" value="channel=Monstercat&amp;auto_play=false&amp;start_volume=25" />
 					</object>
 				</div>
 
@@ -50,7 +50,7 @@
 						<param name="allowScriptAccess" value="always" />
 						<param name="allowNetworking" value="all" />
 						<param name="movie" value="//www-cdn.jtvnw.net/swflibs/TwitchPlayer.swf" />
-						<param name="flashvars" value="channel=esl_lol&auto_play=false&start_volume=25" />
+						<param name="flashvars" value="channel=esl_lol&amp;auto_play=false&amp;start_volume=25" />
 					</object>
 				</div>
 			</div>
