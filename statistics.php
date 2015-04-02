@@ -146,7 +146,6 @@
 		</div>
 	</div>
 </div>
-<ADDRESS> <A HREF=MAILTO:johanneshorm@hotmail.com>Woobs&copy</A> TÜ Informaatika </ADDRESS>
-
+<?php include 'footer.php';?>
 </body>
 </html>

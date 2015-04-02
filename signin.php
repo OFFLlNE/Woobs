@@ -14,8 +14,6 @@
 		<h1 id="heading">Please sign in to continue</h1>
 	</div>
 </div>
-
-<ADDRESS> <A HREF=MAILTO:johanneshorm@hotmail.com>Woobs&copy</A> TÜ Informaatika </ADDRESS>
-
+<?php include 'footer.php';?>
 </body>
 </html>

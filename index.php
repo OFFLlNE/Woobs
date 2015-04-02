@@ -105,8 +105,6 @@
 </div>
 <div class="top">
 </div>
-
-<ADDRESS> <A HREF=MAILTO:johanneshorm@hotmail.com>Woobs&amp;copy</A> TÜ Informaatika </ADDRESS>
-
+<?php include 'footer.php';?>
 </body>
 </html>
