@@ -5,8 +5,7 @@
 
 <?php $activePage = ""; ?>
 <div id="navigation">
-	<?php include('/menu.php'); ?>
-</div>
+	<?php include('/menu.php'); ?></div>
 <div class="middle">
 	<div class="base">
 		<div class="thumbnail">
