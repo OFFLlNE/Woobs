@@ -13,7 +13,7 @@
 		<div class="container-fluid">
 			<div class="row">
 				<div class="col-xs-12 col-sm-12 col-md-6">
-					<object type="application/x-shockwave-flash" height="240" width="360" data="//www-cdn.jtvnw.net/swflibs/TwitchPlayer.swf" bgcolor="#000000">
+					<object type="application/x-shockwave-flash" height="240" width="360" data="//www-cdn.jtvnw.net/swflibs/TwitchPlayer.swf">
 						<param name="allowFullScreen" value="true" />
 						<param name="allowScriptAccess" value="always" />
 						<param name="allowNetworking" value="all" />
@@ -23,7 +23,7 @@
 				</div>
 
 				<div class="col-xs-12 col-sm-12 col-md-6">
-					<object type="application/x-shockwave-flash" height="240" width="360" data="//www-cdn.jtvnw.net/swflibs/TwitchPlayer.swf" bgcolor="#000000">
+					<object type="application/x-shockwave-flash" height="240" width="360" data="//www-cdn.jtvnw.net/swflibs/TwitchPlayer.swf">
 						<param name="allowFullScreen" value="true" />
 						<param name="allowScriptAccess" value="always" />
 						<param name="allowNetworking" value="all" />
@@ -35,7 +35,7 @@
 
 			<div class="row">
 				<div class="col-xs-12 col-sm-12 col-md-6">
-					<object type="application/x-shockwave-flash" height="240" width="360" data="//www-cdn.jtvnw.net/swflibs/TwitchPlayer.swf" bgcolor="#000000">
+					<object type="application/x-shockwave-flash" height="240" width="360" data="//www-cdn.jtvnw.net/swflibs/TwitchPlayer.swf">
 						<param name="allowFullScreen" value="true" />
 						<param name="allowScriptAccess" value="always" />
 						<param name="allowNetworking" value="all" />
@@ -45,7 +45,7 @@
 				</div>
 
 				<div class="col-xs-12 col-sm-12 col-md-6">
-					<object type="application/x-shockwave-flash" height="240" width="360" data="//www-cdn.jtvnw.net/swflibs/TwitchPlayer.swf" bgcolor="#000000">
+					<object type="application/x-shockwave-flash" height="240" width="360" data="//www-cdn.jtvnw.net/swflibs/TwitchPlayer.swf">
 						<param name="allowFullScreen" value="true" />
 						<param name="allowScriptAccess" value="always" />
 						<param name="allowNetworking" value="all" />
