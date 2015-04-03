@@ -15,16 +15,16 @@
 	<div class="container-fluid">
 		<div class="row">
 				<div class="col-xs-3 col-sm-3 col-md-3">
-					<h1>Player1</h1>
-					<img class="profilepic">
-			    		<img src="img/profilepic.png"/>
-					</img>
+					<h1 >Player1</h1>
+					<div class="profilepic">
+			    		<img src="img/profilepic.png" alt="Relevant textual alternative to the image"/>
+					</div>
 				</div>
 				<div class="col-xs-2 col-sm-2 col-md-2">
 					<form class="name">
 						Player1:
 						<br>
-						<input type="text" list="UserNames" id="color" name="color" style="width:100px;">
+						<input type="text" list="UserNames" name="color" style="width:100px;">
 						<datalist id="UserNames">
 						<?php
 						require_once("database\database_connection.php");
@@ -53,7 +53,7 @@
 					<form class="name">
 						Player2:  
 						<br>
-							<input type="text" list="UserNames" id="color" name="color" style="width:100px;">
+							<input type="text" list="UserNames" name="color" style="width:100px;">
 							<datalist id="UserNames">
 							<?php
 							require_once("database\database_connection.php");
@@ -74,10 +74,10 @@
 					</form>
 				</div>
 				<div class="col-xs-3 col-sm-3 col-md-3">
-					<h1 id="heading">Player2</h1>
-					<img class="profilepic">
-			    		<img src="img/profilepic.png"/>
-					</img>
+					<h1>Player2</h1>
+					<div class="profilepic">
+			    		<img src="img/profilepic.png" alt="Relevant textual alternative to the image"/>
+					</div>
 				</div>
 			</div>
 		</div>
