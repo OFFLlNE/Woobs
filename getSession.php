@@ -4,11 +4,13 @@ $url = $_SERVER['REQUEST_URI'];
 $pieces = explode("/",$url);
 $contains = false;
 foreach ($pieces as $data) {
-	if($data == 'signin.php'){
-		$contains = true;
+
+	if (strpos($data,'signin.php') !== false) {
+    	$contains = true;
 	}
 }
+
 if($contains == false){
-$_SESSION['url'] = $url;
+	$_SESSION['url'] = $url;
 }
 ?>
