@@ -5,6 +5,7 @@
 	</head>
 <body>
 
+<?php $activePage = ""; ?>
 <div id="navigation">
 	<?php include('/menu.php'); ?>
 </div>

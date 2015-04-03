@@ -29,9 +29,9 @@
 						while($rows = $resultSet->fetch_assoc()){
 							$users = $rows['users'];
 
-							echo "<p>
+							echo "<h4 class='heading'>
 							Registered users: $users
-							</p>";
+							</h4>";
 
 						}
 					}
@@ -52,9 +52,9 @@
 						while($rows = $resultSet->fetch_assoc()){
 							$users = $rows['users_with_cs'];
 
-							echo "<p>
+							echo "<h4 class='heading'>
 							Registered users with CS:GO: $users
-							</p>";
+							</h4>";
 
 						}
 					}

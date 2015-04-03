@@ -7,14 +7,6 @@
 <body>
 
 <?php $activePage = "compare.php"; ?>
-<?php
-	if(isset($_SESSION['steamid'])) {
-		header("Location: http://csgorankings.azurewebsites.net/compare.php");
-	}
-	else{
-		header("Location: http://csgorankings.azurewebsites.net/signin.php");
-	}
-?>
 <div id="navigation">
 	<?php include('/menu.php'); ?>
 </div>
