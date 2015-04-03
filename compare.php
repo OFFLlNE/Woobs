@@ -8,7 +8,7 @@
 
 <?php $activePage = "compare.php"; ?>
 <?php
-	if (!isset($_SESSION['steamid'])) {
+	if(!isset($_SESSION['steamid'])) {
 		header("Location: http://csgorankings.azurewebsites.net/signin.php");
 	}
 

@@ -7,7 +7,7 @@
 
 <?php $activePage = "profile.php"; ?>
 <?php
-	if (!isset($_SESSION['steamid'])) {
+	if(!isset($_SESSION['steamid'])) {
 		header("Location: http://csgorankings.azurewebsites.net/signin.php");
 	}
 
@@ -24,7 +24,7 @@
 
 
 				<?php
-			    	if (isset($_SESSION['steamid'])) {
+			    	if(isset($_SESSION['steamid'])) {
 			    		include ('steamauth/userInfo.php');
 				    	$avatar = $steamprofile['avatar'];
 
