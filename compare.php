@@ -11,11 +11,11 @@
 	<?php include('/menu.php'); ?>
 </div>
 <div class="middle">
-	<h1 id="heading">Compare</h1>
+	<h1>Compare</h1>
 	<div class="container-fluid">
 		<div class="row">
 				<div class="col-xs-3 col-sm-3 col-md-3">
-					<h1 id="heading">Player1</h1>
+					<h1>Player1</h1>
 					<img class="profilepic">
 			    		<img src="img/profilepic.png"/>
 					</img>
