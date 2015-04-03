@@ -7,6 +7,12 @@
 <body>
 
 <?php $activePage = "compare.php"; ?>
+<?php
+	if (!isset($_SESSION['steamid'])) {
+		header("Location: http://csgorankings.azurewebsites.net/signin.php");
+	}
+
+?>
 <div id="navigation">
 	<?php include('/menu.php'); ?>
 </div>
@@ -47,11 +53,11 @@
 				</div>
 				<div class="col-xs-2 col-sm-2 col-md-2">
 					<button class="btn btn-default btn-lg">GO</button>
-			
+
 				</div>
 				<div class="col-xs-2 col-sm-2 col-md-2">
 					<form class="name">
-						Player2:  
+						Player2:
 						<br>
 							<input type="text" list="UserNames" name="color" style="width:100px;">
 							<datalist class="UserNames">
