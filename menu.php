@@ -17,7 +17,7 @@
 </head>
 
 <body>
-	
+
 <?php require('/getSession.php'); ?>
 <div class="top">
 </div>
@@ -74,19 +74,20 @@
 		                 <?php
 							if(!isset($_SESSION['steamid'])) {
 								$_SESSION['redirect'] = false;
-								steamlogin(); 
+								steamlogin();
 
 							}  else {
 								include ('steamauth/userInfo.php'); //To access the $steamprofile array
 								$name = $steamprofile['personaname'];
 								$avatar = $steamprofile['avatar'];
+								include ('steamauth/csgoInfo.php');
 								echo "<div class='text'><p>Welcome back '{$name}'</p></div>";
 								include('redirect.php');
 								redirect();
-								logoutbutton(); 
+								logoutbutton();
 
 							}
-						
+
 						?>
 		            </div>
 				</div>
