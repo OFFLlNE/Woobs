@@ -7,7 +7,10 @@
 
 <?php $activePage = "profile.php"; ?>
 <?php
-	if(!isset($_SESSION['steamid'])) {
+	if(isset($_SESSION['steamid'])) {
+		header("Location: http://csgorankings.azurewebsites.net/profile.php");
+	}
+	else{
 		header("Location: http://csgorankings.azurewebsites.net/signin.php");
 	}
 
@@ -16,7 +19,7 @@
 	<?php include('/menu.php'); ?>
 </div>
 <div class="middle">
-	<h1 id="heading">Profile</h1>
+	<h1 class="heading">Profile</h1>
 	<div class="container-fluid">
 		<div class="row">
 			<div class="row">
@@ -37,7 +40,7 @@
 
 			</div>
 			<div class="col-xs-9 col-sm-9 col-md-9">
-				<h1 id="heading">Overall Statistics</h1>
+				<h1 class="heading">Overall Statistics</h1>
 				<div class="boxProfile">
 		    		<table style="width:100%">
 						<tr>
@@ -66,7 +69,7 @@
 			</div>
 			</div>
 			<div class="col-xs-3 col-sm-3 col-md-3">
-				<h1 id="heading">Ratings</h1>
+				<h1 class="heading">Ratings</h1>
 				<div class="boxProfile">
 		    		<table style="width:100%">
 						<tr>
