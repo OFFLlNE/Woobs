@@ -10,7 +10,7 @@
 	<?php include('/menu.php'); ?>
 </div>
 <div class="middle">
-	<h1 id="heading">Profile</h1>
+	<h1>Profile</h1>
 	<div class="container-fluid">
 		<div class="row">
 			<div class="row">
@@ -31,7 +31,7 @@
 
 			</div>
 			<div class="col-xs-9 col-sm-9 col-md-9">
-				<h1 id="heading">Overall Statistics</h1>
+				<h1>Overall Statistics</h1>
 				<div class="boxProfile">
 		    		<table style="width:100%">
 						<tr>
@@ -60,7 +60,7 @@
 			</div>
 			</div>
 			<div class="col-xs-3 col-sm-3 col-md-3">
-				<h1 id="heading">Ratings</h1>
+				<h1>Ratings</h1>
 				<div class="boxProfile">
 		    		<table style="width:100%">
 						<tr>
