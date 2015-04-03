@@ -54,7 +54,7 @@
 						Player2:  
 						<br>
 							<input type="text" list="UserNames" name="color" style="width:100px;">
-							<datalist id="UserNames">
+							<datalist class="UserNames">
 							<?php
 							require_once("database\database_connection.php");
 							$conn=database();
