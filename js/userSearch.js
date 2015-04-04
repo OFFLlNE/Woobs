@@ -11,7 +11,7 @@ if (str.length==0) {
             document.getElementById("txtHint").innerHTML=xmlhttp.responseText;
         }
     }
-    xmlhttp.open("GET","/.../database/predictUsers.php?q="+str,true);
+    xmlhttp.open("GET","/../database/predictUsers.php?q="+str,true);
     xmlhttp.send();
 }    
 }
