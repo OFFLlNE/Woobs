@@ -10,7 +10,7 @@
 </div>
 <div class="middle">
 	<h1>Some popular crosshairs</h1>
-		<a href="crosshair.php">
+		<a href="crosshair.html">
 + 			<img src="img/logoSmallSmall.png" alt="sihikud">
 		</a>
 	<h1>Live Stream</h1>
