@@ -2,7 +2,7 @@
 function showHint(str){
 
 if (str.length==0) { 
-    document.getElementById("userHint").innerHTML="";
+    document.getElementById("userHint").innerHTML=" ";
     return;
 } else {
     var xmlhttp=new XMLHttpRequest();
