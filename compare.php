@@ -7,9 +7,6 @@
 <body>
 
 <?php $activePage = "compare.php"; 
-if(!isset($_SESSION['steamid'])) {
-	header("Location: http://csgorankings.azurewebsites.net/signin.php");
-}
 ?>
 <div id="navigation">
 	<?php include('/menu.php'); ?>
@@ -30,21 +27,21 @@ if(!isset($_SESSION['steamid'])) {
 						<br>
 						<input type="text" list="UserNames" name="color" style="width:100px;">
 						<datalist id="UserNames">
-						<?php
-						require_once("database\database_connection.php");
-						$conn=database();
-						//Query the database
-						$resultSet = $conn->query("SELECT userName FROM cs_user_view");
+							<?php
+							require_once("database\database_connection.php");
+							$conn=database();
+							//Query the database
+							$resultSet = $conn->query("SELECT userName FROM cs_user_view");
 
-						if($resultSet->num_rows != 0){
-							while($rows = $resultSet->fetch_assoc()){
-								$userName = $rows['userName'];
-								echo "<option value=$userName>";
+							if($resultSet->num_rows != 0){
+								while($rows = $resultSet->fetch_assoc()){
+									$userName = $rows['userName'];
+									echo "<option value=$userName>";
 
+								}
 							}
-						}
-						$conn->close();
-						?>
+							$conn->close();
+							?>
 						</datalist>
 
 					</form>
