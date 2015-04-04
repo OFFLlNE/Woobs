@@ -8,7 +8,7 @@ function writeToUser($steamprofile) {
 	$avatar_full = $steamprofile['avatarfull'];
 	$profile_url = $steamprofile['profileurl'];
 	require_once("database_connection.php");
-	$conn=database();
+	$conn = database();
 	$query = "SELECT * FROM csgorankingsdata.user WHERE steamID = '{$steamID}'";
 	$result = mysqli_query($conn ,$query) or die(mysqli_error($conn));
 

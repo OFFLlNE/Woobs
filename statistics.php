@@ -5,7 +5,9 @@
 	</head>
 <body>
 
-<?php $activePage = "statistics.php"; ?>
+<?php $activePage = "statistics.php"; 
+include ('database/displayFunctions.php');
+?>
 <div id="navigation">
 	<?php include('/menu.php'); ?>
 </div>
@@ -30,122 +32,37 @@
 				<div class="boxProfile">
 					<table style="width:100%">
 					<?php
-					//connect to the database
-					require_once("database\database_connection.php");
-					$conn=database();
-					//Query the database
-					$resultSet = $conn->query("SELECT * FROM money_well_spent_view");
-
-					if($resultSet->num_rows != 0){
-						while($rows = $resultSet->fetch_assoc()){
-							$username = $rows['UserName'];
-							$money_well_spent = $rows['money_well_spent'];
-
-							echo "<tr>
-							<td>$username</td>
-							<td>$money_well_spent</td>
-							</tr>";
-
-						}
-					}
-					else{
-						echo"ERROR";
-					}
-		    		$conn->close();
+						MoneyWellSpent();
 					?>
 					</table>
-			</div>
-			<h1 id="heading">Top 10 K/D Ratio</h1>
+				</div>
+			<h1>Top 10 K/D Ratio</h1>
 				<div class="boxProfile">
 					<table style="width:100%">
 					<?php
-					//connect to the database
-					require_once("database\database_connection.php");
-					$conn=database();
-					//Query the database
-					$resultSet = $conn->query("SELECT * FROM kd_ratio_view");
-
-					if($resultSet->num_rows != 0){
-						while($rows = $resultSet->fetch_assoc()){
-							$username = $rows['UserName'];
-							$kd_ratio = $rows['kd_ratio'];
-
-							echo "<tr>
-							<td>$username</td>
-							<td>$kd_ratio</td>
-							</tr>";
-
-						}
-					}
-					else{
-						echo"ERROR";
-					}
-		    		$conn->close();
+						KDRatio();
 					?>
 					</table>
 			</div>
-			<h1 id="heading">Top 10 Nolifers</h1>
+			<h1>Top 10 Nolifers</h1>
 				<div class="boxProfile">
 					<table style="width:100%">
 					<?php
-					//connect to the database
-					require_once("database\database_connection.php");
-					$conn=database();
-					//Query the database
-					$resultSet = $conn->query("SELECT * FROM nolifers_view");
-
-					if($resultSet->num_rows != 0){
-						while($rows = $resultSet->fetch_assoc()){
-							$username = $rows['UserName'];
-							$timespent = $rows['timespent'];
-
-							echo "<tr>
-							<td>$username</td>
-							<td>$timespent</td>
-							</tr>";
-
-						}
-					}
-					else{
-						echo"ERROR";
-					}
-					$conn->close();
-		    		
+						nolifers();
 					?>
 					</table>
 			</div>
-			<h1 id="heading">Top 10 Headhunters</h1>
+			<h1>Top 10 Headhunters</h1>
 				<div class="boxProfile">
 					<table style="width:100%">
 					<?php
-					//connect to the database
-					require_once("database\database_connection.php");
-					$conn=database();
-					//Query the database
-					$resultSet = $conn->query("SELECT * FROM headhunters_view");
-
-					if($resultSet->num_rows != 0){
-						while($rows = $resultSet->fetch_assoc()){
-							$username = $rows['UserName'];
-							$headhunters = $rows['headhunters'];
-
-							echo "<tr>
-							<td>$username</td>
-							<td>$headhunters</td>
-							</tr>";
-
-						}
-					}
-					else{
-						echo"ERROR";
-					}
-		    		$conn->close();
+						headhunters();
 					?>
 					</table>
 			</div>
 		</div>
 	</div>
 </div>
-<?php include 'footer.php';?>
+<?php include('footer.php');?>
 </body>
 </html>
