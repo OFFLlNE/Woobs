@@ -46,6 +46,9 @@
 						</p>
 					</div>
 					<div class = "Contact">
+						<div>
+							<a href="chat.php" target="_blank">Ask anything in chat, which pops up lower right corner</a>
+						</div> 
 						<a id="show_id" onclick="document.getElementById('spoiler_id').style.display='';
 							document.getElementById('show_id').style.display='none';" class="link">[Questions or suggestions, feel free to contact us]
 						</a>

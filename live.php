@@ -9,10 +9,6 @@
 	<?php include('/menu.php'); ?>
 </div>
 <div class="middle">
-	<h1>Some popular crosshairs</h1>
-		<a href="crosshair.html">
-+ 			<img src="img/logoSmallSmall.png" alt="sihikud">
-		</a>
 	<h1>Live Stream</h1>
 		<div class="container-fluid">
 			<div class="row">
