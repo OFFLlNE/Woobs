@@ -49,7 +49,14 @@
 			'total_hits_m4a1');
         foreach ($stats as $stat) {
             if(array_search($stat['name'], $info)) {
+                if($stat['value']==""){
+                    $insert_into_db[$stat['name']] = 0;
+                }
+                else{
+
+
                 $insert_into_db[$stat['name']] = $stat['value'];
+                }
             }
         }
         $_SESSION['steam_uptodate'] = true;
