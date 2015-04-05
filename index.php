@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 	<title>Home</title>
-<body>
+
 
 <?php $activePage = ""; 
 include ('database/displayFunctions.php');
@@ -87,4 +87,3 @@ include ('database/displayFunctions.php');
 <div class="top">
 </div>
 <?php include 'footer.php';?>
-</body>
