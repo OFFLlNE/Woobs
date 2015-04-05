@@ -86,5 +86,5 @@ include ('database/displayFunctions.php');
 </div>
 <div class="top">
 </div>
-</body>
 <?php include 'footer.php';?>
+</body>
