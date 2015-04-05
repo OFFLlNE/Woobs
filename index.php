@@ -68,13 +68,13 @@ include ('database/displayFunctions.php');
 	</div>
 
 	<div class="heading">
-		<h1>Top 10 Total Kills</h1>
+		<h1>Users by first letter</h1>
 	</div>
 
 	<div class="boxMain">
 	    <table style="width:100%">
 						<tr>
-							<td>Letter</td>
+							<td>First letter</td>
 							<td>Value</td>
 						</tr>
 					<?php
