@@ -320,4 +320,69 @@ function countUsers(){
 					}
 		    		$conn->close();
 }
+function byFirstLetter(){
+					//connect to the database
+					require_once("database\database_connection.php");
+					$conn=database();
+					//Query the database
+					$resultSet = $conn->query("SELECT * FROM by_first_letter_view");
+
+					if($resultSet->num_rows != 0){
+						while($rows = $resultSet->fetch_assoc()){
+							$subs = $rows['substr'];
+							$value = $rows['count'];
+
+							echo "<tr>
+							<td>$subs</td>
+							<td>$value</td>
+							</tr>";
+
+						}
+					}
+					else{
+						echo"ERROR";
+					}
+		    		$conn->close();
+}
+function usersWith(){
+	//connect to the database
+					require_once("database\database_connection.php");
+					$conn=database();
+					//Query the database
+					$resultSet = $conn->query("SELECT * FROM users_cs_count_view");
+
+					if($resultSet->num_rows != 0){
+						while($rows = $resultSet->fetch_assoc()){
+							$users = $rows['users_with_cs'];
+
+							echo "<h4 class='heading'>
+							Registered users with CS:GO: $users
+							</h4>";
+
+						}
+					}
+					else{
+						echo"ERROR";
+					}
+		    		$conn->close();
+}
+function usersWithout(){
+	//connect to the database
+					require_once("database\database_connection.php");
+					$conn=database();
+					//Query the database
+					$resultSet = $conn->query("SELECT * FROM users_count_view");
+					if($resultSet->num_rows != 0){
+						while($rows = $resultSet->fetch_assoc()){
+							$users = $rows['users'];
+							echo "<h4 class='heading'>
+							Registered users: $users
+							</h4>";
+						}
+					}
+					else{
+						echo"ERROR";
+					}
+		    		$conn->close();
+}
 ?>

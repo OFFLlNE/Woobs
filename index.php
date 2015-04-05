@@ -21,50 +21,13 @@ include ('database/displayFunctions.php');
 
 	<div class="users_statistics">
 		<?php
-					//connect to the database
-					require_once("database\database_connection.php");
-					$conn=database();
-					//Query the database
-					$resultSet = $conn->query("SELECT * FROM users_count_view");
-
-					if($resultSet->num_rows != 0){
-						while($rows = $resultSet->fetch_assoc()){
-							$users = $rows['users'];
-
-							echo "<h4 class='heading'>
-							Registered users: $users
-							</h4>";
-
-						}
-					}
-					else{
-						echo"ERROR";
-					}
-		    		$conn->close();
+			usersWithout();
 		?>
-
 		<?php
-					//connect to the database
-					require_once("database\database_connection.php");
-					$conn=database();
-					//Query the database
-					$resultSet = $conn->query("SELECT * FROM users_cs_count_view");
-
-					if($resultSet->num_rows != 0){
-						while($rows = $resultSet->fetch_assoc()){
-							$users = $rows['users_with_cs'];
-
-							echo "<h4 class='heading'>
-							Registered users with CS:GO: $users
-							</h4>";
-
-						}
-					}
-					else{
-						echo"ERROR";
-					}
-		    		$conn->close();
+			usersWith();		
 		?>
+
+		
 	</div>
 
 	<div class="heading">
@@ -73,35 +36,14 @@ include ('database/displayFunctions.php');
 
 	<div class="boxMain">
 	    <table style="width:100%">
-						<tr>
-							<td>First letter</td>
-							<td>Value</td>
-						</tr>
-					<?php
-					//connect to the database
-					require_once("database\database_connection.php");
-					$conn=database();
-					//Query the database
-					$resultSet = $conn->query("SELECT * FROM by_first_letter_view");
-
-					if($resultSet->num_rows != 0){
-						while($rows = $resultSet->fetch_assoc()){
-							$subs = $rows['substr'];
-							$value = $rows['count'];
-
-							echo "<tr>
-							<td>$subs</td>
-							<td>$value</td>
-							</tr>";
-
-						}
-					}
-					else{
-						echo"ERROR";
-					}
-		    		$conn->close();
-		?>
-					</table>
+			<tr>
+				<td>First letter</td>
+				<td>Value</td>
+			</tr>
+			<?php
+				byFirstLetter();
+			?>
+		</table>
 
 	</div>
 </div>
