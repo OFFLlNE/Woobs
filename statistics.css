@@ -1,0 +1,16 @@
+#tabs ul{
+				margin:0px;
+				padding:0px;
+				overflow:hidden;
+			}
+			#tabs li{
+				float:left;
+				list-style:none;
+				padding:10px;
+				background-color:#333;
+				border:1px solid #ccc;
+			}
+			#tabs li a{
+				color:white;
+				text-decoration:none;
+			}

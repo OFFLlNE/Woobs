@@ -2,6 +2,19 @@
 <html>
 	<head>
 		<title>Statistics</title>
+		<link rel="stylesheet" property='stylesheet' href="statistics.css">
+		<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+		<script>
+			$(function(){
+				$("#tabs a").click(function(){
+					var page = this.hash.substring(1);
+					$.get(page+".php", function(gotHtml){
+						$("#content").html(gotHtml);
+					});
+					return false;
+				});
+			});
+		</script>
 	</head>
 <body>
 
@@ -15,50 +28,17 @@ include ('database/displayFunctions.php');
 	<h1 id="heading">Statistics</h1>
 	<div class="container-fluid">
 		<div class="row">	
-			<div class="dropdown">
-	  				<button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-expanded="true">
-	   					By category
-	    				<span class="caret"></span>
-	  				</button>
-	  				<ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
-	    				<li role="presentation"><a role="menuitem" tabindex="-1" href="#">Bla</a></li>
-	    				<li role="presentation"><a role="menuitem" tabindex="-1" href="#">Bla</a></li>
-	    				<li role="presentation"><a role="menuitem" tabindex="-1" href="#">Bla</a></li>
-	    				<li role="presentation"><a role="menuitem" tabindex="-1" href="#">Bla</a></li>
-	  				</ul>
+			<ul id="tabs">
+				<li><a href="#content1">Tab1</a></li>
+				<li><a href="#content2">Tab2</a></li>
+				<li><a href="#content3">Tab3</a></li>
+			</ul>
+		</div>
+		<div class="row">
+			<div id = "content_wrapper">
+				<div id="content">
+					<p>MAU</p>
 				</div>
-			<div class="col-xs-12 col-sm-12 col-md-12">
-				<h1 id="heading">Top 10 Money Wellspent</h1>
-				<div class="boxProfile">
-					<table style="width:100%">
-					<?php
-						MoneyWellSpent();
-					?>
-					</table>
-				</div>
-			<h1>Top 10 K/D Ratio</h1>
-				<div class="boxProfile">
-					<table style="width:100%">
-					<?php
-						KDRatio();
-					?>
-					</table>
-			</div>
-			<h1>Top 10 Nolifers</h1>
-				<div class="boxProfile">
-					<table style="width:100%">
-					<?php
-						nolifers();
-					?>
-					</table>
-			</div>
-			<h1>Top 10 Headhunters</h1>
-				<div class="boxProfile">
-					<table style="width:100%">
-					<?php
-						headhunters();
-					?>
-					</table>
 			</div>
 		</div>
 	</div>
