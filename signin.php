@@ -6,17 +6,15 @@
 <body>
 
 <?php
-ob_start();
-if(isset($_SESSION['steamid'])) {
-	header("Location: http://csgorankings.azurewebsites.net/profile.php");
-	exit();
-
-}
 $activePage = ""; 
-
 ?>
 <div id="navigation">
-	<?php include('/menu.php'); ?>
+	<?php 
+	if(isset($_SESSION['steamid'])) {
+	header("Location: http://csgorankings.azurewebsites.net/profile.php");
+	}
+	include('/menu.php'); 
+	?>
 </div>
 <div class="middle">
 	<div class="container-fluid">
