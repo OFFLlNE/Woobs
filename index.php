@@ -74,12 +74,33 @@ include ('database/displayFunctions.php');
 	<div class="boxMain">
 	    <table style="width:100%">
 						<tr>
-							<td>Username</td>
-							<td>Total Kills</td>
+							<td>Letter</td>
+							<td>Value</td>
 						</tr>
 					<?php
-					totalKills();
-					?>
+					//connect to the database
+					require_once("database\database_connection.php");
+					$conn=database();
+					//Query the database
+					$resultSet = $conn->query("SELECT * FROM by_first_letter_view");
+
+					if($resultSet->num_rows != 0){
+						while($rows = $resultSet->fetch_assoc()){
+							$subs = $rows['substr'];
+							$value = $rows['count'];
+
+							echo "<tr>
+							<td>$subs</td>
+							<td>$value</td>
+							</tr>";
+
+						}
+					}
+					else{
+						echo"ERROR";
+					}
+		    		$conn->close();
+		?>
 					</table>
 
 	</div>
