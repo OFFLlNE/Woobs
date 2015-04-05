@@ -6,8 +6,11 @@
 <body>
 
 <?php
+ob_start();
 if(isset($_SESSION['steamid'])) {
 	header("Location: http://csgorankings.azurewebsites.net/profile.php");
+	exit();
+
 }
 $activePage = ""; 
 

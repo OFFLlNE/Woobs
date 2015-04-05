@@ -4,7 +4,7 @@
 			if(isset($_SESSION['url'])) 
 		   		$url = $_SESSION['url']; // holds url for last page visited.
 			else 
-		   		$url = "index.php"; // default page for 
+		   		$url = "csgorankings.azurewebistes.net/index.php"; // default page for 
 		   
 			header("Location: http://$url"); // perform correct redirect.
 			$_SESSION['redirect']=true;
