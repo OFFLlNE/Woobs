@@ -5,7 +5,8 @@
 	</head>
 <body>
 
-<?php $activePage = ""; ?>
+<?php $activePage = ""; 
+$_SESSION['url'] = "http://csgorankings.azurewebsites.net/profile.php";?>
 <div id="navigation">
 	<?php include('/menu.php'); ?>
 </div>
