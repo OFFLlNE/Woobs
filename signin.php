@@ -7,7 +7,7 @@
 
 <?php
 if(isset($_SESSION['steamid'])) {
-	header("Location: http://csgorankings.azurewebsites.net/profile.php");
+	echo'<meta http-equiv="refresh" content="0; url=http://csgorankings.azurewebsites.net/profile.php" />';
 }
 $activePage = ""; 
 ?>
