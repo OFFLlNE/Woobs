@@ -5,10 +5,12 @@
 	</head>
 <body>
 
-<?php $activePage = ""; 
+<?php
 if(isset($_SESSION['steamid'])) {
 	header("Location: http://csgorankings.azurewebsites.net/profile.php");
 }
+$activePage = ""; 
+
 ?>
 <div id="navigation">
 	<?php include('/menu.php'); ?>
