@@ -78,12 +78,12 @@
 								$_SESSION['write'] = false;
 
 							}  else {
-								if($_SESSION['write'] == false){
+								if($_SESSION['write'] === false){
 									include_once ('steamauth/userInfo.php'); //To access the $steamprofile array
 									include_once('steamauth/csgoInfo.php');
 									include('redirect.php');
 									redirect();
-									$_SESSION['write'] == true;
+									$_SESSION['write'] = true;
 								}
 								$name = $steamprofile['personaname'];
 								$avatar = $steamprofile['avatar'];
