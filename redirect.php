@@ -1,8 +1,15 @@
 <?php
 	function redirect(){
 		if($_SESSION['redirect']==false){
-			if(isset($_SESSION['url'])) 
-		   		$url = $_SESSION['url']; // holds url for last page visited.
+			if(isset($_SESSION['url'])){
+
+			   	if (strpos($url,'signin.php') !== false) {
+			   		$url = "csgorankings.azurewebistes.net/profile.php"
+				}
+				else{
+					$url = $_SESSION['url'];
+					}
+				}
 			else 
 		   		$url = "csgorankings.azurewebistes.net/index.php"; // default page for 
 		   
