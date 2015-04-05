@@ -6,7 +6,10 @@
 <body>
 
 <?php $activePage = ""; 
-$_SESSION['url'] = "http://csgorankings.azurewebsites.net/profile.php";?>
+if(isset($_SESSION['steamid'])) {
+	header("Location: http://csgorankings.azurewebsites.net/profile.php");
+}
+?>
 <div id="navigation">
 	<?php include('/menu.php'); ?>
 </div>
