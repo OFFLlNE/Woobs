@@ -6,9 +6,6 @@
 <body>
 
 <?php $activePage = "profile.php"; ?>
-<?php
-
-?>
 <div id="navigation">
 	<?php include('/menu.php'); ?>
 </div>
@@ -27,6 +24,7 @@
 					    	echo '<img src=' . $avatar . ' class="img-circle"/>';
 				    	}
 				    	else{
+							$_SESSION['url'] = "http://csgorankings.azurewebsites.net/profile.php";
 				    		header("Location: http://csgorankings.azurewebsites.net/signin.php");
 				    	}
 				    ?>
