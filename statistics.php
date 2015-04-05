@@ -4,17 +4,7 @@
 		<title>Statistics</title>
 		<link rel="stylesheet" property='stylesheet' href="statistics.css">
 		<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
-		<script>
-			$(function(){
-				$("#tabs a").click(function(){
-					var page = this.hash.substring(1);
-					$.get(page+".php", function(gotHtml){
-						$("#content").html(gotHtml);
-					});
-					return false;
-				});
-			});
-		</script>
+		<script src="js/tab.js"></script>
 	</head>
 <body>
 
