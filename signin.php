@@ -7,9 +7,10 @@
 
 <?php
 if(isset($_SESSION['steamid'])) {
-	echo'<script language="javascript">
-    window.location.href = "http://csgorankings.azurewebsites.net/profile.php"
-	</script>'
+	ob_start();
+	header("Location: http://csgorankings.azurewebsites.net/profile.php", TRUE, 303);
+	ob_end_flush();
+	echo '<META HTTP-EQUIV="Refresh" Content="0; URL=http://csgorankings.azurewebsites.net/profile.php">';  
 }
 $activePage = ""; 
 ?>
