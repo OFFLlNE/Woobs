@@ -4,7 +4,7 @@
 						require_once("database\database_connection.php");
 						$conn=database();
 						//Query the database
-						$resultSet = $conn->query("SELECT * FROM csgorankingsdata.statistics WHERE steamID =".$steamID."");
+						$resultSet = $conn->query("SELECT * FROM csgoRankings.Statistics WHERE steamID =".$steamID."");
 
 						if($resultSet->num_rows != 0){
 							while($rows = $resultSet->fetch_assoc()){
@@ -243,6 +243,75 @@ function headhunters(){
 							<td>$username</td>
 							<td>$headhunters</td>
 							</tr>";
+
+						}
+					}
+					else{
+						echo"ERROR";
+					}
+		    		$conn->close();
+}
+function totalKills(){
+
+					//connect to the database
+					require_once("database\database_connection.php");
+					$conn=database();
+					//Query the database
+					$resultSet = $conn->query("SELECT * FROM total_kills_view");
+
+					if($resultSet->num_rows != 0){
+						while($rows = $resultSet->fetch_assoc()){
+							$username = $rows['UserName'];
+							$total_kills = $rows['total_kills'];
+
+							echo "<tr>
+							<td>$username</td>
+							<td>$total_kills</td>
+							</tr>";
+
+						}
+					}
+					else{
+						echo"ERROR";
+					}
+		    		$conn->close();
+}
+function countUsersCS(){
+		//connect to the database
+					require_once("database\database_connection.php");
+					$conn=database();
+					//Query the database
+					$resultSet = $conn->query("SELECT * FROM users_cs_count_view");
+
+					if($resultSet->num_rows != 0){
+						while($rows = $resultSet->fetch_assoc()){
+							$users = $rows['users_with_cs'];
+
+							echo "<h4 class='heading'>
+							Registered users with CS:GO: $users
+							</h4>";
+
+						}
+					}
+					else{
+						echo"ERROR";
+					}
+		    		$conn->close();
+}
+function countUsers(){
+						//connect to the database
+					require_once("database\database_connection.php");
+					$conn=database();
+					//Query the database
+					$resultSet = $conn->query("SELECT * FROM users_count_view");
+
+					if($resultSet->num_rows != 0){
+						while($rows = $resultSet->fetch_assoc()){
+							$users = $rows['users'];
+
+							echo "<h4 class='heading'>
+							Registered users: $users
+							</h4>";
 
 						}
 					}

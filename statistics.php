@@ -64,5 +64,3 @@ include ('database/displayFunctions.php');
 	</div>
 </div>
 <?php include('footer.php');?>
-</body>
-</html>

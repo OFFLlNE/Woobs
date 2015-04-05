@@ -32,10 +32,10 @@ function writeToStatistics($csgoProfile) {
 
 	require_once("database_connection.php");
 	$conn=database();
-	$query = "SELECT * FROM csgorankingsdata.statistics WHERE steamID = '{$steamID}'";
+	$query = "SELECT * FROM csgoRankings.Statistics WHERE steamID = '{$steamID}'";
 	$result = mysqli_query($conn ,$query) or die(mysqli_error($conn));
 	 if(mysqli_num_rows($result) == 0){
-	 	$sql = "INSERT INTO csgorankingsdata.statistics (
+	 	$sql = "INSERT INTO csgoRankings.Statistics (
 			SteamID,
 			total_time_played,
 			time_played_2w,
@@ -103,7 +103,7 @@ function writeToStatistics($csgoProfile) {
 			}
 		}
 		else{
-			$sql = "UPDATE statistics SET
+			$sql = "UPDATE csgoRankings.Statistics SET
 				total_time_played = {$total_time_played},
 				time_played_2w = {$time_played_2weeks},
 				total_damage_done = {$total_damage_done},

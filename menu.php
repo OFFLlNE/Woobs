@@ -75,15 +75,21 @@
 							if(!isset($_SESSION['steamid'])) {
 								$_SESSION['redirect'] = false;
 								steamlogin();
+								$_SESSION['write'] = false;
 
 							}  else {
-								include ('steamauth/userInfo.php'); //To access the $steamprofile array
+								if($_SESSION['write'] == false){
+									include_once ('steamauth/userInfo.php'); //To access the $steamprofile array
+									
+									include('redirect.php');
+									redirect();
+									$_SESSION['write'] == true;
+								}
 								$name = $steamprofile['personaname'];
 								$avatar = $steamprofile['avatar'];
-								include ('steamauth/csgoInfo.php');
+								
 								echo "<div class='text'><p>Welcome back '{$name}'</p></div>";
-								include('redirect.php');
-								redirect();
+								
 								logoutbutton();
 
 							}
