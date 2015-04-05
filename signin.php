@@ -2,16 +2,14 @@
 <html>
 	<head>
 		<title>SignIn</title>
-		<?php
-		if(isset($_SESSION['steamid'])) {
-			echo'<meta http-equiv="refresh" content="0; url=http://csgorankings.azurewebsites.net/profile.php" />';
-			}
-		?>
-
 	</head>
 <body>
 
 <?php
+if(isset($_SESSION['steamid'])) {
+	header("Location: http://csgorankings.azurewebsites.net/profile.php", TRUE, 303);
+	exit
+}
 $activePage = ""; 
 ?>
 <div id="navigation">
