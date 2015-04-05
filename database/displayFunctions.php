@@ -93,7 +93,7 @@
 								<td>{$total_shots_ak47}</td>
 								</tr>
 								<tr>
-								<td>total shots ak47</td>
+								<td>total hits ak47</td>
 								<td>{$total_hits_ak47}</td>
 								</tr>
 								<tr>
