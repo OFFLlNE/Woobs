@@ -3,7 +3,7 @@
 		if($_SESSION['redirect']==false){
 			if(isset($_SESSION['url'])){
 
-			   	if (strpos($_SESSION['url'],'signin.php') !== false) {
+			   	if (strpos($_SESSION['url'],'signin') !== false) {
 			   		$url = "csgorankings.azurewebistes.net/profile.php";
 				}
 				else{
