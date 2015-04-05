@@ -80,7 +80,7 @@
 							}  else {
 								if($_SESSION['write'] == false){
 									include_once ('steamauth/userInfo.php'); //To access the $steamprofile array
-									
+									include_once('steamauth/csgoInfo.php');
 									include('redirect.php');
 									redirect();
 									$_SESSION['write'] == true;
