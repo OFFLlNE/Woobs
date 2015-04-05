@@ -1,10 +1,10 @@
 <?php
 function database(){
 
-	$servername = "eu-cdbr-azure-north-b.cloudapp.net";
-	$username = "bf3c7cd016fb44";
-	$password = "134bea17";
-	$db = "csgorankingsdata";
+	$servername = "csgorankings.cloudapp.net";
+	$username = "sysadmin";
+	$password = "SammalHabe1";
+	$db = "csgoRankings";
 	// Create connection
 	$conn = mysqli_connect($servername, $username, $password, $db);
 

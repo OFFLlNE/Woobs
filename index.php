@@ -3,7 +3,9 @@
 	<title>Home</title>
 <body>
 
-<?php $activePage = ""; ?>
+<?php $activePage = ""; 
+include ('database/displayFunctions.php');
+?>
 <div id="navigation">
 	<?php include('/menu.php'); ?>
 </div>
@@ -76,28 +78,7 @@
 							<td>Total Kills</td>
 						</tr>
 					<?php
-					//connect to the database
-					require_once("database\database_connection.php");
-					$conn=database();
-					//Query the database
-					$resultSet = $conn->query("SELECT * FROM total_kills_view");
-
-					if($resultSet->num_rows != 0){
-						while($rows = $resultSet->fetch_assoc()){
-							$username = $rows['UserName'];
-							$total_kills = $rows['total_kills'];
-
-							echo "<tr>
-							<td>$username</td>
-							<td>$total_kills</td>
-							</tr>";
-
-						}
-					}
-					else{
-						echo"ERROR";
-					}
-		    		$conn->close();
+					totalKills();
 					?>
 					</table>
 
@@ -106,5 +87,3 @@
 <div class="top">
 </div>
 <?php include 'footer.php';?>
-</body>
-</html>
