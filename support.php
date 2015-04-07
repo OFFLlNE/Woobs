@@ -1,14 +1,6 @@
-<!DOCTYPE html>
-<html>
-	<head>
-		<title>Support</title>
-	</head>
-<body>
-
-<?php $activePage = "support.php"; ?>
-<div id="navigation">
-	<?php include('/menu.php'); ?>
-</div>
+<?php include('/menu.php');
+$activePage = "support.php";
+?>
 <div class="middle">
 	<div class="container-fluid">
 		<h1 id="heading">Support</h1>
@@ -48,7 +40,7 @@
 					<div class = "Contact">
 						<div>
 							<a href="chat.php" target="_blank">Ask anything in chat, which pops up lower right corner</a>
-						</div> 
+						</div>
 						<a id="show_id" onclick="document.getElementById('spoiler_id').style.display='';
 							document.getElementById('show_id').style.display='none';" class="link">[Questions or suggestions, feel free to contact us]
 						</a>

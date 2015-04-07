@@ -1,6 +1,7 @@
 <?php
     require ('steamauth/steamauth.php');
-?><!DOCTYPE html>
+?>
+<!DOCTYPE html>
 <html>
 <head>
 	<title>Menu</title>
@@ -14,6 +15,9 @@
 	<!-- Latest compiled and minified JavaScript -->
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
 	<link rel="stylesheet" property='stylesheet' href="main2.css">
+	<link rel="stylesheet" property='stylesheet' href="statistics.css">
+	<script src="js/tab.js"></script>
+	<script src="js/userSearch.js"></script>
 </head>
 
 <body>
@@ -35,6 +39,7 @@
 	           	</div>
 				<div class="col-xs-6 col-sm-6 col-md-6">
 					<div class="menu">
+					<?php $activePage = ""; ?>
 						<ul>
 			          		<li><a <?php if ($activePage =="profile.php") {?> class="active" <?php } ?>
 			          		 class="profile" href="profile.php">Profile</a></li>
@@ -87,9 +92,9 @@
 								}
 								$name = $steamprofile['personaname'];
 								$avatar = $steamprofile['avatar'];
-								
+
 								echo "<div class='text'><p>Welcome back '{$name}'</p></div>";
-								
+
 								logoutbutton();
 
 							}
@@ -100,5 +105,3 @@
 			</div>
 		</div>
 	</div>
-</body>
-</html>

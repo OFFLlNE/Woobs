@@ -1,14 +1,10 @@
-<!DOCTYPE html>
-<html>
-	<title>Home</title>
-
-
-<?php $activePage = ""; 
+<?php include('/menu.php'); ?>
+<?php $activePage = "";
 include ('database/displayFunctions.php');
 ?>
-<div id="navigation">
-	<?php include('/menu.php'); ?>
-</div>
+
+
+
 <div class="middle">
 	<div class="base">
 		<div class="thumbnail">
@@ -24,10 +20,10 @@ include ('database/displayFunctions.php');
 			usersWithout();
 		?>
 		<?php
-			usersWith();		
+			usersWith();
 		?>
 
-		
+
 	</div>
 
 	<div class="heading">

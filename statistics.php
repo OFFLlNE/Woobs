@@ -1,23 +1,12 @@
-<!DOCTYPE html>
-<html>
-	<head>
-		<title>Statistics</title>
-		<link rel="stylesheet" property='stylesheet' href="statistics.css">
-		<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
-		<script src="js/tab.js"></script>
-	</head>
-<body>
-
-<?php $activePage = "statistics.php"; 
+<?php include('/menu.php');
+$activePage = "statistics.php";
 include ('database/displayFunctions.php');
 ?>
-<div id="navigation">
-	<?php include('/menu.php'); ?>
-</div>
+
 <div class="middle">
 	<h1 id="heading">Statistics</h1>
 	<div class="container-fluid">
-		<div class="row">	
+		<div class="row">
 			<ul id="tabs">
 				<li><a href="#content1">Tab1</a></li>
 				<li><a href="#content2">Tab2</a></li>

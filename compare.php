@@ -1,17 +1,7 @@
-<!DOCTYPE html>
-<html>
-	<head>
-		<title>Compare</title>
-
-	</head>
-	<script src="js/userSearch.js"></script>
-<body>
-
-<?php $activePage = "compare.php"; 
+<?php
+include('/menu.php');
+$activePage = "compare.php";
 ?>
-<div id="navigation">
-	<?php include('/menu.php'); ?>
-</div>
 <div class="middle">
 	<h1>Compare</h1>
 	<div class="container-fluid">
@@ -25,10 +15,10 @@
 				<div class="col-xs-2 col-sm-2 col-md-2">
 					<form class="name">
 						Player1:
-						<form action=""> 
+						<form action="">
 							<input type="text" id="txt1" onkeyup="showHint(this.value)">
 						</form>
-						<p>Suggestions: <span id="userHint"></span></p> 
+						<p>Suggestions: <span id="userHint"></span></p>
 				</div>
 				<div class="col-xs-2 col-sm-2 col-md-2">
 					<button class="btn btn-default btn-lg">GO</button>

@@ -1,5 +1,5 @@
 <?php
-	function displayUserdataTable($steamID){			
+	function displayUserdataTable($steamID){
 	//connect to the database
 						require_once("database\database_connection.php");
 						$conn=database();
@@ -225,7 +225,7 @@ function noLifers(){
 						echo"ERROR";
 					}
 					$conn->close();
-		    		
+
 }
 function headhunters(){
 	//connect to the database
@@ -378,6 +378,46 @@ function usersWithout(){
 							echo "<h4 class='heading'>
 							Registered users: $users
 							</h4>";
+						}
+					}
+					else{
+						echo"ERROR";
+					}
+		    		$conn->close();
+}
+function overallStats($steamID){
+	//connect to the database
+					require_once("database\database_connection.php");
+					$conn=database();
+					//Query the database
+					$resultSet = $conn->query("SELECT * FROM money_well_spent_view WHERE steamID =".$steamID."");
+
+					if($resultSet->num_rows != 0){
+						while($rows = $resultSet->fetch_assoc()){
+							$money_well_spent = $rows['money_well_spent'];
+
+							echo "<tr>
+							<td>Money well spent</td>
+							<td>$money_well_spent</td>
+							</tr>";
+
+						}
+					}
+					else{
+						echo"ERROR";
+					}
+
+					$resultSet = $conn->query("SELECT * FROM kd_ratio_view WHERE steamID =".$steamID."");
+
+					if($resultSet->num_rows != 0){
+						while($rows = $resultSet->fetch_assoc()){
+							$kd_ratio = $rows['kd_ratio'];
+
+							echo "<tr>
+							<td>KD ratio</td>
+							<td>$kd_ratio</td>
+							</tr>";
+
 						}
 					}
 					else{

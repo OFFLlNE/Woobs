@@ -1,13 +1,8 @@
+<?php
+include('/menu.php');
+$activePage = "live.php";
+?>
 
-<!DOCTYPE html>
-<html>
-	<title>Live</title>
-<body>
-
-<?php $activePage = "live.php"; ?>
-<div id="navigation">
-	<?php include('/menu.php'); ?>
-</div>
 <div class="middle">
 	<h1>Live Stream</h1>
 		<div class="container-fluid">

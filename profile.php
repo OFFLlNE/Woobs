@@ -1,16 +1,10 @@
-<!DOCTYPE html>
-<html>
-	<head>
-		<title>Profile</title>
-	</head>
-<body>
+<?php include('/menu.php');
+$activePage = "profile.php";
+include ('database/displayFunctions.php');
+?>
 
-<?php $activePage = "profile.php"; ?>
-<div id="navigation">
-	<?php include('/menu.php'); ?>
-</div>
 <div class="middle">
-	
+
 	<div class="container-fluid">
 		<div class="row">
 			<div class="row">
@@ -31,14 +25,9 @@
 				    <h1>Ratings</h1>
 				<div class="boxProfile">
 		    		<table style="width:100%">
-						<tr>
-							<td>blablabla</td>
-							<td>NUMBER</td>
-						</tr>
-						<tr>
-							<td>jne</td>
-							<td>NUMBER</td>
-						</tr>
+		    		<?php
+		    			overallStats($_SESSION['steamid']);
+		    		?>
 					</table>
 				</div>
 
@@ -48,14 +37,13 @@
 					<div class="boxProfile">
 						<table style="width:100%">
 							<?php
-								include ('database/displayFunctions.php');
 								displayUserdataTable($_SESSION['steamid']);
 							?>
 						</table>
 					</div>
 				</div>
 			</div>
-			
+
 		</div>
 	</div>
 </div>
