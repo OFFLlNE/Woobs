@@ -14,7 +14,7 @@ $activePage = "compare.php";
 			</div>
 			<div class="col-xs-2 col-sm-2 col-md-2">
 				Player1:
-				<form action="">
+				<form>
 					<input type="text" id="txt1" onkeyup="showHint(this.value)">
 				</form>
 				<p>Suggestions: <span id="userHint"></span></p>
@@ -38,7 +38,7 @@ $activePage = "compare.php";
 						if($resultSet->num_rows != 0){
 							while($rows = $resultSet->fetch_assoc()){
 								$userName = $rows['userName'];
-								echo "<option value='{$userName}' />";
+								echo "<option value=".{$userName}." >";
 
 							}
 						}
