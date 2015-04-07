@@ -13,12 +13,11 @@ $activePage = "compare.php";
 					</div>
 				</div>
 				<div class="col-xs-2 col-sm-2 col-md-2">
-					<form class="name">
-						Player1:
-						<form action="">
-							<input type="text" id="txt1" onkeyup="showHint(this.value)">
-						</form>
-						<p>Suggestions: <span id="userHint"></span></p>
+					Player1:
+					<form action="">
+						<input type="text" id="txt1" onkeyup="showHint(this.value)">
+					</form>
+					<p>Suggestions: <span id="userHint"></span></p>
 				</div>
 				<div class="col-xs-2 col-sm-2 col-md-2">
 					<button class="btn btn-default btn-lg">GO</button>
@@ -39,7 +38,7 @@ $activePage = "compare.php";
 							if($resultSet->num_rows != 0){
 								while($rows = $resultSet->fetch_assoc()){
 									$userName = $rows['userName'];
-									echo "<option value=$userName>";
+									echo "<option value='{$userName}'>";
 
 								}
 							}
@@ -59,5 +58,3 @@ $activePage = "compare.php";
 	</div>
 </div>
 <?php include 'footer.php';?>
-</body>
-</html>
