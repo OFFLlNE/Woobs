@@ -38,7 +38,7 @@ $activePage = "compare.php";
 						if($resultSet->num_rows != 0){
 							while($rows = $resultSet->fetch_assoc()){
 								$userName = $rows['userName'];
-								echo "<option value='{$userName}'>";
+								echo "<option value=''>$userName</option>";
 
 							}
 						}
