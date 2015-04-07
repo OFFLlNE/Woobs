@@ -50,6 +50,10 @@ $activePage = "live.php";
 				</div>
 			</div>
 		</div>
+	<h1>Some Pro player crosshairs</h1>
+		<div>
+			<a href="crosshairs.php" target="_blank">New tab with different crosshairs will open up</a>
+		</div>
 
 </div>
 <?php include 'footer.php';?>
