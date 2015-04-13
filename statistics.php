@@ -4,10 +4,10 @@ include ('database/displayFunctions.php');
 ?>
 
 <div class="middle">
-	<h1 id="heading">Statistics</h1>
+	<h1>Statistics</h1>
 	<div class="container-fluid">
 		<div class="row">
-			<ul class="tabs">
+			<ul id="tabs">
 				<li><a href="#content1">Tab1</a></li>
 				<li><a href="#content2">Tab2</a></li>
 				<li><a href="#content3">Tab3</a></li>
