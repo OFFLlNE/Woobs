@@ -3,11 +3,11 @@ $activePage = "support.php";
 ?>
 <div class="middle">
 	<div class="container-fluid">
-		<h1 id="heading">Support</h1>
+		<h1>Support</h1>
 			<div class="row">
 				<div class="col-xs-12 col-sm-12 col-md-12">
 					<div class="donation">
-						<h3 id="heading">Donate to our cause</h3>
+						<h3>Donate to our cause</h3>
 						<form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
 							<input type="hidden" name="cmd" value="_donations">
 							<input type="hidden" name="business" value="loll_noob1@hotmail.com">
@@ -27,7 +27,7 @@ $activePage = "support.php";
 			<div class="row">
 				<div class="col-xs-12 col-sm-12 col-md-12">
 					<div class="AboutUs">
-						<h3 id="heading">About us</h3>
+						<h3>About us</h3>
 						<p>
 							We are 3 students in the University of Tartu,
 							studying informatics. Since we and many of our
@@ -44,7 +44,7 @@ $activePage = "support.php";
 						<a id="show_id" onclick="document.getElementById('spoiler_id').style.display='';
 							document.getElementById('show_id').style.display='none';" class="link">[Questions or suggestions, feel free to contact us]
 						</a>
-						<span id="spoiler_id" style="display: none">
+						<span style="display: none">
 							<a
 								onclick="document.getElementById('spoiler_id').style.display='none'; document.getElementById('show_id').style.display='';" class="link">[Hide]
 							</a>
