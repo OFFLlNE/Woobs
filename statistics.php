@@ -7,17 +7,17 @@ include ('database/displayFunctions.php');
 	<h1 id="heading">Statistics</h1>
 	<div class="container-fluid">
 		<div class="row">
-			<ul id="tabs">
+			<ul>
 				<li><a href="#content1">Tab1</a></li>
 				<li><a href="#content2">Tab2</a></li>
 				<li><a href="#content3">Tab3</a></li>
 			</ul>
 		</div>
 		<div class="row">
-			<div id = "content_wrapper">
-				<div id="content">
+			<div>
+				<div>
 					<div class="col-xs-12 col-sm-12 col-md-12">
-				<h1 id="heading">Top 10 Money Wellspent</h1>
+				<h1>Top 10 Money Wellspent</h1>
 				<div class="boxProfile">
 					<table style="width:100%">
 					<?php
