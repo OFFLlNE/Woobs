@@ -27,7 +27,7 @@ $activePage = "compare.php";
 				<form class="name">
 					Player2:
 					<br>
-					<input type="text" list="UserNames" style="width:100px;">
+					<input type="text" list="userName" style="width:100px;">
 					<datalist class="UserNames">
 						<?php
 						require_once("database\database_connection.php");
