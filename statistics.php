@@ -7,7 +7,7 @@ include ('database/displayFunctions.php');
 	<h1 id="heading">Statistics</h1>
 	<div class="container-fluid">
 		<div class="row">
-			<ul>
+			<ul class="tabs">
 				<li><a href="#content1">Tab1</a></li>
 				<li><a href="#content2">Tab2</a></li>
 				<li><a href="#content3">Tab3</a></li>
