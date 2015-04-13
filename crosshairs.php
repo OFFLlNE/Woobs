@@ -2,6 +2,7 @@
 <html manifest="cache.manifest">
 <head>
 	<title>crosshairs</title>
+	<meta charset="utf-8"/>
 </head>
 <body>
 	<h1>Some pro-player crosshairs</h1>
