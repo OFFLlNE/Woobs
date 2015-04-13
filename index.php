@@ -8,7 +8,7 @@ include ('database/displayFunctions.php');
 <div class="middle">
 	<div class="base">
 		<div class="thumbnail">
-			<img src="img/base.gif" alt="CS:GO Rankings"/>
+			<img src="img/base2.jpg" alt="CS:GO Rankings"/>
 		</div>
 	</div>
 </div>
