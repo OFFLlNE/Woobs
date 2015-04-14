@@ -2,7 +2,7 @@
     require ('steamauth/steamauth.php');
 ?>
 <!DOCTYPE html>
-<html manifest="cache.manifest">
+<html>
 <head>
 	<title>Menu</title>
 	<meta property="viewport" content="width=device-width, initial-scale=1"/>
