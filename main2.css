@@ -29,14 +29,20 @@ table {
   display: inline;
   padding-left: 11px;
 }
+
 .main a {
   color: #FFFFFF;
-  font-size: 22px;
+  font-size: 15px;
   font-weight: bold;
   padding: 14px 10px;
   text-transform: uppercase;
-
 }
+@media(max-width: 768px){
+	.main a {
+		font-size:25px;
+	}
+}
+
 .top{
 	height: 30px;
 

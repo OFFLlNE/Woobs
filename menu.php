@@ -34,7 +34,7 @@
 				<div class="col-xs-2 col-sm-2 col-md-2">
 					<div class="logo">
 						<div class="pull-right">
-							<button onclick="location.href = 'index.php';"><img src= "img/logoSmallSmall.png" alt="Logo"></button>
+							<button onclick="location.href = 'index.php';"><img src= "img/logoSmallSmall.jpg" alt="Logo"></button>
 						</div>
 					</div>
 
