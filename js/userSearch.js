@@ -3,7 +3,7 @@ function autocompleteUser() {
     var keyword = $('#username_id').val();
     if (keyword.length >= min_length) {
         $.ajax({
-            url: '../database/ajax_refresh.php',
+            url: '../database/predictUsers.php',
             type: 'POST',
             data: {keyword:keyword},
             success:function(data){
