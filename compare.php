@@ -29,38 +29,8 @@ $activePage = "compare.php";
 
 			</div>
 			<div class="col-xs-2 col-sm-2 col-md-2">
-				<form class="name">
 					Player2:
-					 <script>
-					 jQuery(document).ready(function(){
-					    jQuery( "#users" ).autocomplete({
-					      source: "database/predictUsers.php",
-					      minLength: 2
-					    });
-					  });
-					  </script>
-					<!--<br>
-					<input type="text" list="UserNames" style="width:100px;">
-					<datalist class="UserNames">
-						<?php
-						require_once("database\database_connection.php");
-						$conn=database();
-						//Query the database
-						$resultSet = $conn->query("SELECT userName FROM cs_user_view");
 
-						if($resultSet->num_rows != 0){
-							while($rows = $resultSet->fetch_assoc()){
-								$userName = $rows['userName'];
-								echo "<option value=''>$userName</option>";
-
-							}
-						}
-						$conn->close();
-						?>
-					</datalist>
-				</form>
-			</div>
-			-->
 			<div class="userNames">
 			  <label for="users"></label>
 			  <input id="users">
