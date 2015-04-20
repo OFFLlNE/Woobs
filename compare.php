@@ -13,11 +13,16 @@ $activePage = "compare.php";
 				</div>
 			</div>
 			<div class="col-xs-2 col-sm-2 col-md-2">
-				Player1:
-				<form>
-					<input type="text" id="txt1" onkeyup="showHint(this.value)">
-				</form>
-				<p>Suggestions: <span id="userHint"></span></p>
+				<div class ="predict">
+					<form>
+						<div class="label_div">Player1: </div>
+               				<div class="input_container">
+                   				<input type="text" id="username_id" onkeyup="autocompleteUser()">
+                    			<ul id="username_list_id"></ul>
+                			</div>
+
+					</form>
+				</div>
 			</div>
 			<div class="col-xs-2 col-sm-2 col-md-2">
 				<button class="btn btn-default btn-lg">GO</button>
@@ -26,7 +31,15 @@ $activePage = "compare.php";
 			<div class="col-xs-2 col-sm-2 col-md-2">
 				<form class="name">
 					Player2:
-					<br>
+					 <script>
+					 jQuery(document).ready(function(){
+					    jQuery( "#users" ).autocomplete({
+					      source: "database/predictUsers.php",
+					      minLength: 2
+					    });
+					  });
+					  </script>
+					<!--<br>
 					<input type="text" list="UserNames" style="width:100px;">
 					<datalist class="UserNames">
 						<?php
@@ -46,6 +59,11 @@ $activePage = "compare.php";
 						?>
 					</datalist>
 				</form>
+			</div>
+			-->
+			<div class="userNames">
+			  <label for="users"></label>
+			  <input id="users">
 			</div>
 			<div class="col-xs-3 col-sm-3 col-md-3">
 				<h1>Player2</h1>

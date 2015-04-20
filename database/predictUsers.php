@@ -1,28 +1,19 @@
-<?php 
 
-$q = $_REQUEST["q"];
+<?php
+require_once("database_connection.php");
+$conn=database();
 
-$hint = "";
-if ($q !== "") {
-	$q = strtolower($q);
-    $len=strlen($q);
-	require_once("database_connection.php");
-	$conn=database();
-								//Query the database
-	$resultSet = $conn->query("SELECT userName FROM cs_user_view");
-	if($resultSet->num_rows != 0){
-		while($rows = $resultSet->fetch_assoc()){
-			$name = $rows['userName'];
-			if (stristr($q, substr($name, 0, $len))) {
-	            if ($hint === "") {
-	                $hint = $name;
-	            } 
-	            else {
-	                $hint .= ", $name";
-	            }
-        	}
-    	}
-   }
- }
-echo $hint === "" ? "no suggestion" : $hint;
+$pdo = $conn;
+$keyword = '%'.$_POST['keyword'].'%';
+$sql = "SELECT userName, SteamID FROM cs_user_view WHERE userName LIKE (:keyword) ORDER BY userName ASC LIMIT 0, 10";
+$query = $pdo->prepare($sql);
+$query->bindParam(':keyword', $keyword, PDO::PARAM_STR);
+$query->execute();
+$list = $query->fetchAll();
+foreach ($list as $rs) {
+	// put in bold the written text
+	$username = str_replace($_POST['keyword'], '<b>'.$_POST['keyword'].'</b>', $rs['username']);
+	// add new option
+    echo '<li onclick="set_item(\''.str_replace("'", "\'", $rs['username']).'\')">'.$username.'</li>';
+}
 ?>

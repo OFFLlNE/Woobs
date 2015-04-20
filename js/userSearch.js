@@ -1,17 +1,25 @@
-
-function showHint(str){
-
-if (str.length==0) { 
-    document.getElementById("userHint").innerHTML="0";
-    return;
-} else {
-    var xmlhttp=new XMLHttpRequest();
-    xmlhttp.onreadystatechange=function() {
-        if (xmlhttp.readyState==4 && xmlhttp.status==200) {
-            document.getElementById("userHint").innerHTML=xmlhttp.responseText;
-        }
+function autocompleteUser() {
+    var min_length = 0; // min caracters to display the autocomplete
+    var keyword = $('#username_id').val();
+    if (keyword.length >= min_length) {
+        $.ajax({
+            url: '../database/ajax_refresh.php',
+            type: 'POST',
+            data: {keyword:keyword},
+            success:function(data){
+                $('#username_list_id').show();
+                $('#username_list_id').html(data);
+            }
+        });
+    } else {
+        $('#username_list_id').hide();
     }
-    xmlhttp.open("GET","/../database/predictUsers.php?q="+str,true);
-    xmlhttp.send();
-}    
+}
+
+// set_item : this function will be executed when we select an item
+function set_item(item) {
+    // change input value
+    $('#username_id').val(item);
+    // hide proposition list
+    $('#username_list_id').hide();
 }
