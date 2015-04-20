@@ -3,7 +3,7 @@
 error_reporting(E_ALL); ini_set("display_errors", 1);
 require_once("database_connection.php");
 
-$pdo = $connect();
+$pdo = connect();
 $keyword = '%'.$_POST['keyword'].'%';
 $sql = "SELECT userName, SteamID FROM cs_user_view WHERE userName LIKE (:keyword) ORDER BY userName ASC LIMIT 0, 10";
 $query = $pdo->prepare($sql);
