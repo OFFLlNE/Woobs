@@ -155,6 +155,9 @@ table {
 .input_container ul li:hover {
 	background: #eaeaea;
 }
+#username_list_id {
+	display: none;
+}
 a.profile:hover{
 	background-color: #FF9933;
 	border: 1px solid;
