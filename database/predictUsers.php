@@ -1,9 +1,8 @@
 
 <?php
 require_once("database_connection.php");
-$conn=database();
 
-$pdo = $conn;
+$pdo = $connect();
 $keyword = '%'.$_POST['keyword'].'%';
 $sql = "SELECT userName, SteamID FROM cs_user_view WHERE userName LIKE (:keyword) ORDER BY userName ASC LIMIT 0, 10";
 $query = $pdo->prepare($sql);

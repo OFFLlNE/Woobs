@@ -14,4 +14,7 @@ function database(){
 	}
 	return $conn;
 }
+function connect() {
+    return new PDO('mysql:host=csgorankings.cloudapp.net;dbname=csgoRankings', 'sysadmin', 'SammalHabe1', array(PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION, PDO::MYSQL_ATTR_INIT_COMMAND => "SET NAMES utf8"));
+}
 ?>
