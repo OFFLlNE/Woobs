@@ -30,8 +30,9 @@ function autocompleteUser() {
 
 function markSelected (index) {
     selected = autocompleteResults[index];
-    name = selected.userName;
-    id = selected.SteamID
+    var name = selected.userName;
+    var id = selected.SteamID;
+    set_item(name);
 
     $.post("../compare.php", { selectedID: id, selectedname: name });
 }
