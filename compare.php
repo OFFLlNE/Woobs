@@ -17,11 +17,11 @@ $activePage = "compare.php";
 					<form>
 						<div class="label_div">Player1: </div>
                				<div class="input_container">
-                   				<input type="text" id="username_id" onkeyup="autocompleteUser()">
+                   				<input type="text" id="username_id" onkeyup="autocompleteUser()" >
                     			<ul id="username_list_id"></ul>
                 			</div>
-
 					</form>
+
 				</div>
 			</div>
 			<div class="col-xs-2 col-sm-2 col-md-2">
@@ -39,6 +39,31 @@ $activePage = "compare.php";
 				<h1>Player2</h1>
 				<div class="profilepic">
 					<img src="img/profilepic.png" alt="Relevant textual alternative to the image"/>
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-xs-2 col-sm-2 col-md-2">
+
+				<div class="play1res">
+					<?php
+							if(isset($_POST['selectedname'])){
+								echo "<p>".$_POST['selectedname']."</p>";
+							}
+						?>
+					<?php
+					if(isset($_POST['selectedID'])){
+					echo '<div class="boxProfile">';
+					echo	'<table style="width:100%">';
+
+								include 'database/displayFunctions.php';
+								displayUserdataTable($_POST['selectedID']);
+
+
+					echo'</table>';
+					}
+					echo'</div>';
+					?>
 				</div>
 			</div>
 		</div>

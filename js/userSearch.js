@@ -1,3 +1,6 @@
+var autocompleteResults = [];
+var selected;
+
 function autocompleteUser() {
     var min_length = 0; // min caracters to display the autocomplete
     var keyword = $('#username_id').val();
@@ -6,14 +9,31 @@ function autocompleteUser() {
             url: '../database/predictUsers.php',
             type: 'POST',
             data: {keyword:keyword},
-            success:function(data){
+            success: function(data){
+
+                var data = JSON.parse(data);
+
+                autocompleteResults = data;
+
                 $('#username_list_id').show();
-                $('#username_list_id').html(data);
+                $('#username_list_id').html('');
+
+                for(var i = 0; i < data.length; i++) {
+                    $('#username_list_id').append('<li onclick="markSelected(' + i + ')">' + data[i].userName + '</li>');
+                }
             }
         });
     } else {
         $('#username_list_id').hide();
     }
+}
+
+function markSelected (index) {
+    selected = autocompleteResults[index];
+    name = selected.userName;
+    id = selected.SteamID
+
+    $.post("../compare.php", { selectedID: id, selectedname: name });
 }
 
 // set_item : this function will be executed when we select an item

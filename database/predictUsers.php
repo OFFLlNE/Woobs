@@ -1,4 +1,3 @@
-
 <?php
 error_reporting(E_ALL); ini_set("display_errors", 1);
 require_once("database_connection.php");
@@ -10,10 +9,6 @@ $query = $pdo->prepare($sql);
 $query->bindParam(':keyword', $keyword, PDO::PARAM_STR);
 $query->execute();
 $list = $query->fetchAll();
-foreach ($list as $rs) {
-	// put in bold the written text
-	$username = str_replace($_POST['keyword'], '<b>'.$_POST['keyword'].'</b>', $rs['userName']);
-	// add new option
-    echo '<li onclick="set_item(\''.str_replace("'", "\'", $rs['userName']).'\')">'.$username.'</li>';
-}
+echo json_encode($list);
+die();
 ?>
