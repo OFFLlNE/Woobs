@@ -1,6 +1,6 @@
 <?php
 	//connect to the database
-		require_once("database\database_connection.php");
+		require_once("database_connection.php");
 		$conn=database();
 		//Query the database
 		$steamID = ''.$_POST['steamID'].'';
