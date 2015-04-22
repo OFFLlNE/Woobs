@@ -33,7 +33,6 @@ function markSelected (index) {
     var name = selected.userName;
     var id = selected.SteamID;
     set_item(name);
-
     $.ajax({
             url: '../database/compareUser.php',
             type: 'POST',
@@ -41,6 +40,7 @@ function markSelected (index) {
             success: function(data){
 
                 var data = JSON.parse(data);
+                console.log(data);
 
                 $('#player1stat').html(data);
                 $('#player1stat').show();
