@@ -151,7 +151,7 @@
 				</table>
 				</div>
 				";
-			var $results = [$result];
+			$results = [$result];
 			echo json_encode($results);
 			die();
 

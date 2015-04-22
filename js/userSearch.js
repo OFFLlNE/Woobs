@@ -32,6 +32,7 @@ function markSelected (index) {
     selected = autocompleteResults[index];
     var name = selected.userName;
     var steamID = selected.steamID;
+    console.log(steamID);
     set_item(name);
     $.ajax({
             url: '../database/compareUser.php',
