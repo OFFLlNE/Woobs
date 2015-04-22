@@ -158,7 +158,8 @@
 			}
 		}
 		else{
-			echo"ERROR";
-		}
+			$result = "Error :(";
+			$results = [$result];
+			echo json_encode($results);
 		$conn->close();
 ?>
