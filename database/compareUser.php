@@ -3,9 +3,10 @@
 		require_once("database_connection.php");
 		$conn=database();
 		//Query the database
-		$steamID = ''.$_POST['steamID'].'';
-		$resultSet = $conn->query("SELECT * FROM csgoRankings.Statistics WHERE steamID =".$steamID."");
+		$steamID = '%'.$_POST['steamID'].'%';
 		$result = "";
+		$resultSet = $conn->query("SELECT * FROM csgoRankings.Statistics WHERE steamID =".$steamID."");
+
 		if($resultSet->num_rows != 0){
 			while($rows = $resultSet->fetch_assoc()){
 				$total_time_played = intval($rows['total_time_played'])/60;
