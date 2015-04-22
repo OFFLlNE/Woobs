@@ -45,25 +45,8 @@ $activePage = "compare.php";
 		<div class="row">
 			<div class="col-xs-2 col-sm-2 col-md-2">
 
-				<div class="play1res">
-					<?php
-							if(isset($_POST['selectedname'])){
-								echo "<p>".$_POST['selectedname']."</p>";
-							}
-						?>
-					<?php
-					if(isset($_POST['selectedID'])){
-					echo '<div class="boxProfile">';
-					echo	'<table style="width:100%">';
+				<div class="player1stat">
 
-								include 'database/displayFunctions.php';
-								displayUserdataTable($_POST['selectedID']);
-
-
-					echo'</table>';
-					}
-					echo'</div>';
-					?>
 				</div>
 			</div>
 		</div>

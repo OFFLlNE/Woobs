@@ -34,7 +34,20 @@ function markSelected (index) {
     var id = selected.SteamID;
     set_item(name);
 
-    $.post("../compare.php", { selectedID: id, selectedname: name });
+    $.ajax({
+            url: '../database/compareUser.php',
+            type: 'POST',
+            data: {steamID:id},
+            success: function(data){
+
+                var data = JSON.parse(data);
+
+                $('#player1stat').html(data);
+                $('#player1stat').show();
+
+            }
+        });
+
 }
 
 // set_item : this function will be executed when we select an item
