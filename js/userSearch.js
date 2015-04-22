@@ -41,7 +41,7 @@ function markSelected (index) {
             success: function(data){
 
                 var data = JSON.parse(data);
-
+                console.log(data);
                 $('#player1stat').html(data[0]);
                 $('#player1stat').show();
 
