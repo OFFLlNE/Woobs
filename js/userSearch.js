@@ -31,18 +31,17 @@ function autocompleteUser() {
 function markSelected (index) {
     selected = autocompleteResults[index];
     var name = selected.userName;
-    var id = selected.SteamID;
+    var steamID = selected.SteamID;
     set_item(name);
     $.ajax({
             url: '../database/compareUser.php',
             type: 'POST',
-            data: {steamID:id},
+            data: {steamID:steamID},
             success: function(data){
 
                 var data = JSON.parse(data);
-                console.log(data);
 
-                $('#player1stat').html(data);
+                $('#player1stat').html(data[0]);
                 $('#player1stat').show();
 
             }

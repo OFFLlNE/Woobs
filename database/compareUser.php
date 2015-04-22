@@ -151,13 +151,14 @@
 				</table>
 				</div>
 				";
+			var $results = [$result];
+			echo json_encode($results);
+			die();
 
 			}
 		}
 		else{
 			echo"ERROR";
 		}
-		echo json_encode($result);
-		die();
 		$conn->close();
 ?>
