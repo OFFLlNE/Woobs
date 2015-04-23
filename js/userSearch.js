@@ -43,7 +43,6 @@ function markSelected (index) {
                 var data = JSON.parse(data);
                 console.log(data[0]);
                 $('#player1stat').html(data[0]);
-                $('#player1stat').show();
 
             }
         });
