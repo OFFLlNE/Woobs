@@ -45,7 +45,7 @@ $activePage = "compare.php";
 		<div class="row">
 			<div class="col-xs-2 col-sm-2 col-md-2">
 
-				<div class="player1stat">
+				<div id="player1stat">
 
 				</div>
 			</div>
