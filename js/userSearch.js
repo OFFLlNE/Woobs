@@ -34,7 +34,7 @@ function markSelected (index) {
     var steamID = selected.steamID;
     console.log(steamID);
     set_item(name);
-    $('#label_div1').html(data[0]);
+    $('#label_div1').html(name);
     $.ajax({
             url: '../database/compareUser.php',
             type: 'POST',
