@@ -7,7 +7,7 @@ $activePage = "compare.php";
 	<div class="container-fluid">
 		<div class="row">
 			<div class="col-xs-3 col-sm-3 col-md-3">
-			<div id="label_div1">Player1: </div>
+			<div id="label_div1"></div>
 
 				<div class="profilepic">
 					<img src="img/profilepic.png" alt="Relevant textual alternative to the image"/>
@@ -38,7 +38,7 @@ $activePage = "compare.php";
 				</div>
 			</div>
 			<div class="col-xs-3 col-sm-3 col-md-3">
-				<div id="label_div2">Player2: </div>
+				<div id="label_div2"></div>
 
 				<div class="profilepic">
 					<img src="img/profilepic.png" alt="Relevant textual alternative to the image"/>
