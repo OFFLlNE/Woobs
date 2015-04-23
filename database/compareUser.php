@@ -3,7 +3,14 @@
 		require_once("database_connection.php");
 		$conn=database();
 		//Query the database
-		$steamID = '%'.$_POST['steamID'].'%';
+		$steamID = '';
+		$steamID = $_POST['steamID'];
+		if($steamID === ""){
+			$result = "ErrorID :(";
+			$results = [$result];
+			echo json_encode($results);
+		}
+
 		$result = "";
 		$resultSet = $conn->query("SELECT * FROM csgoRankings.Statistics WHERE steamID =".$steamID."");
 
@@ -153,7 +160,6 @@
 				";
 			$results = [$result];
 			echo json_encode($results);
-			die();
 
 			}
 		}
@@ -161,5 +167,6 @@
 			$result = "Error :(";
 			$results = [$result];
 			echo json_encode($results);
+		}
 		$conn->close();
 ?>
