@@ -19,7 +19,7 @@ function autocompleteUser2() {
                 $('#username_list_id2').html('');
 
                 for(var i = 0; i < data.length; i++) {
-                    $('#username_list_id2').append('<li onclick="markSelected(' + i + ')">' + data[i].userName + '</li>');
+                    $('#username_list_id2').append('<li onclick="markSelected2(' + i + ')">' + data[i].userName + '</li>');
                 }
             }
         });
@@ -28,7 +28,7 @@ function autocompleteUser2() {
     }
 }
 
-function markSelected (index) {
+function markSelected2 (index) {
     selected = autocompleteResults[index];
     var name = selected.userName;
     var steamID = selected.steamID;

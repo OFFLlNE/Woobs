@@ -28,7 +28,7 @@ $activePage = "compare.php";
 				<div class ="predict">
 					<form>
 						<div class="label_div">Player2: </div>
-               				<div class="input_container2">
+               				<div class="input_container">
                    				<input type="text" id="username_id2" onkeyup="autocompleteUser2()" >
                     			<ul id="username_list_id2"></ul>
                 			</div>
