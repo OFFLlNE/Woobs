@@ -15,7 +15,7 @@ $activePage = "compare.php";
 			<div class="col-xs-3 col-sm-3 col-md-3">
 				<div class ="predict">
 					<form>
-						<div class="label_div">Player1: </div>
+						<div id="label_div1">Player1: </div>
                				<div class="input_container">
                    				<input type="text" id="username_id" onkeyup="autocompleteUser()" >
                     			<ul id="username_list_id"></ul>
@@ -27,7 +27,7 @@ $activePage = "compare.php";
 			<div class="col-xs-3 col-sm-3 col-md-3">
 				<div class ="predict">
 					<form>
-						<div class="label_div">Player2: </div>
+						<div id="label_div2">Player2: </div>
                				<div class="input_container">
                    				<input type="text" id="username_id2" onkeyup="autocompleteUser2()" >
                     			<ul id="username_list_id2"></ul>
