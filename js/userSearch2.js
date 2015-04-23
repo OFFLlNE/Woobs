@@ -33,7 +33,7 @@ function markSelected2 (index) {
     var name = selected.userName;
     var steamID = selected.steamID;
     console.log(steamID);
-    set_item(name);
+    set_item2(name);
     $.ajax({
             url: '../database/compareUser.php',
             type: 'POST',
@@ -50,7 +50,7 @@ function markSelected2 (index) {
 }
 
 // set_item : this function will be executed when we select an item
-function set_item(item) {
+function set_item2(item) {
     // change input value
     $('#username_id2').val(item);
     // hide proposition list
