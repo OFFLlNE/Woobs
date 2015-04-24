@@ -276,6 +276,131 @@ function totalKills(){
 					}
 		    		$conn->close();
 }
+function totalHeadShotKills(){
+
+					//connect to the database
+					require_once("database\database_connection.php");
+					$conn=database();
+					//Query the database
+					$resultSet = $conn->query("SELECT * FROM total_kills_headshot_view");
+
+					if($resultSet->num_rows != 0){
+						while($rows = $resultSet->fetch_assoc()){
+							$username = $rows['UserName'];
+							$total_kills_headshot = $rows['total_kills_headshot'];
+
+							echo "<tr>
+							<td>$username</td>
+							<td>$total_kills_headshot</td>
+							</tr>";
+
+						}
+					}
+					else{
+						echo"ERROR";
+					}
+		    		$conn->close();
+}
+function total_kills_awp(){
+
+					//connect to the database
+					require_once("database\database_connection.php");
+					$conn=database();
+					//Query the database
+					$resultSet = $conn->query("SELECT * FROM total_kills_awp_view");
+
+					if($resultSet->num_rows != 0){
+						while($rows = $resultSet->fetch_assoc()){
+							$username = $rows['UserName'];
+							$total_kills_awp = $rows['total_kills_awp'];
+
+							echo "<tr>
+							<td>$username</td>
+							<td>$total_kills_awp</td>
+							</tr>";
+
+						}
+					}
+					else{
+						echo"ERROR";
+					}
+		    		$conn->close();
+}
+function pistol_acc(){
+
+					//connect to the database
+					require_once("database\database_connection.php");
+					$conn=database();
+					//Query the database
+					$resultSet = $conn->query("SELECT * FROM pistolers_acc_view");
+
+					if($resultSet->num_rows != 0){
+						while($rows = $resultSet->fetch_assoc()){
+							$username = $rows['UserName'];
+							$pistolers_acc = $rows['pistolers_acc'];
+
+							echo "<tr>
+							<td>$username</td>
+							<td>$pistolers_acc</td>
+							</tr>";
+
+						}
+					}
+					else{
+						echo"ERROR";
+					}
+		    		$conn->close();
+}
+function rifle_acc(){
+
+					//connect to the database
+					require_once("database\database_connection.php");
+					$conn=database();
+					//Query the database
+					$resultSet = $conn->query("SELECT * FROM rifflers_acc_view");
+
+					if($resultSet->num_rows != 0){
+						while($rows = $resultSet->fetch_assoc()){
+							$username = $rows['UserName'];
+							$rifflers_acc = $rows['rifflers_acc'];
+
+							echo "<tr>
+							<td>$username</td>
+							<td>$rifflers_acc</td>
+							</tr>";
+
+						}
+					}
+					else{
+						echo"ERROR";
+					}
+		    		$conn->close();
+}
+function sniper_acc(){
+
+					//connect to the database
+					require_once("database\database_connection.php");
+					$conn=database();
+					//Query the database
+					$resultSet = $conn->query("SELECT * FROM snipers_acc_view");
+
+					if($resultSet->num_rows != 0){
+						while($rows = $resultSet->fetch_assoc()){
+							$username = $rows['UserName'];
+							$snipers_acc = $rows['snipers_acc'];
+
+							echo "<tr>
+							<td>$username</td>
+							<td>$snipers_acc</td>
+							</tr>";
+
+						}
+					}
+					else{
+						echo"ERROR";
+					}
+		    		$conn->close();
+}
 function countUsersCS(){
 		//connect to the database
 					require_once("database\database_connection.php");

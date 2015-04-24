@@ -8,9 +8,9 @@ include ('database/displayFunctions.php');
 	<div class="container-fluid">
 		<div class="row">
 			<ul id="tabs">
-				<li><a href="#content1">Tab1</a></li>
-				<li><a href="#content2">Tab2</a></li>
-				<li><a href="#content3">Tab3</a></li>
+				<li><a href="#content1">Overall</a></li>
+				<li><a href="#content2">Best Killers</a></li>
+				<li><a href="#content3">Accuracy</a></li>
 			</ul>
 		</div>
 		<div class="row">
