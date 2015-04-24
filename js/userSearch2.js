@@ -47,6 +47,19 @@ function markSelected2 (index) {
 
             }
         });
+    $.ajax({
+            url: '../database/getPicture.php',
+            type: 'POST',
+            data: {steamID:steamID},
+            success: function(data){
+
+                var data = JSON.parse(data);
+                console.log(data[0]);
+                $('#profile2').html(data[0]);
+
+            }
+        });
+
 
 }
 
