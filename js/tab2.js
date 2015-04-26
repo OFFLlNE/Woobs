@@ -7,8 +7,7 @@ $(document).ready(function() {
                 show1();
             } else if (e.state.view == "cs2") {
                 show2();
-            } else if (e.state.view == "cs3") {
-                show3();
+            } 
             }
         });
     }
@@ -16,24 +15,16 @@ $(document).ready(function() {
     function hideAll() {
         $("#cs1").hide();
         $("#cs2").hide();
-        $("#cs3").hide();
     }
 
     function show1() {
         $("#cs1").show();
         $("#cs2").hide();
-        $("#cs3").hide();
     }
 
     function show2() {
         $("#cs1").hide();
         $("#cs2").show();
-        $("#cs3").hide();
-    }
-    function show3() {
-        $("#cs1").hide();
-        $("#cs2").hide();
-        $("#cs3").show();
     }
 
 
@@ -47,8 +38,7 @@ $(document).ready(function() {
            show1();
         } else if (a == "content2") {
             show2();
-        } else if (a == "content3") {
-            show3();
+        } 
         } else {
             hideAll();
         }
@@ -66,11 +56,5 @@ $(document).ready(function() {
         addingListener();
         return false;
     }); 
-    $("#C3").click(function(){
-        show3();
-        window.history.pushState({'view': 'cs3'}, "content3", "/statistics.php#content3");
-        addingListener();
-        return false;
-    });
    
 });

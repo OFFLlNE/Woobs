@@ -8,37 +8,51 @@ include ('database/displayFunctions.php');
 	<div class="container-fluid">
 		<div class="row">
 			<ul id="tabs">
-				<a id="C1" href="#content1">Overall</a>
-				<a id="C2" href="#content2">Best Killers</a>
+				<li><a href="#content1">Overall</a></li>
+				<li><a href="#content2">Best Killers</a></li>
+				<li><a href="#content3">Accuracy</a></li>
 			</ul>
 		</div>
-		<div id="cs1" style="display: none;">
-                       
-			<table class="cs1" id ="t01">
+		<div class="row">
+			<div class = "content_wrapper">
+				<div id = "content">
+					<div class="col-xs-12 col-sm-12 col-md-12">
+				<h1>Top 10 Money Wellspent</h1>
+				<div class="boxProfile">
+					<table style="width:100%">
+					<?php
+						MoneyWellSpent();
+					?>
+					</table>
+				</div>
 			<h1>Top 10 K/D Ratio</h1>
-				<div>
+				<div class="boxProfile">
 					<table style="width:100%">
 					<?php
 						KDRatio();
 					?>
 					</table>
 			</div>
-			</table>
-				</div>
-		<div id="cs2" style="display: none;">
-			<table class ="cs2" id="t02">
-			<h1>Top 10 Total Kills</h1>
-				<div>
+			<h1>Top 10 Nolifers</h1>
+				<div class="boxProfile">
 					<table style="width:100%">
 					<?php
-						totalKills();
+						nolifers();
 					?>
 					</table>
 			</div>
-				</table>
+			<h1>Top 10 Headhunters</h1>
+				<div class="boxProfile">
+					<table style="width:100%">
+					<?php
+						headhunters();
+					?>
+					</table>
+			</div>
+</div>
+				</div>
+			</div>
 		</div>
-
-		</div>
-
 	</div>
+</div>
 <?php include('footer.php');?>
