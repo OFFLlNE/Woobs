@@ -15,7 +15,7 @@ include ('database/displayFunctions.php');
 				    		include ('steamauth/userInfo.php');
 					    	$avatar = $steamprofile['avatar'];
 
-					    	echo '<img src=' . $avatar . ' class="img-circle"/>';
+					    	echo '<img src="' . $avatar . '" class="img-circle" alt="mau"/>';
 				    	}
 				    	else{
 							$_SESSION['url'] = "http://csgorankings.azurewebsites.net/profile.php";
