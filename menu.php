@@ -64,7 +64,7 @@
 			    			include ('steamauth/userInfo.php');
 				    		$avatar = $steamprofile['avatar'];
 
-				    		echo '<img src=' . $avatar . 'alt="Avatar"/>';
+				    		echo '<img src="' . $avatar . '" alt="Avatar"/>';
 			    	}
 			    	else{
 			    		echo '<img src="img/bck.png" alt="Default"/>';
