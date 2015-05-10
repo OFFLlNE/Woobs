@@ -1,7 +1,7 @@
 <?php
 		include_once('uuenda.php');
 
-		$sql = "SELECT * FROM csgoRankings.User";
+		$sql = "SELECT * FROM User";
 		$res = mysql_query($sql);
 		$result = array();
 
