@@ -1,6 +1,15 @@
 var autocompleteResults = [];
 var selected;
 
+$(function pageload(hash){
+    $("#tabs a").click(function(){
+                    var page = this.hash.substring(1);
+                        $.get(page+".php", function(gotHtml){
+                        $("#content").html(gotHtml);
+                    });
+                });
+            });
+
 function autocompleteUser2() {
     var min_length = 0; // min caracters to display the autocomplete
     var keyword = $('#username_id2').val();
