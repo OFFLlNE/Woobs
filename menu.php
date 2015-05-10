@@ -53,7 +53,7 @@
 			        	<ul class="col-xs-6 col-sm-6 col-md-6">
 			    			<li><a class="youtube" href="https://www.youtube.com">Youtube</a></li>
 		          			<li><a class="reddit" href="https://www.reddit.com">Reddit</a></li>
-		          			<li><a class="twitch" href="https://www.twitch.tv">Twitch</a></li>
+		          			<li><a class="twitch" href="http://www.twitch.tv/">Twitch</a></li>
 			    		</ul>
 			        </div>
 			    </div>
