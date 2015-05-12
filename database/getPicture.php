@@ -18,7 +18,7 @@
 			while($rows = $resultSet->fetch_assoc()){
 				$avatar = $rows['avatar_full'];
 				$result = "
-				<img src='{$avatar}'alt='Avatar'/>
+				<img class='img-responsive' src='{$avatar}'alt='Avatar'/>
 				";
 			$results = [$result];
 			echo json_encode($results);
