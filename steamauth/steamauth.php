@@ -3,7 +3,7 @@ ob_start();
 require ('openid.php');
 
 function logoutbutton() {
-    echo "<form action=\"steamauth/logout.php\" method=\"post\"><input value=\"Logout\" type=\"image\" src=\"http://csgorankings.azurewebsites.net/img/logout.png\" alt=\"signOut\" /></form>"; //logout button
+    echo "<form action=\"steamauth/logout.php\" method=\"post\"><input value=\"Logout\" type=\"image\" src=\"http://csgorankings.azurewebsites.net/img/logout.png\" alt=\"signOut\" ></form>"; //logout button
 }
 
 function steamlogin()

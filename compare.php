@@ -11,7 +11,7 @@ $activePage = "compare.php";
 
 				<div class="profilepic">
 					<div id="profile1">
-						<img src="img/profilepic.png" alt="Relevant textual alternative to the image"/>
+						<img class="img-responsive" src="img/profilepic.png" alt="Relevant textual alternative to the image"/>
 					</div>
 				</div>
 			</div>
@@ -42,9 +42,9 @@ $activePage = "compare.php";
 			<div class="col-xs-3 col-sm-3 col-md-3">
 				<div id="label_div2"></div>
 
-				<div class="profilepic">
+				<div class="profilepic ">
 					<div id="profile2">
-						<img src="img/profilepic.png" alt="Relevant textual alternative to the image"/>
+						<img class="img-responsive" src="img/profilepic.png" alt="Relevant textual alternative to the image"/>
 					</div>
 				</div>
 			</div>
