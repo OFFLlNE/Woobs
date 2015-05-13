@@ -1,12 +1,13 @@
 <?php
-		include_once('uuenda.php');
+		include_once('update.php');
 
-		$sql = "SELECT * FROM User";
-		$res = mysql_query($sql);
+		$sql = "SELECT * FROM csgoRankings.User";
+		$res = $conn -> query("SELECT * FROM csgoRankings.User");
 		$result = array();
 
-		while( $row = mysql_fetch_array($res))
-			array_push($result, array ('SteamID' => $row[0]
+		while( $row = mysqli_fetch_array($res))
+			array_push($result, array ('SteamID' => $row[0],
+									   'UserName' => $row[1]
 										));
 		echo json_encode(array("result" => $result));
 ?>

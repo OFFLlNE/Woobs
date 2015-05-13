@@ -42,6 +42,7 @@ include ('database/displayFunctions.php');
 		</table>
 
 	</div>
+	<ol></ol>
 </div>
 <div class="top">
 </div>
