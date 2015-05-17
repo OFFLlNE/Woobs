@@ -7,7 +7,7 @@ $activePage = "compare.php";
 	<div class="container-fluid">
 		<div class="row">
 			<div class="col-xs-3 col-sm-3 col-md-3">
-			<div id="label_div1"></div>
+				<div id="label_div1"></div>
 
 				<div class="profilepic">
 					<div id="profile1">
