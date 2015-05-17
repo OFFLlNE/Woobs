@@ -48,7 +48,7 @@ $activePage = "compare.php";
 					</div>
 				</div>
 			</div>
-
+		</div>
 		<div class="row">
 			<div class="col-xs-6 col-sm-6 col-md-6">
 
@@ -65,4 +65,5 @@ $activePage = "compare.php";
 		</div>
 	</div>
 </div>
+
 <?php include 'footer.php';?>
