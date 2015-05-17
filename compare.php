@@ -11,14 +11,14 @@ $activePage = "compare.php";
 
 				<div class="profilepic">
 					<div id="profile1">
-						<img class="img-responsive" src="img/profilepic.png" alt="Relevant textual alternative to the image"/>
+						<img class="img-responsive pull-right" src="img/profilepic.png" alt="Relevant textual alternative to the image"/>
 					</div>
 				</div>
 			</div>
 			<div class="col-xs-3 col-sm-3 col-md-3">
 				<div class ="predict">
-					<form>
-							<h1 >Player1</h1>
+					<form class="pull-left">
+							<h1 class="pull-right">Player1</h1>
                				<div class="input_container">
                    				<input type="text" id="username_id" onkeyup="autocompleteUser()" >
                     			<ul id="username_list_id"></ul>
@@ -29,8 +29,8 @@ $activePage = "compare.php";
 			</div>
 			<div class="col-xs-3 col-sm-3 col-md-3">
 				<div class ="predict">
-					<form>
-							<h1 >Player2</h1>
+					<form class="pull-right">
+							<h1 class="pull-left">Player2</h1>
                				<div class="input_container">
                    				<input type="text" id="username_id2" onkeyup="autocompleteUser2()" >
                     			<ul id="username_list_id2"></ul>
@@ -42,9 +42,9 @@ $activePage = "compare.php";
 			<div class="col-xs-3 col-sm-3 col-md-3">
 				<div id="label_div2"></div>
 
-				<div class="profilepic ">
+				<div class="profilepic">
 					<div id="profile2">
-						<img class="img-responsive" src="img/profilepic.png" alt="Relevant textual alternative to the image"/>
+						<img class="img-responsive pull-left" src="img/profilepic.png" alt="Relevant textual alternative to the image"/>
 					</div>
 				</div>
 			</div>
