@@ -27,15 +27,13 @@
 <div class="main">
 	<div class="container-fluid">
 			<div class="row">
-				<div class="col-xs-2 col-sm-2 col-md-2">
-					<div class="logo">
-						<div class="pull-right">
-							<button onclick="location.href = 'index.php';"><img src= "img/logoSmallSmall.jpg" alt="Logo"></button>
-						</div>
+				<div class="col-xs-4 col-sm-2 col-md-2">
+					<div class="logo pull-right">
+						<button onclick="location.href = 'index.php';"><img src= "img/logoSmallSmall.jpg" alt="Logo"></button>
 					</div>
 
 	           	</div>
-				<div class="col-xs-6 col-sm-6 col-md-6">
+				<div class="col-xs-4 col-sm-6 col-md-6">
 					<div class="menu">
 					<?php $activePage = ""; ?>
 						<ul>
@@ -50,7 +48,7 @@
 			          		<li><a <?php if ($activePage =="support.php") {?> class="active" <?php } ?>
 			          		 class="support" href="support.php">Support</a></li>
 			        	</ul>
-			        	<ul class="col-xs-6 col-sm-6 col-md-6">
+			        	<ul>
 			    			<li><a class="youtube" href="https://www.youtube.com">Youtube</a></li>
 		          			<li><a class="reddit" href="https://www.reddit.com">Reddit</a></li>
 		          			<li><a class="twitch" href="http://www.twitch.tv/">Twitch</a></li>
