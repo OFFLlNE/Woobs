@@ -50,7 +50,7 @@ include ('database/displayFunctions.php');
 							</div>
 						</div>
 						<div id="cs2" style="display: none;">
-							<h1 id="heading">Top 10 Total Kills Headshot</h1>
+							<h1>Top 10 Total Kills Headshot</h1>
 							<div class="boxProfile">
 								<table style="width:100%">
 								<?php
@@ -76,7 +76,7 @@ include ('database/displayFunctions.php');
 							</div>
 						</div>
 						<div id="cs3" style="display: none;">
-							<h1 id="heading">Top 10 Pistol Accuracy</h1>
+							<h1>Top 10 Pistol Accuracy</h1>
 							<div class="boxProfile">
 								<table style="width:100%">
 								<?php
