@@ -1,7 +1,9 @@
 <?php include('/menu.php');
 ?>
 
-<class="container-fluid">
+<div class="middle">
+	<h1>Statistics</h1>
+		<div class="container-fluid">
 			<div class="row">			
 				<ul id="tabs">
 					<a id="CSS1">Overall</a>
@@ -131,4 +133,5 @@
 		</div>
 
 	</div>
+</div>
 <?php include('footer.php');?>
