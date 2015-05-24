@@ -10,7 +10,6 @@ $(document).ready(function() {
             } else if (e.state.view == "cs3") {
                 show3();
             }
-            }
         });
     
 
