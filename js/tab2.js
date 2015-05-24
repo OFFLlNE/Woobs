@@ -53,25 +53,25 @@ $(document).ready(function() {
             show3();
         } 
         } else {
-            show3();
+            hideAll();
         }
     }
 
     $("#CS1").click(function(){
         show1();
-        window.history.pushState({'view': 'cs1'}, "Overall", "/statistics.php#content1");
+        window.history.pushState({'view': 'cs1'}, "Overall", "/statistics.php#Overall");
         addingListener();
         return false;
     }); 
     $("#CS2").click(function(){
         show2();
-        window.history.pushState({'view': 'cs2'}, "Best killers", "/statistics.php#content2");
+        window.history.pushState({'view': 'cs2'}, "Best killers", "/statistics.php#Best killers");
         addingListener();
         return false;
     }); 
     $("#CS3").click(function(){
         show3();
-        window.history.pushState({'view': 'cs3'}, "Accuracy", "/statistics.php#content3");
+        window.history.pushState({'view': 'cs3'}, "Accuracy", "/statistics.php#Accuracy");
         addingListener();
         return false;
     }); 
