@@ -16,7 +16,7 @@ include ('database/displayFunctions.php');
                        
 			<table class="cs1" id ="t01">
 				<h1 id="heading">Top 10 Money Wellspent</h1>
-				<div id = "cs1" class="boxProfile" style="display: none;">
+				<div class="boxProfile">
 					<table style="width:100%">
 					<?php
 						MoneyWellSpent();
@@ -51,54 +51,60 @@ include ('database/displayFunctions.php');
 		</div>
 		<div id="cs2" style="display: none;">
 			<table class ="cs2" id="t02">
-					<tr>
-							<th>Nr</th>
-							<th>Nimi</th>
-							<th>Piirkond</th>
-							<th>Erakond</th>
-							<th>Hääli</th>
-							</tr>
-							<tr>
-							<td>1</td>
-							<td>Karl</td>
-							<td>Tartu</td>
-							<td>Java</td>
-							<td>007</td>
-							</tr>
-							<tr>
-							<td>2</td>
-							<td>Hilx</td>
-							<td>Tartu</td>
-							<td>Java Naiskond</td>
-							<td>2</td>
-							</tr>
+					<h1 id="heading">Top 10 Total Kills Headshot</h1>
+				<div class="boxProfile">
+					<table style="width:100%">
+					<?php
+						totalHeadShotKills();
+					?>
+					</table>
+				</div>
+			<h1>Top 10 Total Kills</h1>
+				<div class="boxProfile">
+					<table style="width:100%">
+					<?php
+						totalKills();
+					?>
+					</table>
+			</div>
+			<h1>Top 10 AWP Kills</h1>
+				<div class="boxProfile">
+					<table style="width:100%">
+					<?php
+						total_kills_awp();
+					?>
+					</table>
+			</div>
 							
 						
 				</table>
 		</div>
 		<div id="cs3" style="display: none;">
 			<table class ="cs3" id="t02">
-					<tr>
-							<th>Nr</th>
-							<th>Nimi</th>
-							<th>Piirkond</th>
-							<th>Erakond</th>
-							<th>Hääli</th>
-							</tr>
-							<tr>
-							<td>1</td>
-							<td>Karl</td>
-							<td>Tartu</td>
-							<td>Java</td>
-							<td>007</td>
-							</tr>
-							<tr>
-							<td>2</td>
-							<td>Hilx</td>
-							<td>Tartu</td>
-							<td>Java Naiskond</td>
-							<td>2</td>
-							</tr>
+					<h1 id="heading">Top 10 Pistol Accuracy</h1>
+				<div class="boxProfile">
+					<table style="width:100%">
+					<?php
+						pistol_acc();
+					?>
+					</table>
+				</div>
+			<h1>Top 10 Rifle Accuracy</h1>
+				<div class="boxProfile">
+					<table style="width:100%">
+					<?php
+						rifle_acc();
+					?>
+					</table>
+			</div>
+			<h1>Top 10 Sniper Accuracy</h1>
+				<div class="boxProfile">
+					<table style="width:100%">
+					<?php
+						sniper_acc();
+					?>
+					</table>
+			</div>
 							
 						
 				</table>
