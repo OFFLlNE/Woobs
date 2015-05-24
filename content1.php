@@ -3,7 +3,7 @@ include ('database/displayFunctions.php');
 ?>
 <div class="col-xs-12 col-sm-12 col-md-12">
 				<h1 id="heading">Top 10 Money Wellspent</h1>
-				<div id = "cs1" class="boxProfile" style="display: none;">
+				<div class="boxProfile">
 					<table style="width:100%">
 					<?php
 						MoneyWellSpent();
