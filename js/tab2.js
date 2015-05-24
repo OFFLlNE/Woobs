@@ -53,7 +53,7 @@ $(document).ready(function() {
             show3();
         } 
         } else {
-            hideAll();
+            show3();
         }
     }
 
