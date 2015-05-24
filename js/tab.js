@@ -11,6 +11,10 @@ $(document).ready(function(){
 
 $.fragmentChange(true);
   $(document).bind("fragmentChange.page", function() {
-    alert("yoyoy");
-    });
+    $.getScript($.queryString(document.location.href, { "page" : $.fragment().page }));
   });
+  
+  if ($.fragment().page) {
+    $(document).trigger("fragmentChange.page");
+  }
+});
