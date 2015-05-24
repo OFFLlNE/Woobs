@@ -6,9 +6,9 @@
 		<div class="container-fluid">
 			<div class="row">			
 				<ul id="tabs">
-					<a id="CSS1">Overall</a>
-					<a id="CSS2">Bestkillers</a>
-					<a id="CSS3">Accuracy</a>
+					<li><a id="CSS1">Overall</a></li>
+					<li><a id="CSS2">Bestkillers</a></li>
+					<li><a id="CSS3">Accuracy</a></li>
 				</ul>
 			</ol>
 			<div id="cs1" style="display: none;">
