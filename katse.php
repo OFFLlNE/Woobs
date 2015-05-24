@@ -14,7 +14,7 @@ include ('database/displayFunctions.php');
 			</ol>
 			<div id="cs1" style="display: none;">
                        
-			<table class="cs1" id ="t01">
+			<table class="cs1">
 					<tr>
 							<td>HotPapa</td>
 							<td>2.51</td>
@@ -52,7 +52,7 @@ include ('database/displayFunctions.php');
 			</table>
 		</div>
 		<div id="cs2" style="display: none;">
-			<table class ="cs2" id="t02">
+			<table class ="cs2">
 						<tr>
 							<td>HotPapa</td>
 							<td>52168</td>
@@ -92,7 +92,7 @@ include ('database/displayFunctions.php');
 				</table>
 		</div>
 		<div id="cs3" style="display: none;">
-			<table class ="cs3" id="t03">
+			<table class ="cs3">
 						<tr>
 							<td>HotPapa</td>
 							<td>35.93</td>
