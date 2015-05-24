@@ -19,6 +19,9 @@
                        
 			<table class="cs1" style="width:100%">
 					<tr>
+							<th>Username</th>
+							<th>Money Well Spent</th>
+							</tr><tr>
 							<td>HotPapa</td>
 							<td>2.51</td>
 							</tr><tr>
@@ -57,6 +60,9 @@
 		<div id="cs2" style="display: none;">
 			<table class ="cs2" style="width:100%">
 						<tr>
+							<th>Username</th>
+							<th>Overall kills</th>
+							</tr><tr>
 							<td>HotPapa</td>
 							<td>52168</td>
 							</tr><tr>
@@ -97,9 +103,9 @@
 		<div id="cs3" style="display: none;">
 			<table class ="cs3" style="width:100%">
 						<tr>
-							<th>Erakond</th>
-							<th>Esimees</th>
-
+							<th>Username</th>
+							<th>Accuracy percentage</th>
+							</tr><tr>
 							<td>HotPapa</td>
 							<td>35.93</td>
 							</tr><tr>
