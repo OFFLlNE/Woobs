@@ -29,7 +29,7 @@
 			<div class="row">
 				<div class="hidden-xs col-sm-2 col-md-2">
 					<div class="logo pull-right">
-						<button onclick="location.href = 'index.php';"><img src= "img/logoSmallSmall.jpg" alt="Logo"></button>
+						<a href="index.php"><img src= "img/logoSmallSmall.jpg" alt="Logo"></a>
 					</div>
 
 	           	</div>

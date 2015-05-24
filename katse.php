@@ -17,7 +17,7 @@
 					<div class="col-xs-12 col-sm-12 col-md-12">
 			<div id="cs1" style="display: none;">
                        
-			<table class="cs1">
+			<table class="cs1" style="width:100%">
 					<tr>
 							<td>HotPapa</td>
 							<td>2.51</td>
@@ -55,7 +55,7 @@
 			</table>
 		</div>
 		<div id="cs2" style="display: none;">
-			<table class ="cs2">
+			<table class ="cs2" style="width:100%">
 						<tr>
 							<td>HotPapa</td>
 							<td>52168</td>
@@ -95,7 +95,7 @@
 				</table>
 		</div>
 		<div id="cs3" style="display: none;">
-			<table class ="cs3">
+			<table class ="cs3" style="width:100%">
 						<tr>
 							<td>HotPapa</td>
 							<td>35.93</td>
