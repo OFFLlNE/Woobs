@@ -1,21 +1,21 @@
+$(function pageload(hash){
+	$("#tabs a").click(function(){
+					var page = this.hash.substring(1);
+    					$.get(page+".php", function(gotHtml){
+						$("#content").html(gotHtml);
+					});
+				});
+			});
 
 $(document).ready(function(){
+    // Initialize history plugin.
+    $.history.init(pageload);
 
-    $("a").live("click",function(){
-        history.pushState(null,"", this.href);
+    $("a").on("click",function(){
         if ($(this).attr("href").charAt(0) == '#'){
             var hash = $(this).attr("href");
             hash = hash.replace(/^.*#/, '');
+            $.history.load(hash);
         }
     })
-});
-
-$.fragmentChange(true);
-  $(document).bind("fragmentChange.page", function() {
-    $.getScript($.queryString(document.location.href, { "page" : $.fragment().page }));
-  });
-  
-  if ($.fragment().page) {
-    $(document).trigger("fragmentChange.page");
-  }
 });
