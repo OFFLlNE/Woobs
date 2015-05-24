@@ -36,6 +36,15 @@ include ('database/displayFunctions.php');
 							?>	
 			</table>
 
+			<table style="width:100%">
+							<th>Username</th>
+							<th>Best headhunters</th>
+							</tr><tr>
+							<?php
+								headhunters();
+							?>
+			</table>
+
 		</div>
 		<div id="cs2" style="display: none;">
 			<table class ="cs2" style="width:100%">
@@ -45,9 +54,9 @@ include ('database/displayFunctions.php');
 							<?php
 								totalKills();
 							?>
-				</table>
+			</table>
 
-				<table style="width:100%">
+			<table style="width:100%">
 							<th>Username</th>
 							<th>Headshot kills</th>
 							</tr><tr>
@@ -55,11 +64,20 @@ include ('database/displayFunctions.php');
 								totalHeadShotKills();
 							?>	
 			</table>
+
+			<table style="width:100%">
+							<th>Username</th>
+							<th>Total AWP kills</th>
+							</tr><tr>
+							<?php
+								total_kills_awp();
+							?>
+			</table>
 		</div>
 		<div id="cs3" style="display: none;">
 			<table class ="cs3" style="width:100%">
 							<th>Username</th>
-							<th>Accuracy percentage</th>
+							<th>Rifle Accuracy percentage</th>
 							</tr><tr>
 							<?php
 								rifle_acc();
@@ -67,6 +85,24 @@ include ('database/displayFunctions.php');
 							
 						
 				</table>
+
+				<table style="width:100%">
+							<th>Username</th>
+							<th>Pistol Accuracy percentage</th>
+							</tr><tr>
+							<?php
+								pistol_acc();
+							?>
+			</table>
+
+			<table style="width:100%">
+							<th>Username</th>
+							<th>Sniper Accuracy percentage</th>
+							</tr><tr>
+							<?php
+								sniper_acc();
+							?>
+			</table>
 				</div>
 		</div>
 
