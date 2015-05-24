@@ -11,6 +11,10 @@
 					<li><a id="CSS3">Accuracy</a></li>
 				</ul>
 			</ol>
+			<div class="row">
+			<div class = "content_wrapper">
+				<div id = "content">
+					<div class="col-xs-12 col-sm-12 col-md-12">
 			<div id="cs1" style="display: none;">
                        
 			<table class="cs1">
@@ -129,6 +133,11 @@
 							
 						
 				</table>
+				</div>
+		</div>
+
+	</div>
+</div>
 		</div>
 		</div>
 
