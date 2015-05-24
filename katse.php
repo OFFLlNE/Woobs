@@ -1,4 +1,5 @@
 <?php include('/menu.php');
+include ('database/displayFunctions.php');
 ?>
 
 <div class="middle">
@@ -18,37 +19,12 @@
 			<div id="cs1" style="display: none;">
                        
 			<table class="cs1" style="width:100%">
-					<tr>
 							<th>Username</th>
 							<th>Kill/Death ratio</th>
 							</tr><tr>
-							<td>HotPapa</td>
-							<td>4.72</td>
-							</tr><tr>
-							<td>HotPapa</td>
-							<td>3.38</td>
-							</tr><tr>
-							<td>Little Ponies</td>
-							<td>1.28</td>
-							</tr><tr>
-							<td>THIS. IS. MELL!</td>
-							<td>1.21</td>
-							</tr><tr>
-							<td>Josh</td>
-							<td>1.13</td>
-							</tr><tr>
-							<td>Get eRekt</td>
-							<td>1.01</td>
-							</tr><tr>
-							<td>THIS. lS. MELL!</td>
-							<td>0.94</td>
-							</tr><tr>
-							<td>MoMentous</td>
-							<td>0.92</td>
-							</tr><tr>
-							<td>Priidrik</td>
-							<td>0.75</td>
-							</tr>
+							<?php
+						KDRatio();
+							?>
 			</table>
 
 			<table style="width:100%">
