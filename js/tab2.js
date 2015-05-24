@@ -11,7 +11,7 @@ $(document).ready(function() {
                 show3();
             }
         });
-    }); 
+    }; 
 
     function hideAll() {
         $("#cs1").hide();
