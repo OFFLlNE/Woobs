@@ -73,5 +73,5 @@ $(document).ready(function() {
         addingListener();
         return false;
     }); 
-}); 
+}; 
 }); 
