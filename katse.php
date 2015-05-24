@@ -6,7 +6,7 @@
 			<ol class="singleline">			
 				<li>
 					<a id="CSS1">Overall</a>
-					<a id="CSS2">Best killers</a>
+					<a id="CSS2">Bestkillers</a>
 					<a id="CSS3">Accuracy</a>
 				</li>
 			</ol>

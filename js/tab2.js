@@ -47,7 +47,7 @@ $(document).ready(function() {
         var a = url.substr(url.indexOf("#") + 1);
         if (a == "Overall") {
            show1();
-        } else if (a == "Best killers") {
+        } else if (a == "Bestkillers") {
             show2();
         } else if (a == "Accuracy") {
             show3();
@@ -65,7 +65,7 @@ $(document).ready(function() {
     }); 
     $("#CSS2").click(function(){
         show2();
-        window.history.pushState({'view': 'cs2'}, "Best killers", "/katse.php#Best killers");
+        window.history.pushState({'view': 'cs2'}, "Bestkillers", "/katse.php#Bestkillers");
         addingListener();
         return false;
     }); 
