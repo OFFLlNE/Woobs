@@ -59,19 +59,19 @@ $(document).ready(function() {
 
     $("#CSS1").click(function(){
         show1();
-        window.history.pushState({'view': 'cs1'}, "Overall", "/statistics.php#Overall");
+        window.history.pushState({'view': 'cs1'}, "Overall", "/katse.php#Overall");
         addingListener();
         return false;
     }); 
     $("#CSS2").click(function(){
         show2();
-        window.history.pushState({'view': 'cs2'}, "Best killers", "/statistics.php#Best killers");
+        window.history.pushState({'view': 'cs2'}, "Best killers", "/katse.php#Best killers");
         addingListener();
         return false;
     }); 
     $("#CSS3").click(function(){
         show3();
-        window.history.pushState({'view': 'cs3'}, "Accuracy", "/statistics.php#Accuracy");
+        window.history.pushState({'view': 'cs3'}, "Accuracy", "/katse.php#Accuracy");
         addingListener();
         return false;
     }); 
