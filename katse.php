@@ -1,6 +1,4 @@
 <?php include('/menu.php');
-$activePage = "statistics.php";
-include ('database/displayFunctions.php');
 ?>
 
 <div class="container">
