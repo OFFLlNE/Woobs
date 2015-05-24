@@ -8,7 +8,7 @@ include ('database/displayFunctions.php');
 	<div class="container-fluid">
 		<div class="row">
 			<div class="row">
-				<div class="col-xs-3 col-sm-3 col-md-3">
+				<div class="col-xs-12 col-sm-3 col-md-3">
 					<h1>Profile</h1>
 					<?php
 				    	if(isset($_SESSION['steamid'])) {
@@ -32,7 +32,7 @@ include ('database/displayFunctions.php');
 				</div>
 
 				</div>
-				<div class="col-xs-9 col-sm-9 col-md-9">
+				<div class="col-xs-12 col-sm-9 col-md-9">
 					<h1>Overall Statistics</h1>
 					<div class="boxProfile">
 						<table style="width:100%">
