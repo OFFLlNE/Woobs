@@ -7,7 +7,7 @@
 	<script type="text/javascript" src="js/userSearch.js"></script>
 	<script type="text/javascript" src="js/userSearch2.js"></script>
 	<script type="text/javascript" src="js/changePage.js"></script>
-	<script type="text/javascript" src="tab2.js"></script>
+	<script type="text/javascript" src="js/tab2.js"></script>
 	<script type="text/javascript" src="js/benal.js"></script>
 </body>
 </html>
