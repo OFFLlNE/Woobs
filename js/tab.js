@@ -1,15 +1,11 @@
-
-$(document).ready(function(){
-
-    $("a").on("click",function(){
-        if ($(this).attr("href").charAt(0) == '#'){
-            var hash = $(this).attr("href");
-            hash = hash.replace(/^.*#/, '');
-        }
-    })
-});
-
-$.fragmentChange(true);
+$(function() {
+  $(".pagination a").live("click", function() {
+    $.setFragment({ "page" : $.queryString(this.href).page })
+    $(".pagination").html("Page is loading...");
+    return false;
+  });
+  
+  $.fragmentChange(true);
   $(document).bind("fragmentChange.page", function() {
     $.getScript($.queryString(document.location.href, { "page" : $.fragment().page }));
   });
