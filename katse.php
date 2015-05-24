@@ -7,15 +7,14 @@ include ('database/displayFunctions.php');
 		<div class="middle">
 			<ol class="singleline">			
 				<li>
-					<a id="CS1">Overall</a>
-					<a id="CS2">Best killers</a>
-					<a id="CS3">Accuracy</a>
+					<a id="CSS1">Overall</a>
+					<a id="CSS2">Best killers</a>
+					<a id="CSS3">Accuracy</a>
 				</li>
 			</ol>
 			<div id="cs1" style="display: none;">
                        
 			<table class="cs1" id ="t01">
-				<h1 id="heading">Top 10 Money Wellspent</h1>
 					<tr>
 							<td>HotPapa</td>
 							<td>2.51</td>
@@ -54,7 +53,6 @@ include ('database/displayFunctions.php');
 		</div>
 		<div id="cs2" style="display: none;">
 			<table class ="cs2" id="t02">
-					<h1 id="heading">Top 10 Total Kills Headshot</h1>
 						<tr>
 							<td>HotPapa</td>
 							<td>52168</td>
@@ -95,7 +93,6 @@ include ('database/displayFunctions.php');
 		</div>
 		<div id="cs3" style="display: none;">
 			<table class ="cs3" id="t03">
-					<h1 id="heading">Top 10 Pistol Accuracy</h1>
 						<tr>
 							<td>HotPapa</td>
 							<td>35.93</td>

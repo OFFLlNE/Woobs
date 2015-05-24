@@ -57,19 +57,19 @@ $(document).ready(function() {
         }
     }
 
-    $("#CS1").click(function(){
+    $("#CSS1").click(function(){
         show1();
         window.history.pushState({'view': 'cs1'}, "Overall", "/statistics.php#Overall");
         addingListener();
         return false;
     }); 
-    $("#CS2").click(function(){
+    $("#CSS2").click(function(){
         show2();
         window.history.pushState({'view': 'cs2'}, "Best killers", "/statistics.php#Best killers");
         addingListener();
         return false;
     }); 
-    $("#CS3").click(function(){
+    $("#CSS3").click(function(){
         show3();
         window.history.pushState({'view': 'cs3'}, "Accuracy", "/statistics.php#Accuracy");
         addingListener();
