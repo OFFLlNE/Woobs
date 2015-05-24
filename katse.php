@@ -97,6 +97,9 @@
 		<div id="cs3" style="display: none;">
 			<table class ="cs3" style="width:100%">
 						<tr>
+							<th>Erakond</th>
+							<th>Esimees</th>
+
 							<td>HotPapa</td>
 							<td>35.93</td>
 							</tr><tr>
