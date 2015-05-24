@@ -19,6 +19,9 @@ include ('database/displayFunctions.php');
 							<h1>Top 10 Money Wellspent</h1>
 							<div class="boxProfile">
 								<table style="width:100%">
+								<th>Username</th>
+								<th>Total money spent / total damage ratio</th>
+								</tr><tr>
 								<?php
 									MoneyWellSpent();
 								?>
@@ -27,6 +30,9 @@ include ('database/displayFunctions.php');
 							<h1>Top 10 K/D Ratio</h1>
 							<div class="boxProfile">
 								<table style="width:100%">
+								<th>Username</th>
+								<th>Kill/Death ratio</th>
+								</tr><tr>
 								<?php
 									KDRatio();
 								?>
@@ -35,6 +41,9 @@ include ('database/displayFunctions.php');
 							<h1>Top 10 Nolifers</h1>
 							<div class="boxProfile">
 								<table style="width:100%">
+								<th>Username</th>
+								<th>Hours played last 2 weeks</th>
+								</tr><tr>
 								<?php
 									nolifers();
 								?>
@@ -43,6 +52,9 @@ include ('database/displayFunctions.php');
 							<h1>Top 10 Headhunters</h1>
 							<div class="boxProfile">
 								<table style="width:100%">
+								<th>Username</th>
+								<th>Headshot kills / total kill ratio</th>
+								</tr><tr>
 								<?php
 									headhunters();
 								?>
@@ -53,6 +65,9 @@ include ('database/displayFunctions.php');
 							<h1>Top 10 Total Kills Headshot</h1>
 							<div class="boxProfile">
 								<table style="width:100%">
+								<th>Username</th>
+								<th>Headshot kills</th>
+								</tr><tr>
 								<?php
 									totalHeadShotKills();
 								?>
@@ -61,6 +76,9 @@ include ('database/displayFunctions.php');
 							<h1>Top 10 Total Kills</h1>
 							<div class="boxProfile">
 								<table style="width:100%">
+								<th>Username</th>
+								<th>Total kills</th>
+								</tr><tr>
 								<?php
 									totalKills();
 								?>
@@ -69,6 +87,9 @@ include ('database/displayFunctions.php');
 							<h1>Top 10 AWP Kills</h1>
 							<div class="boxProfile">
 								<table style="width:100%">
+								<th>Username</th>
+								<th>Total AWP kills</th>
+								</tr><tr>
 								<?php
 									total_kills_awp();
 								?>
@@ -79,6 +100,9 @@ include ('database/displayFunctions.php');
 							<h1>Top 10 Pistol Accuracy</h1>
 							<div class="boxProfile">
 								<table style="width:100%">
+								<th>Username</th>
+								<th>Pistol accuracy(starting pistols)</th>
+								</tr><tr>
 								<?php
 									pistol_acc();
 								?>
@@ -87,6 +111,9 @@ include ('database/displayFunctions.php');
 							<h1>Top 10 Rifle Accuracy</h1>
 							<div class="boxProfile">
 								<table style="width:100%">
+								<th>Username</th>
+								<th>AK/M4 accuracy</th>
+								</tr><tr>
 								<?php
 									rifle_acc();
 								?>
@@ -95,6 +122,9 @@ include ('database/displayFunctions.php');
 							<h1>Top 10 Sniper Accuracy</h1>
 							<div class="boxProfile">
 								<table style="width:100%">
+								<th>Username</th>
+								<th>AWP/Scout accuracy</th>
+								</tr><tr>
 								<?php
 									sniper_acc();
 								?>
