@@ -8,3 +8,9 @@ $(document).ready(function(){
         }
     })
 });
+
+$.fragmentChange(true);
+  $(document).bind("fragmentChange.page", function() {
+    alert("yoyoy");
+    });
+  });
