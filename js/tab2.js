@@ -7,8 +7,8 @@ $(document).ready(function() {
                 show1();
             } else if (e.state.view == "cs2") {
                 show2();
-            } else if (e.state.view == "cs1") {
-                show1();
+            } else if (e.state.view == "cs3") {
+                show3();
             }
             }
         });
@@ -45,11 +45,11 @@ $(document).ready(function() {
         hideAll();
     } else {
         var a = url.substr(url.indexOf("#") + 1);
-        if (a == "content1") {
+        if (a == "Overall") {
            show1();
-        } else if (a == "content2") {
+        } else if (a == "Best killers") {
             show2();
-        } else if (a == "content3") {
+        } else if (a == "Accuracy") {
             show3();
         } 
         } else {
@@ -59,19 +59,19 @@ $(document).ready(function() {
 
     $("#CS1").click(function(){
         show1();
-        window.history.pushState({'view': 'cs1'}, "content1", "/statistics.php#content1");
+        window.history.pushState({'view': 'cs1'}, "Overall", "/statistics.php#content1");
         addingListener();
         return false;
     }); 
     $("#CS2").click(function(){
         show2();
-        window.history.pushState({'view': 'cs2'}, "content2", "/statistics.php#content2");
+        window.history.pushState({'view': 'cs2'}, "Best killers", "/statistics.php#content2");
         addingListener();
         return false;
     }); 
     $("#CS3").click(function(){
         show3();
-        window.history.pushState({'view': 'cs3'}, "content3", "/statistics.php#content3");
+        window.history.pushState({'view': 'cs3'}, "Accuracy", "/statistics.php#content3");
         addingListener();
         return false;
     }); 
