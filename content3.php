@@ -3,7 +3,7 @@ include ('database/displayFunctions.php');
 ?>
 <div class="col-xs-12 col-sm-12 col-md-12">
 				<h1 id="heading">Top 10 Pistol Accuracy</h1>
-				<div class="boxProfile">
+				<div id = "cs3" class="boxProfile" style="display: none;">
 					<table style="width:100%">
 					<?php
 						pistol_acc();

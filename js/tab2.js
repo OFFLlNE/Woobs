@@ -7,24 +7,35 @@ $(document).ready(function() {
                 show1();
             } else if (e.state.view == "cs2") {
                 show2();
-            } 
+            } else if (e.state.view == "cs1") {
+                show1();
+            }
             }
         });
-    }
+    
 
     function hideAll() {
         $("#cs1").hide();
         $("#cs2").hide();
+        $("#cs3").hide();
     }
 
     function show1() {
         $("#cs1").show();
         $("#cs2").hide();
+        $("#cs3").hide();
     }
 
     function show2() {
         $("#cs1").hide();
         $("#cs2").show();
+        $("#cs3").hide();
+    }
+
+    function show3() {
+        $("#cs1").hide();
+        $("#cs2").hide();
+        $("#cs3").show();
     }
 
 
@@ -38,21 +49,29 @@ $(document).ready(function() {
            show1();
         } else if (a == "content2") {
             show2();
+        } else if (a == "content3") {
+            show3();
         } 
         } else {
             hideAll();
         }
     }
 
-    $("#C1").click(function(){
+    $("#CS1").click(function(){
         show1();
         window.history.pushState({'view': 'cs1'}, "content1", "/statistics.php#content1");
         addingListener();
         return false;
     }); 
-    $("#C2").click(function(){
+    $("#CS2").click(function(){
         show2();
         window.history.pushState({'view': 'cs2'}, "content2", "/statistics.php#content2");
+        addingListener();
+        return false;
+    }); 
+    $("#CS3").click(function(){
+        show3();
+        window.history.pushState({'view': 'cs3'}, "content3", "/statistics.php#content3");
         addingListener();
         return false;
     }); 
