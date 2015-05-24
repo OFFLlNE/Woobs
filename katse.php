@@ -20,42 +20,76 @@
 			<table class="cs1" style="width:100%">
 					<tr>
 							<th>Username</th>
-							<th>Money Well Spent</th>
+							<th>Kill/Death ratio</th>
 							</tr><tr>
 							<td>HotPapa</td>
-							<td>2.51</td>
+							<td>4.72</td>
 							</tr><tr>
 							<td>HotPapa</td>
-							<td>1.43</td>
-							</tr><tr>
-							<td>root</td>
-							<td>1.28</td>
-							</tr><tr>
-							<td>Josh</td>
-							<td>0.90</td>
-							</tr><tr>
-							<td>THIS. IS. MELL!</td>
-							<td>0.75</td>
-							</tr><tr>
-							<td>MoMentous</td>
-							<td>0.60</td>
-							</tr><tr>
-							<td>THIS. lS. MELL!</td>
-							<td>0.59</td>
+							<td>3.38</td>
 							</tr><tr>
 							<td>Little Ponies</td>
-							<td>0.57</td>
+							<td>1.28</td>
 							</tr><tr>
-							<td>Mihkel</td>
-							<td>0.50</td>
+							<td>THIS. IS. MELL!</td>
+							<td>1.21</td>
 							</tr><tr>
-							<td>Priidrik</td>
-							<td>0.49</td>
+							<td>Josh</td>
+							<td>1.13</td>
 							</tr><tr>
 							<td>Get eRekt</td>
-							<td>0.48</td>
+							<td>1.01</td>
+							</tr><tr>
+							<td>THIS. lS. MELL!</td>
+							<td>0.94</td>
+							</tr><tr>
+							<td>MoMentous</td>
+							<td>0.92</td>
+							</tr><tr>
+							<td>Priidrik</td>
+							<td>0.75</td>
 							</tr>
 			</table>
+
+			<table style="width:100%">
+					<tr>
+							<th>Username</th>
+							<th>Hours played last 2 weeks</th>
+							</tr><tr>
+							<td>MoMentous</td>
+							<td>50.27</td>
+							</tr><tr>
+							<td>root</td>
+							<td>49.65</td>
+							</tr><tr>
+							<td>Little Ponies</td>
+							<td>41.18</td>
+							</tr><tr>
+							<td>THIS. IS. MELL!</td>
+							<td>20.57</td>
+							</tr><tr>
+							<td>Priidrik</td>
+							<td>14.15</td>
+							</tr><tr>
+							<td>Josh</td>
+							<td>11.87</td>
+							</tr><tr>
+							<td>HotPapa</td>
+							<td>8.78</td>
+							</tr><tr>
+							<td>HotPapa</td>
+							<td>6.12</td>
+							</tr><tr>
+							<td>THIS. lS. MELL!</td>
+							<td>3.93</td>
+							</tr><tr>
+							<td>Mihkel</td>
+							<td>3.83</td>
+							</tr><tr>
+							<td>Get eRekt</td>
+							<td>3.35</td>
+							</tr>					</table>
+
 		</div>
 		<div id="cs2" style="display: none;">
 			<table class ="cs2" style="width:100%">
