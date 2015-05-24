@@ -7,16 +7,16 @@ function done(){
 	setTimeout(function() {
 		updates();
 		done();
-	}, 200);
+	}, 1000);
 }
 
 function updates(){
 	$.getJSON("database/fetch.php", function(data) {
-		$("ol").empty();
+		$("#last").empty();
 
 		$.each(data.result, function(){
 
-			$("ol").append("<li>Name Tag: "+this['UserName']+"</li><br />");
+			$("#last").append("<li>Username: "+this['UserName']+"</li><br />");
 		});
 	});
 }

@@ -42,7 +42,11 @@ include ('database/displayFunctions.php');
 		</table>
 
 	</div>
-	<!--<ol></ol> -->
+	<div class="heading">
+		<h1>Last user to join</h1>
+		<ul id="last"></ul>
+	</div>
+
 </div>
 <div class="top">
 </div>
