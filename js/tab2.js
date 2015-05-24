@@ -50,7 +50,6 @@ $(document).ready(function() {
             show2();
         } else if (a == "Accuracy") {
             show3();
-        } 
         } else {
             hideAll();
         }
