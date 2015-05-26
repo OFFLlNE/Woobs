@@ -151,7 +151,7 @@ select {
 }
 .input_container input {
 	height: 20px;
-	width: 200px;
+	width: 150px;
 	padding: 3px;
 	border: 1px solid #cccccc;
 	border-radius: 0;
